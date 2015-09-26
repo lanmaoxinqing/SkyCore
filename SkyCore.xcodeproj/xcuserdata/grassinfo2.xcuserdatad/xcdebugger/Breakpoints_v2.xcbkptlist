@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "exampleTests/exampleTests.m"
+            timestampString = "439452843.753994"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "-testStoreObj"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[exampleTests testStoreObj]"
+                  moduleName = "exampleTests"
+                  urlString = "file:///Users/grassinfo2/Documents/liud/workspace-restore/SkyCore-v2/exampleTests/exampleTests.m"
+                  timestampString = "439452929.726124"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "720">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[exampleTests testStoreObj]"
+                  moduleName = "exampleTests"
+                  urlString = "file:///Users/grassinfo2/Documents/liud/workspace-restore/SkyCore-v2/exampleTests/exampleTests.m"
+                  timestampString = "439452929.726359"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "1944">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[exampleTests testStoreObj]"
+                  moduleName = "exampleTests"
+                  urlString = "file:///Users/grassinfo2/Documents/liud/workspace-restore/SkyCore-v2/exampleTests/exampleTests.m"
+                  timestampString = "439452929.726681"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "2087">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[exampleTests testStoreObj]"
+                  moduleName = "exampleTests"
+                  urlString = "file:///Users/grassinfo2/Documents/liud/workspace-restore/SkyCore-v2/exampleTests/exampleTests.m"
+                  timestampString = "439452929.727086"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "2587">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

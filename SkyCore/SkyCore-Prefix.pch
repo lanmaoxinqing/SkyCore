@@ -1,0 +1,22 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#define SCLogSimple
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import "SCSysconfig.h"
+    #import "SCAppCache.h"
+    #import "SCBaseDao.h"
+    #import "SCBaseDomain.h"
+    #import "SCBaseManagedDomain.h"
+    #import "SCBaseService.h"
+    #import "NSObject+NotNull.h"
+    #import "UIViewController+Addons.h"
+    #import "AFNetworking.h"
+    #import "UIKit+AFNetworking.h"
+#endif
+ 
