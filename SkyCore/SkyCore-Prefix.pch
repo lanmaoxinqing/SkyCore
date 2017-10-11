@@ -15,8 +15,7 @@
     #import "SCBaseManagedDomain.h"
     #import "SCBaseService.h"
     #import "NSObject+NotNull.h"
-    #import "UIViewController+Addons.h"
-    #import "AFNetworking.h"
+    #import <AFNetworking/AFNetworking.h>
     #import "UIKit+AFNetworking.h"
 #endif
  

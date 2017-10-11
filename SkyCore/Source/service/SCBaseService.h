@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "NSObject+NotNull.h"
-#import "AFNetworking.h"
+#import <AFNetworking/AFNetworking.h>
 
 /**
  服务器通信基类,提供POST网络请求,文件下载,上传,
@@ -26,7 +26,7 @@
 @property(nonatomic,copy) NSString *downloadPath;   //下载文件保存地址,默认使用[SCSysconfig filePathByName:[self url]]
 //@property(nonatomic,strong,readonly) NSMutableDictionary *headers;  //头信息
 @property(readonly,nonatomic,strong) NSMutableDictionary *params;   //传递参数
-@property(readonly,nonatomic,strong) AFHTTPRequestOperationManager *manager;
+@property(readonly,nonatomic,strong) AFHTTPSessionManager *manager;
 /**
  *  为网络请求添加参数
  *
@@ -41,7 +41,7 @@
  *
  *  @return 创建的网络请求Operation,供后续操作
  */
--(AFHTTPRequestOperation *)request:(void (^)(NSString *response,NSString *error))finish;
+-(NSURLSessionDataTask *)request:(void (^)(id responseObject,NSString *error))finish;
 /**
  *  发起带进度的网络请求并回调服务器响应结果,适用文件上传
  *
@@ -50,8 +50,8 @@
  *
  *  @return 创建的网络请求Operation,供后续操作
  */
--(AFHTTPRequestOperation *)requestWithProgressBlock:(void (^)(NSUInteger bytesWritten, long long totalBytesWritten, long long totalBytesExpectedToWrite))block
-                                             finish:(void (^)(NSString *response,NSString *error))finish;
+-(NSURLSessionDataTask *)requestWithProgressBlock:(void (^)(NSUInteger bytesWritten, long long totalBytesWritten, long long totalBytesExpectedToWrite))block
+                                             finish:(void (^)(id responseObject,NSString *error))finish;
 /**
  *  发起下载请求并回调下载地址
  *
@@ -61,10 +61,10 @@
  *
  *  @return 创建的网络请求Operation,供后续操作
  */
--(AFHTTPRequestOperation *)download:(void (^)(NSString *downloadPath,NSString *error))finish;
--(AFHTTPRequestOperation *)download:(void (^)(NSString *downloadPath,NSString *error))finish
+-(NSURLSessionDataTask *)download:(void (^)(NSString *downloadPath,NSString *error))finish;
+-(NSURLSessionDataTask *)download:(void (^)(NSString *downloadPath,NSString *error))finish
                              append:(BOOL)append;
--(AFHTTPRequestOperation *)downloadWithProcess:(void (^)(NSUInteger bytesRead, long long totalBytesRead, long long totalBytesExpectedToRead))processBlock
+-(NSURLSessionDataTask *)downloadWithProcess:(void (^)(NSUInteger bytesRead, long long totalBytesRead, long long totalBytesExpectedToRead))processBlock
                                         finish:(void (^)(NSString *downloadPath,NSString *error))finish
                                         append:(BOOL)append;
 /**
@@ -82,9 +82,9 @@
  *
  *  @return 创建的网络请求Operation,供后续操作
  */
--(AFHTTPRequestOperation *)upload:(void (^)(NSString *response,NSString *error))finish;
--(AFHTTPRequestOperation *)uploadWithProgressBlock:(void (^)(NSUInteger bytesWritten, long long totalBytesWritten, long long totalBytesExpectedToWrite))block
-                                            finish:(void (^)(NSString *response,NSString *error))finish;
+-(NSURLSessionDataTask *)upload:(void (^)(id responseObject,NSString *error))finish;
+-(NSURLSessionDataTask *)uploadWithProgressBlock:(void (^)(NSUInteger bytesWritten, long long totalBytesWritten, long long totalBytesExpectedToWrite))block
+                                            finish:(void (^)(id responseObject,NSString *error))finish;
 /**
  *  批量上传文件
  *

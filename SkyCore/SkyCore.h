@@ -6,7 +6,6 @@
 //  Copyright (c) 2014年 com.grassinfo. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import <SkyCore/SCSysconfig.h>
 #import <SkyCore/SCAppCache.h>
 #import <SkyCore/SCBaseDao.h>
@@ -16,8 +15,6 @@
 #import <SkyCore/NSObject+NotNull.h>
 #import <SkyCore/UIViewController+Addons.h>
 #import <SkyCore/UIView+Frame.h>
-#import <SkyCore/AFNetworking.h>
-#import <SkyCore/UIKit+AFNetworking.h>
 
 @interface SkyCore : NSObject
 

@@ -9,7 +9,6 @@
 #import "SCBaseManagedDomain.h"
 #import "SCBaseDao.h"
 #import <objc/runtime.h>
-#import "GDataXMLElement+Addons.h"
 
 @implementation SCBaseManagedDomain
 
@@ -57,29 +56,29 @@
     return nil;
 }
 
--(id)initWithElement:(GDataXMLElement *)ele{
-    //    NSAssert(NO, @"子类请重写[BaseDomain initWithDictionary:]方法");
-    //    return nil;
-    if(self=[super init]){
-        [self enumPropertiesUsingBlock:^(NSString *propertyName, NSUInteger idx, BOOL *stop) {
-            //首字母大写
-            NSString *firstLetter=[propertyName substringToIndex:1];
-            NSString *modifyName=[propertyName stringByReplacingCharactersInRange:NSMakeRange(0, 1) withString:[firstLetter uppercaseString]];
-            id value=[[ele elementsForName:modifyName][0] stringValue];
-            if(value){
-                [self setValue:value forKey:propertyName];
-                return ;
-            }
-            //使用原字段设置
-            value=[[ele elementsForName:propertyName][0] stringValue];
-            if(value){
-                [self setValue:value forKey:propertyName];
-            }
-        }];
-        return self;
-    }
-    return nil;
-}
+//-(id)initWithElement:(GDataXMLElement *)ele{
+//    //    NSAssert(NO, @"子类请重写[BaseDomain initWithDictionary:]方法");
+//    //    return nil;
+//    if(self=[super init]){
+//        [self enumPropertiesUsingBlock:^(NSString *propertyName, NSUInteger idx, BOOL *stop) {
+//            //首字母大写
+//            NSString *firstLetter=[propertyName substringToIndex:1];
+//            NSString *modifyName=[propertyName stringByReplacingCharactersInRange:NSMakeRange(0, 1) withString:[firstLetter uppercaseString]];
+//            id value=[[ele elementsForName:modifyName][0] stringValue];
+//            if(value){
+//                [self setValue:value forKey:propertyName];
+//                return ;
+//            }
+//            //使用原字段设置
+//            value=[[ele elementsForName:propertyName][0] stringValue];
+//            if(value){
+//                [self setValue:value forKey:propertyName];
+//            }
+//        }];
+//        return self;
+//    }
+//    return nil;
+//}
 
 -(void)encodeWithCoder:(NSCoder *)aCoder{
     [self enumPropertiesUsingBlock:^(NSString *propertyName, NSUInteger idx, BOOL *stop) {

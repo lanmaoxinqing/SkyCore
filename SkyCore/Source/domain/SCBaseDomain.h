@@ -29,6 +29,6 @@
  *
  *  @return 类对象实例
  */
--(id)initWithElement:(GDataXMLElement *)ele;
+//-(id)initWithElement:(GDataXMLElement *)ele;
 
 @end

@@ -8,7 +8,7 @@
 
 #import "SCCommonTools.h"
 #import "SCSysconfig.h"
-#import "SSZipArchive.h"
+#import <SSZipArchive/SSZipArchive.h>
 
 @interface SCCommonTools(Private)
 

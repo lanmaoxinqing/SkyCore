@@ -7,7 +7,6 @@
 //
 
 #import "SCLocationService.h"
-#import "JSONKit.h"
 #import "SCSysconfig.h"
 #import "SCAppCache.h"
 
@@ -26,7 +25,7 @@ const double pi = 3.14159265358979324;
     [base addParamByKey:@"ak" value:[SCSysconfig baiduAppKey]];
     [base request:^(NSString *response, NSString *error) {
         if([response isNotEmpty]){
-            NSDictionary *responseDic=[response objectFromJSONString];
+            NSDictionary *responseDic=[NSJSONSerialization JSONObjectWithData:[response dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingAllowFragments error:nil];
             NSDictionary *resultDic=[responseDic objectForKey:@"result"];
             NSDictionary *locationDic=[resultDic objectForKey:@"location"];
             if([locationDic isNotEmpty]){
@@ -57,7 +56,7 @@ const double pi = 3.14159265358979324;
     [base addParamByKey:@"coordtype" value:@"gcj02ll"];
     [base request:^(NSString *response, NSString *error) {
         if([response isNotEmpty]){
-            NSDictionary *responseDic=[response objectFromJSONString];
+            NSDictionary *responseDic=[NSJSONSerialization JSONObjectWithData:[response dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingAllowFragments error:nil];
             NSDictionary *resultDic=[responseDic objectForKey:@"result"];
             NSString *address=[resultDic objectForKey:@"formatted_address"];
             if([address isNotEmpty] && completeHandle){

@@ -7,33 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33E801031F8E825D00CF5CB4 /* SCBaseDao.h in Headers */ = {isa = PBXBuildFile; fileRef = 33E801011F8E825D00CF5CB4 /* SCBaseDao.h */; };
+		33E801041F8E825D00CF5CB4 /* SCBaseDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E801021F8E825D00CF5CB4 /* SCBaseDao.m */; };
+		BD82C7FB592A309C7034EFCF /* libPods-SkyCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F3718501A78E7166D2B316 /* libPods-SkyCore.a */; };
 		FAABF88C1A020276004948E9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAABF88A1A020276004948E9 /* InfoPlist.strings */; };
-		FAABF8901A020276004948E9 /* SkyCore.m in Sources */ = {isa = PBXBuildFile; fileRef = FAABF88F1A020276004948E9 /* SkyCore.m */; };
 		FAABF9A61A0202DA004948E9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAABF99B1A0202DA004948E9 /* Security.framework */; };
 		FAABF9A91A0202DA004948E9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAABF99E1A0202DA004948E9 /* CoreTelephony.framework */; };
 		FAABF9AA1A0202DA004948E9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAABF99F1A0202DA004948E9 /* QuartzCore.framework */; };
 		FAABF9AB1A0202DA004948E9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAABF9A01A0202DA004948E9 /* SystemConfiguration.framework */; };
 		FAABF9AD1A0202DA004948E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAABF9A21A0202DA004948E9 /* UIKit.framework */; };
-		FAC2144B1A2C7034004D3832 /* Readme.markdown in Sources */ = {isa = PBXBuildFile; fileRef = FAC2143C1A2C7034004D3832 /* Readme.markdown */; };
-		FAC2144C1A2C7034004D3832 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = FAC214401A2C7034004D3832 /* ioapi.c */; };
-		FAC2144D1A2C7034004D3832 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = FAC214421A2C7034004D3832 /* mztools.c */; };
-		FAC2144E1A2C7034004D3832 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = FAC214441A2C7034004D3832 /* unzip.c */; };
-		FAC2144F1A2C7034004D3832 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = FAC214461A2C7034004D3832 /* zip.c */; };
-		FAC214501A2C7034004D3832 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC214491A2C7034004D3832 /* SSZipArchive.m */; };
-		FAC214631A2C7041004D3832 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = FAC214561A2C7041004D3832 /* crypt.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAC214641A2C7041004D3832 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = FAC214571A2C7041004D3832 /* ioapi.c */; };
-		FAC214651A2C7041004D3832 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = FAC214581A2C7041004D3832 /* ioapi.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAC214661A2C7041004D3832 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = FAC214591A2C7041004D3832 /* mztools.c */; };
-		FAC214671A2C7041004D3832 /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = FAC2145A1A2C7041004D3832 /* mztools.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAC214681A2C7041004D3832 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = FAC2145B1A2C7041004D3832 /* unzip.c */; };
-		FAC214691A2C7041004D3832 /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = FAC2145C1A2C7041004D3832 /* unzip.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAC2146A1A2C7041004D3832 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = FAC2145D1A2C7041004D3832 /* zip.c */; };
-		FAC2146B1A2C7041004D3832 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = FAC2145E1A2C7041004D3832 /* zip.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAC2146C1A2C7041004D3832 /* SSZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = FAC2145F1A2C7041004D3832 /* SSZipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAC2146D1A2C7041004D3832 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC214601A2C7041004D3832 /* SSZipArchive.m */; };
 		FAE7F9581A02046400DC86BD /* SkyCore.h in Headers */ = {isa = PBXBuildFile; fileRef = FAABF88E1A020276004948E9 /* SkyCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAF988061A314FF600B4EFF9 /* SCBaseDao.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF987D31A314FF600B4EFF9 /* SCBaseDao.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAF988071A314FF600B4EFF9 /* SCBaseDao.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF987D41A314FF600B4EFF9 /* SCBaseDao.m */; };
 		FAF988081A314FF600B4EFF9 /* NSDate+ChineseCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF987D61A314FF600B4EFF9 /* NSDate+ChineseCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FAF988091A314FF600B4EFF9 /* NSDate+ChineseCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF987D71A314FF600B4EFF9 /* NSDate+ChineseCalendar.m */; };
 		FAF9880A1A314FF600B4EFF9 /* NSObject+NotNull.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF987D81A314FF600B4EFF9 /* NSObject+NotNull.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -76,155 +59,26 @@
 		FAF9882F1A314FF600B4EFF9 /* UIButton+VerticalAlign.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF987FF1A314FF600B4EFF9 /* UIButton+VerticalAlign.m */; };
 		FAF988301A314FF600B4EFF9 /* UIImage+Addons.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF988001A314FF600B4EFF9 /* UIImage+Addons.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FAF988311A314FF600B4EFF9 /* UIImage+Addons.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF988011A314FF600B4EFF9 /* UIImage+Addons.m */; };
-		FAF988321A314FF600B4EFF9 /* UIView+Frame.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF988021A314FF600B4EFF9 /* UIView+Frame.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAF988331A314FF600B4EFF9 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF988031A314FF600B4EFF9 /* UIView+Frame.m */; };
-		FAF988341A314FF600B4EFF9 /* UIViewController+Addons.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF988041A314FF600B4EFF9 /* UIViewController+Addons.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAF988351A314FF600B4EFF9 /* UIViewController+Addons.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF988051A314FF600B4EFF9 /* UIViewController+Addons.m */; };
 		FAF988851A3162A000B4EFF9 /* NSObject+Persistence.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF988831A3162A000B4EFF9 /* NSObject+Persistence.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FAF988861A3162A000B4EFF9 /* NSObject+Persistence.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF988841A3162A000B4EFF9 /* NSObject+Persistence.m */; };
-		FAF988BE1A31797D00B4EFF9 /* SCBaseDao.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF9888A1A31797D00B4EFF9 /* SCBaseDao.m */; };
-		FAF988BF1A31797D00B4EFF9 /* NSDate+ChineseCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF9888D1A31797D00B4EFF9 /* NSDate+ChineseCalendar.m */; };
-		FAF988C01A31797D00B4EFF9 /* NSObject+NotNull.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF9888F1A31797D00B4EFF9 /* NSObject+NotNull.m */; };
-		FAF988C11A31797D00B4EFF9 /* NSObject+Persistence.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF988911A31797D00B4EFF9 /* NSObject+Persistence.m */; };
-		FAF988C21A31797D00B4EFF9 /* NSString+BlankFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF988931A31797D00B4EFF9 /* NSString+BlankFilter.m */; };
-		FAF988C31A31797D00B4EFF9 /* NSString+DateFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF988951A31797D00B4EFF9 /* NSString+DateFormat.m */; };
-		FAF988C41A31797D00B4EFF9 /* NSString+md5.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF988971A31797D00B4EFF9 /* NSString+md5.m */; };
-		FAF988C51A31797D00B4EFF9 /* PinYin.c in Sources */ = {isa = PBXBuildFile; fileRef = FAF988981A31797D00B4EFF9 /* PinYin.c */; };
-		FAF988C61A31797D00B4EFF9 /* SCBaseDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF9889B1A31797D00B4EFF9 /* SCBaseDomain.m */; };
-		FAF988C71A31797D00B4EFF9 /* SCBaseManagedDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF9889D1A31797D00B4EFF9 /* SCBaseManagedDomain.m */; };
-		FAF988C81A31797D00B4EFF9 /* SCAppCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF988A01A31797D00B4EFF9 /* SCAppCache.m */; };
-		FAF988C91A31797D00B4EFF9 /* SCBaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF988A21A31797D00B4EFF9 /* SCBaseService.m */; };
-		FAF988CA1A31797D00B4EFF9 /* SCCommonTools.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF988A41A31797D00B4EFF9 /* SCCommonTools.m */; };
-		FAF988CB1A31797D00B4EFF9 /* SCFileOper.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF988A61A31797D00B4EFF9 /* SCFileOper.m */; };
-		FAF988CC1A31797D00B4EFF9 /* SCLocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF988A81A31797D00B4EFF9 /* SCLocationService.m */; };
-		FAF988CD1A31797D00B4EFF9 /* SCSysconfig.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF988AA1A31797D00B4EFF9 /* SCSysconfig.m */; };
-		FAF988CE1A31797D00B4EFF9 /* DragView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF988AD1A31797D00B4EFF9 /* DragView.m */; };
-		FAF988CF1A31797D00B4EFF9 /* MKMapView+ZoomLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF988AF1A31797D00B4EFF9 /* MKMapView+ZoomLevel.m */; };
-		FAF988D01A31797D00B4EFF9 /* OBShapedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF988B11A31797D00B4EFF9 /* OBShapedButton.m */; };
-		FAF988D11A31797D00B4EFF9 /* PhotoImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF988B31A31797D00B4EFF9 /* PhotoImageScrollView.m */; };
-		FAF988D21A31797D00B4EFF9 /* UIButton+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF988B51A31797D00B4EFF9 /* UIButton+Block.m */; };
-		FAF988D31A31797D00B4EFF9 /* UIButton+VerticalAlign.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF988B71A31797D00B4EFF9 /* UIButton+VerticalAlign.m */; };
-		FAF988D41A31797D00B4EFF9 /* UIImage+Addons.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF988B91A31797D00B4EFF9 /* UIImage+Addons.m */; };
-		FAF988D51A31797D00B4EFF9 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF988BB1A31797D00B4EFF9 /* UIView+Frame.m */; };
-		FAF988D61A31797D00B4EFF9 /* UIViewController+Addons.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF988BD1A31797D00B4EFF9 /* UIViewController+Addons.m */; };
-		FAF988D91A31798C00B4EFF9 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF988D81A31798C00B4EFF9 /* Test.m */; };
-		FAFAC9611A0B251E00BFB43F /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFAC8EB1A0B251E00BFB43F /* AFHTTPRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAFAC9621A0B251E00BFB43F /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFAC8EC1A0B251E00BFB43F /* AFHTTPRequestOperation.m */; };
-		FAFAC9631A0B251E00BFB43F /* AFHTTPRequestOperationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFAC8ED1A0B251E00BFB43F /* AFHTTPRequestOperationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAFAC9641A0B251E00BFB43F /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFAC8EE1A0B251E00BFB43F /* AFHTTPRequestOperationManager.m */; };
-		FAFAC9651A0B251E00BFB43F /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFAC8EF1A0B251E00BFB43F /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAFAC9661A0B251E00BFB43F /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFAC8F01A0B251E00BFB43F /* AFHTTPSessionManager.m */; };
-		FAFAC9671A0B251E00BFB43F /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFAC8F11A0B251E00BFB43F /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAFAC9681A0B251E00BFB43F /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFAC8F21A0B251E00BFB43F /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAFAC9691A0B251E00BFB43F /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFAC8F31A0B251E00BFB43F /* AFNetworkReachabilityManager.m */; };
-		FAFAC96A1A0B251E00BFB43F /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFAC8F41A0B251E00BFB43F /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAFAC96B1A0B251E00BFB43F /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFAC8F51A0B251E00BFB43F /* AFSecurityPolicy.m */; };
-		FAFAC96C1A0B251E00BFB43F /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFAC8F61A0B251E00BFB43F /* AFURLConnectionOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAFAC96D1A0B251E00BFB43F /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFAC8F71A0B251E00BFB43F /* AFURLConnectionOperation.m */; };
-		FAFAC96E1A0B251E00BFB43F /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFAC8F81A0B251E00BFB43F /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAFAC96F1A0B251E00BFB43F /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFAC8F91A0B251E00BFB43F /* AFURLRequestSerialization.m */; };
-		FAFAC9701A0B251E00BFB43F /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFAC8FA1A0B251E00BFB43F /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAFAC9711A0B251E00BFB43F /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFAC8FB1A0B251E00BFB43F /* AFURLResponseSerialization.m */; };
-		FAFAC9721A0B251E00BFB43F /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFAC8FC1A0B251E00BFB43F /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAFAC9731A0B251E00BFB43F /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFAC8FD1A0B251E00BFB43F /* AFURLSessionManager.m */; };
-		FAFAC9761A0B251E00BFB43F /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFAC9011A0B251E00BFB43F /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAFAC9771A0B251E00BFB43F /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFAC9021A0B251E00BFB43F /* AFNetworkActivityIndicatorManager.m */; };
-		FAFAC9781A0B251E00BFB43F /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFAC9031A0B251E00BFB43F /* UIActivityIndicatorView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAFAC9791A0B251E00BFB43F /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFAC9041A0B251E00BFB43F /* UIActivityIndicatorView+AFNetworking.m */; };
-		FAFAC97A1A0B251E00BFB43F /* UIAlertView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFAC9051A0B251E00BFB43F /* UIAlertView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAFAC97B1A0B251E00BFB43F /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFAC9061A0B251E00BFB43F /* UIAlertView+AFNetworking.m */; };
-		FAFAC97C1A0B251E00BFB43F /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFAC9071A0B251E00BFB43F /* UIButton+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAFAC97D1A0B251E00BFB43F /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFAC9081A0B251E00BFB43F /* UIButton+AFNetworking.m */; };
-		FAFAC97E1A0B251E00BFB43F /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFAC9091A0B251E00BFB43F /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAFAC97F1A0B251E00BFB43F /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFAC90A1A0B251E00BFB43F /* UIImageView+AFNetworking.m */; };
-		FAFAC9801A0B251E00BFB43F /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFAC90B1A0B251E00BFB43F /* UIKit+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAFAC9811A0B251E00BFB43F /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFAC90C1A0B251E00BFB43F /* UIProgressView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAFAC9821A0B251E00BFB43F /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFAC90D1A0B251E00BFB43F /* UIProgressView+AFNetworking.m */; };
-		FAFAC9831A0B251E00BFB43F /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFAC90E1A0B251E00BFB43F /* UIRefreshControl+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAFAC9841A0B251E00BFB43F /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFAC90F1A0B251E00BFB43F /* UIRefreshControl+AFNetworking.m */; };
-		FAFAC9851A0B251E00BFB43F /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFAC9101A0B251E00BFB43F /* UIWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAFAC9861A0B251E00BFB43F /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFAC9111A0B251E00BFB43F /* UIWebView+AFNetworking.m */; };
-		FAFAC9881A0B251E00BFB43F /* GDataXMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFAC9161A0B251E00BFB43F /* GDataXMLNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAFAC9891A0B251E00BFB43F /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFAC9171A0B251E00BFB43F /* GDataXMLNode.m */; };
-		FAFAC98B1A0B251E00BFB43F /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFAC91A1A0B251E00BFB43F /* JSONKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAFAC98C1A0B251E00BFB43F /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFAC91B1A0B251E00BFB43F /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		FAFAC98F1A0B251E00BFB43F /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFAC91F1A0B251E00BFB43F /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAFAC9901A0B251E00BFB43F /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFAC9201A0B251E00BFB43F /* MBProgressHUD.m */; };
-		FAFAC9921A0B251E00BFB43F /* MJRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFAC9231A0B251E00BFB43F /* MJRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAFAC9931A0B251E00BFB43F /* MJRefreshBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFAC9241A0B251E00BFB43F /* MJRefreshBaseView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAFAC9941A0B251F00BFB43F /* MJRefreshBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFAC9251A0B251E00BFB43F /* MJRefreshBaseView.m */; };
-		FAFAC9951A0B251F00BFB43F /* MJRefreshFooterView.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFAC9261A0B251E00BFB43F /* MJRefreshFooterView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAFAC9961A0B251F00BFB43F /* MJRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFAC9271A0B251E00BFB43F /* MJRefreshFooterView.m */; };
-		FAFAC9971A0B251F00BFB43F /* MJRefreshHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFAC9281A0B251E00BFB43F /* MJRefreshHeaderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAFAC9981A0B251F00BFB43F /* MJRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFAC9291A0B251E00BFB43F /* MJRefreshHeaderView.m */; };
-		FAFAC9991A0B251F00BFB43F /* SFHFKeychainUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFAC92C1A0B251E00BFB43F /* SFHFKeychainUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAFAC99A1A0B251F00BFB43F /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFAC92D1A0B251E00BFB43F /* SFHFKeychainUtils.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		FAFAC9CF1A0B257C00BFB43F /* GDataXMLElement+Addons.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFAC9CD1A0B257C00BFB43F /* GDataXMLElement+Addons.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAFAC9D01A0B257C00BFB43F /* GDataXMLElement+Addons.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFAC9CE1A0B257C00BFB43F /* GDataXMLElement+Addons.m */; };
-		FAFACBDB1A0B3D8B00BFB43F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFACBDA1A0B3D8B00BFB43F /* main.m */; };
-		FAFACBDE1A0B3D8B00BFB43F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFACBDD1A0B3D8B00BFB43F /* AppDelegate.m */; };
-		FAFACBE11A0B3D8B00BFB43F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFACBE01A0B3D8B00BFB43F /* ViewController.m */; };
-		FAFACBE61A0B3D8B00BFB43F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAFACBE51A0B3D8B00BFB43F /* Images.xcassets */; };
-		FAFACBF51A0B3D8B00BFB43F /* exampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFACBF41A0B3D8B00BFB43F /* exampleTests.m */; };
-		FAFACC751A0B3DA200BFB43F /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFACC001A0B3DA100BFB43F /* AFHTTPRequestOperation.m */; };
-		FAFACC761A0B3DA200BFB43F /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFACC021A0B3DA100BFB43F /* AFHTTPRequestOperationManager.m */; };
-		FAFACC771A0B3DA200BFB43F /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFACC041A0B3DA100BFB43F /* AFHTTPSessionManager.m */; };
-		FAFACC781A0B3DA200BFB43F /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFACC071A0B3DA100BFB43F /* AFNetworkReachabilityManager.m */; };
-		FAFACC791A0B3DA200BFB43F /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFACC091A0B3DA100BFB43F /* AFSecurityPolicy.m */; };
-		FAFACC7A1A0B3DA200BFB43F /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFACC0B1A0B3DA100BFB43F /* AFURLConnectionOperation.m */; };
-		FAFACC7B1A0B3DA200BFB43F /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFACC0D1A0B3DA100BFB43F /* AFURLRequestSerialization.m */; };
-		FAFACC7C1A0B3DA200BFB43F /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFACC0F1A0B3DA100BFB43F /* AFURLResponseSerialization.m */; };
-		FAFACC7D1A0B3DA200BFB43F /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFACC111A0B3DA100BFB43F /* AFURLSessionManager.m */; };
-		FAFACC7F1A0B3DA200BFB43F /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = FAFACC131A0B3DA100BFB43F /* README.md */; };
-		FAFACC801A0B3DA200BFB43F /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFACC161A0B3DA100BFB43F /* AFNetworkActivityIndicatorManager.m */; };
-		FAFACC811A0B3DA200BFB43F /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFACC181A0B3DA100BFB43F /* UIActivityIndicatorView+AFNetworking.m */; };
-		FAFACC821A0B3DA200BFB43F /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFACC1A1A0B3DA100BFB43F /* UIAlertView+AFNetworking.m */; };
-		FAFACC831A0B3DA200BFB43F /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFACC1C1A0B3DA100BFB43F /* UIButton+AFNetworking.m */; };
-		FAFACC841A0B3DA200BFB43F /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFACC1E1A0B3DA100BFB43F /* UIImageView+AFNetworking.m */; };
-		FAFACC851A0B3DA200BFB43F /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFACC211A0B3DA100BFB43F /* UIProgressView+AFNetworking.m */; };
-		FAFACC861A0B3DA200BFB43F /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFACC231A0B3DA100BFB43F /* UIRefreshControl+AFNetworking.m */; };
-		FAFACC871A0B3DA200BFB43F /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFACC251A0B3DA100BFB43F /* UIWebView+AFNetworking.m */; };
-		FAFACC891A0B3DA200BFB43F /* GDataXMLElement+Addons.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFACC2B1A0B3DA100BFB43F /* GDataXMLElement+Addons.m */; };
-		FAFACC8A1A0B3DA200BFB43F /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFACC2D1A0B3DA100BFB43F /* GDataXMLNode.m */; };
-		FAFACC8B1A0B3DA200BFB43F /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = FAFACC2E1A0B3DA100BFB43F /* README.md */; };
-		FAFACC8C1A0B3DA200BFB43F /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFACC311A0B3DA100BFB43F /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		FAFACC8D1A0B3DA200BFB43F /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = FAFACC321A0B3DA100BFB43F /* README.md */; };
-		FAFACC8F1A0B3DA200BFB43F /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFACC361A0B3DA100BFB43F /* MBProgressHUD.m */; };
-		FAFACC901A0B3DA200BFB43F /* README.mdown in Sources */ = {isa = PBXBuildFile; fileRef = FAFACC371A0B3DA100BFB43F /* README.mdown */; };
-		FAFACC911A0B3DA200BFB43F /* MJRefreshBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFACC3B1A0B3DA100BFB43F /* MJRefreshBaseView.m */; };
-		FAFACC921A0B3DA200BFB43F /* MJRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFACC3D1A0B3DA100BFB43F /* MJRefreshFooterView.m */; };
-		FAFACC931A0B3DA200BFB43F /* MJRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFACC3F1A0B3DA100BFB43F /* MJRefreshHeaderView.m */; };
-		FAFACC941A0B3DA200BFB43F /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFACC431A0B3DA100BFB43F /* SFHFKeychainUtils.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		FAFACCAD1A0B3DF100BFB43F /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FAABF99A1A0202DA004948E9 /* libstdc++.dylib */; };
-		FAFACCAE1A0B3DF100BFB43F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAABF99B1A0202DA004948E9 /* Security.framework */; };
-		FAFACCAF1A0B3DF100BFB43F /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FAABF99C1A0202DA004948E9 /* libz.1.2.5.dylib */; };
-		FAFACCB01A0B3DF100BFB43F /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FAABF99D1A0202DA004948E9 /* libicucore.dylib */; };
-		FAFACCB11A0B3DF100BFB43F /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAABF99E1A0202DA004948E9 /* CoreTelephony.framework */; };
-		FAFACCB21A0B3DF100BFB43F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAABF99F1A0202DA004948E9 /* QuartzCore.framework */; };
-		FAFACCB31A0B3DF100BFB43F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAABF9A01A0202DA004948E9 /* SystemConfiguration.framework */; };
-		FAFACCB41A0B3DF100BFB43F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAABF9A11A0202DA004948E9 /* Foundation.framework */; };
-		FAFACCB51A0B3DF100BFB43F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAABF9A21A0202DA004948E9 /* UIKit.framework */; };
-		FAFACCB61A0B3DF100BFB43F /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FAABF9A31A0202DA004948E9 /* libxml2.dylib */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		FAFACBEF1A0B3D8B00BFB43F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FAABF8781A020276004948E9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FAFACBD51A0B3D8B00BFB43F;
-			remoteInfo = example;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		FA0B43511A2D5ACF0093158D /* 1.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = 1.zip; sourceTree = "<group>"; };
+		182179C94103E7C1F3C81F56 /* Pods-example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example.release.xcconfig"; path = "Pods/Target Support Files/Pods-example/Pods-example.release.xcconfig"; sourceTree = "<group>"; };
+		30F136BBFA816E563E49B995 /* Pods-example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-example/Pods-example.debug.xcconfig"; sourceTree = "<group>"; };
+		33E801011F8E825D00CF5CB4 /* SCBaseDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBaseDao.h; sourceTree = "<group>"; };
+		33E801021F8E825D00CF5CB4 /* SCBaseDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBaseDao.m; sourceTree = "<group>"; };
+		3A6B8C140C952B04102DA86B /* Pods-SkyCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyCore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SkyCore/Pods-SkyCore.debug.xcconfig"; sourceTree = "<group>"; };
+		50F3718501A78E7166D2B316 /* libPods-SkyCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SkyCore.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEC855E36DF5BB1C8EC30209 /* Pods-exampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-exampleTests/Pods-exampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BBD12DFA68BB5B110D086D63 /* Pods-SkyCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyCore.release.xcconfig"; path = "Pods/Target Support Files/Pods-SkyCore/Pods-SkyCore.release.xcconfig"; sourceTree = "<group>"; };
+		CF9E8D8602BF397704C0FCA5 /* libPods-example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D09F46B4D2B79F3FD8D67CBC /* libPods-exampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-exampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B8511470C88C9FBEE055F5 /* Pods-exampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-exampleTests/Pods-exampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		FAABF8821A020276004948E9 /* SkyCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework.static; includeInIndex = 0; path = SkyCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAABF8891A020276004948E9 /* SkyCore-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SkyCore-Info.plist"; sourceTree = "<group>"; };
 		FAABF88B1A020276004948E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FAABF88D1A020276004948E9 /* SkyCore-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SkyCore-Prefix.pch"; sourceTree = "<group>"; };
 		FAABF88E1A020276004948E9 /* SkyCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SkyCore.h; sourceTree = "<group>"; };
-		FAABF88F1A020276004948E9 /* SkyCore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SkyCore.m; sourceTree = "<group>"; };
 		FAABF99A1A0202DA004948E9 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		FAABF99B1A0202DA004948E9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		FAABF99C1A0202DA004948E9 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
@@ -235,34 +89,6 @@
 		FAABF9A11A0202DA004948E9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FAABF9A21A0202DA004948E9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FAABF9A31A0202DA004948E9 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
-		FAC2143B1A2C7034004D3832 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		FAC2143C1A2C7034004D3832 /* Readme.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.markdown; sourceTree = "<group>"; };
-		FAC2143F1A2C7034004D3832 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
-		FAC214401A2C7034004D3832 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
-		FAC214411A2C7034004D3832 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
-		FAC214421A2C7034004D3832 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
-		FAC214431A2C7034004D3832 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
-		FAC214441A2C7034004D3832 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
-		FAC214451A2C7034004D3832 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
-		FAC214461A2C7034004D3832 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
-		FAC214471A2C7034004D3832 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
-		FAC214481A2C7034004D3832 /* SSZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipArchive.h; sourceTree = "<group>"; };
-		FAC214491A2C7034004D3832 /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
-		FAC214521A2C7041004D3832 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		FAC214531A2C7041004D3832 /* Readme.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.markdown; sourceTree = "<group>"; };
-		FAC214561A2C7041004D3832 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
-		FAC214571A2C7041004D3832 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
-		FAC214581A2C7041004D3832 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
-		FAC214591A2C7041004D3832 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
-		FAC2145A1A2C7041004D3832 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
-		FAC2145B1A2C7041004D3832 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
-		FAC2145C1A2C7041004D3832 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
-		FAC2145D1A2C7041004D3832 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
-		FAC2145E1A2C7041004D3832 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
-		FAC2145F1A2C7041004D3832 /* SSZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipArchive.h; sourceTree = "<group>"; };
-		FAC214601A2C7041004D3832 /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
-		FAF987D31A314FF600B4EFF9 /* SCBaseDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBaseDao.h; sourceTree = "<group>"; };
-		FAF987D41A314FF600B4EFF9 /* SCBaseDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBaseDao.m; sourceTree = "<group>"; };
 		FAF987D61A314FF600B4EFF9 /* NSDate+ChineseCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ChineseCalendar.h"; sourceTree = "<group>"; };
 		FAF987D71A314FF600B4EFF9 /* NSDate+ChineseCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ChineseCalendar.m"; sourceTree = "<group>"; };
 		FAF987D81A314FF600B4EFF9 /* NSObject+NotNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+NotNull.h"; sourceTree = "<group>"; };
@@ -305,197 +131,8 @@
 		FAF987FF1A314FF600B4EFF9 /* UIButton+VerticalAlign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+VerticalAlign.m"; sourceTree = "<group>"; };
 		FAF988001A314FF600B4EFF9 /* UIImage+Addons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Addons.h"; sourceTree = "<group>"; };
 		FAF988011A314FF600B4EFF9 /* UIImage+Addons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Addons.m"; sourceTree = "<group>"; };
-		FAF988021A314FF600B4EFF9 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
-		FAF988031A314FF600B4EFF9 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
-		FAF988041A314FF600B4EFF9 /* UIViewController+Addons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Addons.h"; sourceTree = "<group>"; };
-		FAF988051A314FF600B4EFF9 /* UIViewController+Addons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Addons.m"; sourceTree = "<group>"; };
 		FAF988831A3162A000B4EFF9 /* NSObject+Persistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Persistence.h"; sourceTree = "<group>"; };
 		FAF988841A3162A000B4EFF9 /* NSObject+Persistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Persistence.m"; sourceTree = "<group>"; };
-		FAF988891A31797D00B4EFF9 /* SCBaseDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBaseDao.h; sourceTree = "<group>"; };
-		FAF9888A1A31797D00B4EFF9 /* SCBaseDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBaseDao.m; sourceTree = "<group>"; };
-		FAF9888C1A31797D00B4EFF9 /* NSDate+ChineseCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ChineseCalendar.h"; sourceTree = "<group>"; };
-		FAF9888D1A31797D00B4EFF9 /* NSDate+ChineseCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ChineseCalendar.m"; sourceTree = "<group>"; };
-		FAF9888E1A31797D00B4EFF9 /* NSObject+NotNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+NotNull.h"; sourceTree = "<group>"; };
-		FAF9888F1A31797D00B4EFF9 /* NSObject+NotNull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NotNull.m"; sourceTree = "<group>"; };
-		FAF988901A31797D00B4EFF9 /* NSObject+Persistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Persistence.h"; sourceTree = "<group>"; };
-		FAF988911A31797D00B4EFF9 /* NSObject+Persistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Persistence.m"; sourceTree = "<group>"; };
-		FAF988921A31797D00B4EFF9 /* NSString+BlankFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BlankFilter.h"; sourceTree = "<group>"; };
-		FAF988931A31797D00B4EFF9 /* NSString+BlankFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BlankFilter.m"; sourceTree = "<group>"; };
-		FAF988941A31797D00B4EFF9 /* NSString+DateFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DateFormat.h"; sourceTree = "<group>"; };
-		FAF988951A31797D00B4EFF9 /* NSString+DateFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DateFormat.m"; sourceTree = "<group>"; };
-		FAF988961A31797D00B4EFF9 /* NSString+md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+md5.h"; sourceTree = "<group>"; };
-		FAF988971A31797D00B4EFF9 /* NSString+md5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+md5.m"; sourceTree = "<group>"; };
-		FAF988981A31797D00B4EFF9 /* PinYin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PinYin.c; sourceTree = "<group>"; };
-		FAF988991A31797D00B4EFF9 /* PinYin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinYin.h; sourceTree = "<group>"; };
-		FAF9889A1A31797D00B4EFF9 /* SCBaseDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBaseDomain.h; sourceTree = "<group>"; };
-		FAF9889B1A31797D00B4EFF9 /* SCBaseDomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBaseDomain.m; sourceTree = "<group>"; };
-		FAF9889C1A31797D00B4EFF9 /* SCBaseManagedDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBaseManagedDomain.h; sourceTree = "<group>"; };
-		FAF9889D1A31797D00B4EFF9 /* SCBaseManagedDomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBaseManagedDomain.m; sourceTree = "<group>"; };
-		FAF9889F1A31797D00B4EFF9 /* SCAppCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAppCache.h; sourceTree = "<group>"; };
-		FAF988A01A31797D00B4EFF9 /* SCAppCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAppCache.m; sourceTree = "<group>"; };
-		FAF988A11A31797D00B4EFF9 /* SCBaseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBaseService.h; sourceTree = "<group>"; };
-		FAF988A21A31797D00B4EFF9 /* SCBaseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBaseService.m; sourceTree = "<group>"; };
-		FAF988A31A31797D00B4EFF9 /* SCCommonTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCCommonTools.h; sourceTree = "<group>"; };
-		FAF988A41A31797D00B4EFF9 /* SCCommonTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCCommonTools.m; sourceTree = "<group>"; };
-		FAF988A51A31797D00B4EFF9 /* SCFileOper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFileOper.h; sourceTree = "<group>"; };
-		FAF988A61A31797D00B4EFF9 /* SCFileOper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFileOper.m; sourceTree = "<group>"; };
-		FAF988A71A31797D00B4EFF9 /* SCLocationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLocationService.h; sourceTree = "<group>"; };
-		FAF988A81A31797D00B4EFF9 /* SCLocationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLocationService.m; sourceTree = "<group>"; };
-		FAF988A91A31797D00B4EFF9 /* SCSysconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSysconfig.h; sourceTree = "<group>"; };
-		FAF988AA1A31797D00B4EFF9 /* SCSysconfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSysconfig.m; sourceTree = "<group>"; };
-		FAF988AC1A31797D00B4EFF9 /* DragView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragView.h; sourceTree = "<group>"; };
-		FAF988AD1A31797D00B4EFF9 /* DragView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragView.m; sourceTree = "<group>"; };
-		FAF988AE1A31797D00B4EFF9 /* MKMapView+ZoomLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+ZoomLevel.h"; sourceTree = "<group>"; };
-		FAF988AF1A31797D00B4EFF9 /* MKMapView+ZoomLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+ZoomLevel.m"; sourceTree = "<group>"; };
-		FAF988B01A31797D00B4EFF9 /* OBShapedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBShapedButton.h; sourceTree = "<group>"; };
-		FAF988B11A31797D00B4EFF9 /* OBShapedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBShapedButton.m; sourceTree = "<group>"; };
-		FAF988B21A31797D00B4EFF9 /* PhotoImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoImageScrollView.h; sourceTree = "<group>"; };
-		FAF988B31A31797D00B4EFF9 /* PhotoImageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoImageScrollView.m; sourceTree = "<group>"; };
-		FAF988B41A31797D00B4EFF9 /* UIButton+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Block.h"; sourceTree = "<group>"; };
-		FAF988B51A31797D00B4EFF9 /* UIButton+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Block.m"; sourceTree = "<group>"; };
-		FAF988B61A31797D00B4EFF9 /* UIButton+VerticalAlign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+VerticalAlign.h"; sourceTree = "<group>"; };
-		FAF988B71A31797D00B4EFF9 /* UIButton+VerticalAlign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+VerticalAlign.m"; sourceTree = "<group>"; };
-		FAF988B81A31797D00B4EFF9 /* UIImage+Addons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Addons.h"; sourceTree = "<group>"; };
-		FAF988B91A31797D00B4EFF9 /* UIImage+Addons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Addons.m"; sourceTree = "<group>"; };
-		FAF988BA1A31797D00B4EFF9 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
-		FAF988BB1A31797D00B4EFF9 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
-		FAF988BC1A31797D00B4EFF9 /* UIViewController+Addons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Addons.h"; sourceTree = "<group>"; };
-		FAF988BD1A31797D00B4EFF9 /* UIViewController+Addons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Addons.m"; sourceTree = "<group>"; };
-		FAF988D71A31798C00B4EFF9 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
-		FAF988D81A31798C00B4EFF9 /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
-		FAFAC8EB1A0B251E00BFB43F /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
-		FAFAC8EC1A0B251E00BFB43F /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
-		FAFAC8ED1A0B251E00BFB43F /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
-		FAFAC8EE1A0B251E00BFB43F /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
-		FAFAC8EF1A0B251E00BFB43F /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
-		FAFAC8F01A0B251E00BFB43F /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
-		FAFAC8F11A0B251E00BFB43F /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
-		FAFAC8F21A0B251E00BFB43F /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
-		FAFAC8F31A0B251E00BFB43F /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
-		FAFAC8F41A0B251E00BFB43F /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
-		FAFAC8F51A0B251E00BFB43F /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
-		FAFAC8F61A0B251E00BFB43F /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
-		FAFAC8F71A0B251E00BFB43F /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
-		FAFAC8F81A0B251E00BFB43F /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
-		FAFAC8F91A0B251E00BFB43F /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
-		FAFAC8FA1A0B251E00BFB43F /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
-		FAFAC8FB1A0B251E00BFB43F /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
-		FAFAC8FC1A0B251E00BFB43F /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
-		FAFAC8FD1A0B251E00BFB43F /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
-		FAFAC8FE1A0B251E00BFB43F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		FAFAC8FF1A0B251E00BFB43F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		FAFAC9011A0B251E00BFB43F /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
-		FAFAC9021A0B251E00BFB43F /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
-		FAFAC9031A0B251E00BFB43F /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
-		FAFAC9041A0B251E00BFB43F /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
-		FAFAC9051A0B251E00BFB43F /* UIAlertView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+AFNetworking.h"; sourceTree = "<group>"; };
-		FAFAC9061A0B251E00BFB43F /* UIAlertView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+AFNetworking.m"; sourceTree = "<group>"; };
-		FAFAC9071A0B251E00BFB43F /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+AFNetworking.h"; sourceTree = "<group>"; };
-		FAFAC9081A0B251E00BFB43F /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+AFNetworking.m"; sourceTree = "<group>"; };
-		FAFAC9091A0B251E00BFB43F /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
-		FAFAC90A1A0B251E00BFB43F /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
-		FAFAC90B1A0B251E00BFB43F /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+AFNetworking.h"; sourceTree = "<group>"; };
-		FAFAC90C1A0B251E00BFB43F /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
-		FAFAC90D1A0B251E00BFB43F /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
-		FAFAC90E1A0B251E00BFB43F /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
-		FAFAC90F1A0B251E00BFB43F /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
-		FAFAC9101A0B251E00BFB43F /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
-		FAFAC9111A0B251E00BFB43F /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
-		FAFAC9131A0B251E00BFB43F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		FAFAC9161A0B251E00BFB43F /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
-		FAFAC9171A0B251E00BFB43F /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
-		FAFAC9181A0B251E00BFB43F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		FAFAC91A1A0B251E00BFB43F /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
-		FAFAC91B1A0B251E00BFB43F /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
-		FAFAC91C1A0B251E00BFB43F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		FAFAC91E1A0B251E00BFB43F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		FAFAC91F1A0B251E00BFB43F /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		FAFAC9201A0B251E00BFB43F /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		FAFAC9211A0B251E00BFB43F /* README.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.mdown; sourceTree = "<group>"; };
-		FAFAC9231A0B251E00BFB43F /* MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefresh.h; sourceTree = "<group>"; };
-		FAFAC9241A0B251E00BFB43F /* MJRefreshBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBaseView.h; sourceTree = "<group>"; };
-		FAFAC9251A0B251E00BFB43F /* MJRefreshBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBaseView.m; sourceTree = "<group>"; };
-		FAFAC9261A0B251E00BFB43F /* MJRefreshFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshFooterView.h; sourceTree = "<group>"; };
-		FAFAC9271A0B251E00BFB43F /* MJRefreshFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshFooterView.m; sourceTree = "<group>"; };
-		FAFAC9281A0B251E00BFB43F /* MJRefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshHeaderView.h; sourceTree = "<group>"; };
-		FAFAC9291A0B251E00BFB43F /* MJRefreshHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshHeaderView.m; sourceTree = "<group>"; };
-		FAFAC92C1A0B251E00BFB43F /* SFHFKeychainUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHFKeychainUtils.h; sourceTree = "<group>"; };
-		FAFAC92D1A0B251E00BFB43F /* SFHFKeychainUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHFKeychainUtils.m; sourceTree = "<group>"; };
-		FAFAC9CD1A0B257C00BFB43F /* GDataXMLElement+Addons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GDataXMLElement+Addons.h"; sourceTree = "<group>"; };
-		FAFAC9CE1A0B257C00BFB43F /* GDataXMLElement+Addons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GDataXMLElement+Addons.m"; sourceTree = "<group>"; };
-		FAFACBD61A0B3D8B00BFB43F /* example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = example.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAFACBD91A0B3D8B00BFB43F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAFACBDA1A0B3D8B00BFB43F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FAFACBDC1A0B3D8B00BFB43F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		FAFACBDD1A0B3D8B00BFB43F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FAFACBDF1A0B3D8B00BFB43F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FAFACBE01A0B3D8B00BFB43F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		FAFACBE31A0B3D8B00BFB43F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FAFACBE51A0B3D8B00BFB43F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		FAFACBE81A0B3D8B00BFB43F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		FAFACBEE1A0B3D8B00BFB43F /* exampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = exampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAFACBF31A0B3D8B00BFB43F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAFACBF41A0B3D8B00BFB43F /* exampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = exampleTests.m; sourceTree = "<group>"; };
-		FAFACBFF1A0B3DA100BFB43F /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
-		FAFACC001A0B3DA100BFB43F /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
-		FAFACC011A0B3DA100BFB43F /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
-		FAFACC021A0B3DA100BFB43F /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
-		FAFACC031A0B3DA100BFB43F /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
-		FAFACC041A0B3DA100BFB43F /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
-		FAFACC051A0B3DA100BFB43F /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
-		FAFACC061A0B3DA100BFB43F /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
-		FAFACC071A0B3DA100BFB43F /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
-		FAFACC081A0B3DA100BFB43F /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
-		FAFACC091A0B3DA100BFB43F /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
-		FAFACC0A1A0B3DA100BFB43F /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
-		FAFACC0B1A0B3DA100BFB43F /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
-		FAFACC0C1A0B3DA100BFB43F /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
-		FAFACC0D1A0B3DA100BFB43F /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
-		FAFACC0E1A0B3DA100BFB43F /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
-		FAFACC0F1A0B3DA100BFB43F /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
-		FAFACC101A0B3DA100BFB43F /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
-		FAFACC111A0B3DA100BFB43F /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
-		FAFACC121A0B3DA100BFB43F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		FAFACC131A0B3DA100BFB43F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		FAFACC151A0B3DA100BFB43F /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
-		FAFACC161A0B3DA100BFB43F /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
-		FAFACC171A0B3DA100BFB43F /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
-		FAFACC181A0B3DA100BFB43F /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
-		FAFACC191A0B3DA100BFB43F /* UIAlertView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+AFNetworking.h"; sourceTree = "<group>"; };
-		FAFACC1A1A0B3DA100BFB43F /* UIAlertView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+AFNetworking.m"; sourceTree = "<group>"; };
-		FAFACC1B1A0B3DA100BFB43F /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+AFNetworking.h"; sourceTree = "<group>"; };
-		FAFACC1C1A0B3DA100BFB43F /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+AFNetworking.m"; sourceTree = "<group>"; };
-		FAFACC1D1A0B3DA100BFB43F /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
-		FAFACC1E1A0B3DA100BFB43F /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
-		FAFACC1F1A0B3DA100BFB43F /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+AFNetworking.h"; sourceTree = "<group>"; };
-		FAFACC201A0B3DA100BFB43F /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
-		FAFACC211A0B3DA100BFB43F /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
-		FAFACC221A0B3DA100BFB43F /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
-		FAFACC231A0B3DA100BFB43F /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
-		FAFACC241A0B3DA100BFB43F /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
-		FAFACC251A0B3DA100BFB43F /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
-		FAFACC271A0B3DA100BFB43F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		FAFACC2A1A0B3DA100BFB43F /* GDataXMLElement+Addons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GDataXMLElement+Addons.h"; sourceTree = "<group>"; };
-		FAFACC2B1A0B3DA100BFB43F /* GDataXMLElement+Addons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GDataXMLElement+Addons.m"; sourceTree = "<group>"; };
-		FAFACC2C1A0B3DA100BFB43F /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
-		FAFACC2D1A0B3DA100BFB43F /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
-		FAFACC2E1A0B3DA100BFB43F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		FAFACC301A0B3DA100BFB43F /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
-		FAFACC311A0B3DA100BFB43F /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
-		FAFACC321A0B3DA100BFB43F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		FAFACC341A0B3DA100BFB43F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		FAFACC351A0B3DA100BFB43F /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		FAFACC361A0B3DA100BFB43F /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		FAFACC371A0B3DA100BFB43F /* README.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.mdown; sourceTree = "<group>"; };
-		FAFACC391A0B3DA100BFB43F /* MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefresh.h; sourceTree = "<group>"; };
-		FAFACC3A1A0B3DA100BFB43F /* MJRefreshBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBaseView.h; sourceTree = "<group>"; };
-		FAFACC3B1A0B3DA100BFB43F /* MJRefreshBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBaseView.m; sourceTree = "<group>"; };
-		FAFACC3C1A0B3DA100BFB43F /* MJRefreshFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshFooterView.h; sourceTree = "<group>"; };
-		FAFACC3D1A0B3DA100BFB43F /* MJRefreshFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshFooterView.m; sourceTree = "<group>"; };
-		FAFACC3E1A0B3DA100BFB43F /* MJRefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshHeaderView.h; sourceTree = "<group>"; };
-		FAFACC3F1A0B3DA100BFB43F /* MJRefreshHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshHeaderView.m; sourceTree = "<group>"; };
-		FAFACC421A0B3DA100BFB43F /* SFHFKeychainUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHFKeychainUtils.h; sourceTree = "<group>"; };
-		FAFACC431A0B3DA100BFB43F /* SFHFKeychainUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHFKeychainUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -508,44 +145,42 @@
 				FAABF9AB1A0202DA004948E9 /* SystemConfiguration.framework in Frameworks */,
 				FAABF9A91A0202DA004948E9 /* CoreTelephony.framework in Frameworks */,
 				FAABF9A61A0202DA004948E9 /* Security.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAFACBD31A0B3D8B00BFB43F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FAFACCAD1A0B3DF100BFB43F /* libstdc++.dylib in Frameworks */,
-				FAFACCAE1A0B3DF100BFB43F /* Security.framework in Frameworks */,
-				FAFACCAF1A0B3DF100BFB43F /* libz.1.2.5.dylib in Frameworks */,
-				FAFACCB01A0B3DF100BFB43F /* libicucore.dylib in Frameworks */,
-				FAFACCB11A0B3DF100BFB43F /* CoreTelephony.framework in Frameworks */,
-				FAFACCB21A0B3DF100BFB43F /* QuartzCore.framework in Frameworks */,
-				FAFACCB31A0B3DF100BFB43F /* SystemConfiguration.framework in Frameworks */,
-				FAFACCB41A0B3DF100BFB43F /* Foundation.framework in Frameworks */,
-				FAFACCB51A0B3DF100BFB43F /* UIKit.framework in Frameworks */,
-				FAFACCB61A0B3DF100BFB43F /* libxml2.dylib in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAFACBEB1A0B3D8B00BFB43F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				BD82C7FB592A309C7034EFCF /* libPods-SkyCore.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1EBD306A6637E4A2F5C6248C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A6B8C140C952B04102DA86B /* Pods-SkyCore.debug.xcconfig */,
+				BBD12DFA68BB5B110D086D63 /* Pods-SkyCore.release.xcconfig */,
+				30F136BBFA816E563E49B995 /* Pods-example.debug.xcconfig */,
+				182179C94103E7C1F3C81F56 /* Pods-example.release.xcconfig */,
+				AEC855E36DF5BB1C8EC30209 /* Pods-exampleTests.debug.xcconfig */,
+				E7B8511470C88C9FBEE055F5 /* Pods-exampleTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		33E801001F8E825D00CF5CB4 /* dao */ = {
+			isa = PBXGroup;
+			children = (
+				33E801011F8E825D00CF5CB4 /* SCBaseDao.h */,
+				33E801021F8E825D00CF5CB4 /* SCBaseDao.m */,
+			);
+			path = dao;
+			sourceTree = "<group>";
+		};
 		FAABF8771A020276004948E9 = {
 			isa = PBXGroup;
 			children = (
 				FAABF8871A020276004948E9 /* SkyCore */,
-				FAFACBD71A0B3D8B00BFB43F /* example */,
-				FAFACBF11A0B3D8B00BFB43F /* exampleTests */,
 				FAABF8841A020276004948E9 /* Frameworks */,
 				FAABF8831A020276004948E9 /* Products */,
+				1EBD306A6637E4A2F5C6248C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -553,8 +188,6 @@
 			isa = PBXGroup;
 			children = (
 				FAABF8821A020276004948E9 /* SkyCore.framework */,
-				FAFACBD61A0B3D8B00BFB43F /* example.app */,
-				FAFACBEE1A0B3D8B00BFB43F /* exampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -572,6 +205,9 @@
 				FAABF9A11A0202DA004948E9 /* Foundation.framework */,
 				FAABF9A21A0202DA004948E9 /* UIKit.framework */,
 				FAABF9A31A0202DA004948E9 /* libxml2.dylib */,
+				50F3718501A78E7166D2B316 /* libPods-SkyCore.a */,
+				CF9E8D8602BF397704C0FCA5 /* libPods-example.a */,
+				D09F46B4D2B79F3FD8D67CBC /* libPods-exampleTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -580,9 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				FAF987D11A314FF600B4EFF9 /* Source */,
-				FAFAC8E81A0B251E00BFB43F /* Frameworks */,
 				FAABF88E1A020276004948E9 /* SkyCore.h */,
-				FAABF88F1A020276004948E9 /* SkyCore.m */,
 				FAABF8881A020276004948E9 /* Supporting Files */,
 			);
 			path = SkyCore;
@@ -593,101 +227,19 @@
 			children = (
 				FAABF8891A020276004948E9 /* SkyCore-Info.plist */,
 				FAABF88A1A020276004948E9 /* InfoPlist.strings */,
-				FAABF88D1A020276004948E9 /* SkyCore-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		FAC2143A1A2C7034004D3832 /* SSZipArchive */ = {
-			isa = PBXGroup;
-			children = (
-				FAC2143B1A2C7034004D3832 /* LICENSE */,
-				FAC2143C1A2C7034004D3832 /* Readme.markdown */,
-				FAC2143D1A2C7034004D3832 /* SSZipArchive */,
-			);
-			path = SSZipArchive;
-			sourceTree = "<group>";
-		};
-		FAC2143D1A2C7034004D3832 /* SSZipArchive */ = {
-			isa = PBXGroup;
-			children = (
-				FAC2143E1A2C7034004D3832 /* minizip */,
-				FAC214481A2C7034004D3832 /* SSZipArchive.h */,
-				FAC214491A2C7034004D3832 /* SSZipArchive.m */,
-			);
-			path = SSZipArchive;
-			sourceTree = "<group>";
-		};
-		FAC2143E1A2C7034004D3832 /* minizip */ = {
-			isa = PBXGroup;
-			children = (
-				FAC2143F1A2C7034004D3832 /* crypt.h */,
-				FAC214401A2C7034004D3832 /* ioapi.c */,
-				FAC214411A2C7034004D3832 /* ioapi.h */,
-				FAC214421A2C7034004D3832 /* mztools.c */,
-				FAC214431A2C7034004D3832 /* mztools.h */,
-				FAC214441A2C7034004D3832 /* unzip.c */,
-				FAC214451A2C7034004D3832 /* unzip.h */,
-				FAC214461A2C7034004D3832 /* zip.c */,
-				FAC214471A2C7034004D3832 /* zip.h */,
-			);
-			path = minizip;
-			sourceTree = "<group>";
-		};
-		FAC214511A2C7041004D3832 /* SSZipArchive */ = {
-			isa = PBXGroup;
-			children = (
-				FAC214521A2C7041004D3832 /* LICENSE */,
-				FAC214531A2C7041004D3832 /* Readme.markdown */,
-				FAC214541A2C7041004D3832 /* SSZipArchive */,
-			);
-			path = SSZipArchive;
-			sourceTree = "<group>";
-		};
-		FAC214541A2C7041004D3832 /* SSZipArchive */ = {
-			isa = PBXGroup;
-			children = (
-				FAC214551A2C7041004D3832 /* minizip */,
-				FAC2145F1A2C7041004D3832 /* SSZipArchive.h */,
-				FAC214601A2C7041004D3832 /* SSZipArchive.m */,
-			);
-			path = SSZipArchive;
-			sourceTree = "<group>";
-		};
-		FAC214551A2C7041004D3832 /* minizip */ = {
-			isa = PBXGroup;
-			children = (
-				FAC214561A2C7041004D3832 /* crypt.h */,
-				FAC214571A2C7041004D3832 /* ioapi.c */,
-				FAC214581A2C7041004D3832 /* ioapi.h */,
-				FAC214591A2C7041004D3832 /* mztools.c */,
-				FAC2145A1A2C7041004D3832 /* mztools.h */,
-				FAC2145B1A2C7041004D3832 /* unzip.c */,
-				FAC2145C1A2C7041004D3832 /* unzip.h */,
-				FAC2145D1A2C7041004D3832 /* zip.c */,
-				FAC2145E1A2C7041004D3832 /* zip.h */,
-			);
-			path = minizip;
 			sourceTree = "<group>";
 		};
 		FAF987D11A314FF600B4EFF9 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				FAF987D21A314FF600B4EFF9 /* dao */,
+				33E801001F8E825D00CF5CB4 /* dao */,
 				FAF987D51A314FF600B4EFF9 /* domain */,
 				FAF987E61A314FF600B4EFF9 /* service */,
 				FAF987F31A314FF600B4EFF9 /* view */,
 			);
 			path = Source;
-			sourceTree = "<group>";
-		};
-		FAF987D21A314FF600B4EFF9 /* dao */ = {
-			isa = PBXGroup;
-			children = (
-				FAF987D31A314FF600B4EFF9 /* SCBaseDao.h */,
-				FAF987D41A314FF600B4EFF9 /* SCBaseDao.m */,
-			);
-			path = dao;
 			sourceTree = "<group>";
 		};
 		FAF987D51A314FF600B4EFF9 /* domain */ = {
@@ -751,461 +303,8 @@
 				FAF987FF1A314FF600B4EFF9 /* UIButton+VerticalAlign.m */,
 				FAF988001A314FF600B4EFF9 /* UIImage+Addons.h */,
 				FAF988011A314FF600B4EFF9 /* UIImage+Addons.m */,
-				FAF988021A314FF600B4EFF9 /* UIView+Frame.h */,
-				FAF988031A314FF600B4EFF9 /* UIView+Frame.m */,
-				FAF988041A314FF600B4EFF9 /* UIViewController+Addons.h */,
-				FAF988051A314FF600B4EFF9 /* UIViewController+Addons.m */,
 			);
 			path = view;
-			sourceTree = "<group>";
-		};
-		FAF988871A31797D00B4EFF9 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				FAF988881A31797D00B4EFF9 /* dao */,
-				FAF9888B1A31797D00B4EFF9 /* domain */,
-				FAF9889E1A31797D00B4EFF9 /* service */,
-				FAF988AB1A31797D00B4EFF9 /* view */,
-			);
-			name = Source;
-			path = SkyCore/Source;
-			sourceTree = SOURCE_ROOT;
-		};
-		FAF988881A31797D00B4EFF9 /* dao */ = {
-			isa = PBXGroup;
-			children = (
-				FAF988891A31797D00B4EFF9 /* SCBaseDao.h */,
-				FAF9888A1A31797D00B4EFF9 /* SCBaseDao.m */,
-			);
-			path = dao;
-			sourceTree = "<group>";
-		};
-		FAF9888B1A31797D00B4EFF9 /* domain */ = {
-			isa = PBXGroup;
-			children = (
-				FAF9888C1A31797D00B4EFF9 /* NSDate+ChineseCalendar.h */,
-				FAF9888D1A31797D00B4EFF9 /* NSDate+ChineseCalendar.m */,
-				FAF9888E1A31797D00B4EFF9 /* NSObject+NotNull.h */,
-				FAF9888F1A31797D00B4EFF9 /* NSObject+NotNull.m */,
-				FAF988901A31797D00B4EFF9 /* NSObject+Persistence.h */,
-				FAF988911A31797D00B4EFF9 /* NSObject+Persistence.m */,
-				FAF988921A31797D00B4EFF9 /* NSString+BlankFilter.h */,
-				FAF988931A31797D00B4EFF9 /* NSString+BlankFilter.m */,
-				FAF988941A31797D00B4EFF9 /* NSString+DateFormat.h */,
-				FAF988951A31797D00B4EFF9 /* NSString+DateFormat.m */,
-				FAF988961A31797D00B4EFF9 /* NSString+md5.h */,
-				FAF988971A31797D00B4EFF9 /* NSString+md5.m */,
-				FAF988981A31797D00B4EFF9 /* PinYin.c */,
-				FAF988991A31797D00B4EFF9 /* PinYin.h */,
-				FAF9889A1A31797D00B4EFF9 /* SCBaseDomain.h */,
-				FAF9889B1A31797D00B4EFF9 /* SCBaseDomain.m */,
-				FAF9889C1A31797D00B4EFF9 /* SCBaseManagedDomain.h */,
-				FAF9889D1A31797D00B4EFF9 /* SCBaseManagedDomain.m */,
-			);
-			path = domain;
-			sourceTree = "<group>";
-		};
-		FAF9889E1A31797D00B4EFF9 /* service */ = {
-			isa = PBXGroup;
-			children = (
-				FAF9889F1A31797D00B4EFF9 /* SCAppCache.h */,
-				FAF988A01A31797D00B4EFF9 /* SCAppCache.m */,
-				FAF988A11A31797D00B4EFF9 /* SCBaseService.h */,
-				FAF988A21A31797D00B4EFF9 /* SCBaseService.m */,
-				FAF988A31A31797D00B4EFF9 /* SCCommonTools.h */,
-				FAF988A41A31797D00B4EFF9 /* SCCommonTools.m */,
-				FAF988A51A31797D00B4EFF9 /* SCFileOper.h */,
-				FAF988A61A31797D00B4EFF9 /* SCFileOper.m */,
-				FAF988A71A31797D00B4EFF9 /* SCLocationService.h */,
-				FAF988A81A31797D00B4EFF9 /* SCLocationService.m */,
-				FAF988A91A31797D00B4EFF9 /* SCSysconfig.h */,
-				FAF988AA1A31797D00B4EFF9 /* SCSysconfig.m */,
-			);
-			path = service;
-			sourceTree = "<group>";
-		};
-		FAF988AB1A31797D00B4EFF9 /* view */ = {
-			isa = PBXGroup;
-			children = (
-				FAF988AC1A31797D00B4EFF9 /* DragView.h */,
-				FAF988AD1A31797D00B4EFF9 /* DragView.m */,
-				FAF988AE1A31797D00B4EFF9 /* MKMapView+ZoomLevel.h */,
-				FAF988AF1A31797D00B4EFF9 /* MKMapView+ZoomLevel.m */,
-				FAF988B01A31797D00B4EFF9 /* OBShapedButton.h */,
-				FAF988B11A31797D00B4EFF9 /* OBShapedButton.m */,
-				FAF988B21A31797D00B4EFF9 /* PhotoImageScrollView.h */,
-				FAF988B31A31797D00B4EFF9 /* PhotoImageScrollView.m */,
-				FAF988B41A31797D00B4EFF9 /* UIButton+Block.h */,
-				FAF988B51A31797D00B4EFF9 /* UIButton+Block.m */,
-				FAF988B61A31797D00B4EFF9 /* UIButton+VerticalAlign.h */,
-				FAF988B71A31797D00B4EFF9 /* UIButton+VerticalAlign.m */,
-				FAF988B81A31797D00B4EFF9 /* UIImage+Addons.h */,
-				FAF988B91A31797D00B4EFF9 /* UIImage+Addons.m */,
-				FAF988BA1A31797D00B4EFF9 /* UIView+Frame.h */,
-				FAF988BB1A31797D00B4EFF9 /* UIView+Frame.m */,
-				FAF988BC1A31797D00B4EFF9 /* UIViewController+Addons.h */,
-				FAF988BD1A31797D00B4EFF9 /* UIViewController+Addons.m */,
-			);
-			path = view;
-			sourceTree = "<group>";
-		};
-		FAFAC8E81A0B251E00BFB43F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FAC214511A2C7041004D3832 /* SSZipArchive */,
-				FAFAC8E91A0B251E00BFB43F /* AFNetworking */,
-				FAFAC9121A0B251E00BFB43F /* GDataXML-HTML */,
-				FAFAC9191A0B251E00BFB43F /* JSONKit */,
-				FAFAC91D1A0B251E00BFB43F /* MBProgressHUD */,
-				FAFAC9221A0B251E00BFB43F /* MJRefresh */,
-				FAFAC92A1A0B251E00BFB43F /* SFHFKeychainUtils */,
-			);
-			path = Frameworks;
-			sourceTree = "<group>";
-		};
-		FAFAC8E91A0B251E00BFB43F /* AFNetworking */ = {
-			isa = PBXGroup;
-			children = (
-				FAFAC8EA1A0B251E00BFB43F /* AFNetworking */,
-				FAFAC8FE1A0B251E00BFB43F /* LICENSE */,
-				FAFAC8FF1A0B251E00BFB43F /* README.md */,
-				FAFAC9001A0B251E00BFB43F /* UIKit+AFNetworking */,
-			);
-			path = AFNetworking;
-			sourceTree = "<group>";
-		};
-		FAFAC8EA1A0B251E00BFB43F /* AFNetworking */ = {
-			isa = PBXGroup;
-			children = (
-				FAFAC8EB1A0B251E00BFB43F /* AFHTTPRequestOperation.h */,
-				FAFAC8EC1A0B251E00BFB43F /* AFHTTPRequestOperation.m */,
-				FAFAC8ED1A0B251E00BFB43F /* AFHTTPRequestOperationManager.h */,
-				FAFAC8EE1A0B251E00BFB43F /* AFHTTPRequestOperationManager.m */,
-				FAFAC8EF1A0B251E00BFB43F /* AFHTTPSessionManager.h */,
-				FAFAC8F01A0B251E00BFB43F /* AFHTTPSessionManager.m */,
-				FAFAC8F11A0B251E00BFB43F /* AFNetworking.h */,
-				FAFAC8F21A0B251E00BFB43F /* AFNetworkReachabilityManager.h */,
-				FAFAC8F31A0B251E00BFB43F /* AFNetworkReachabilityManager.m */,
-				FAFAC8F41A0B251E00BFB43F /* AFSecurityPolicy.h */,
-				FAFAC8F51A0B251E00BFB43F /* AFSecurityPolicy.m */,
-				FAFAC8F61A0B251E00BFB43F /* AFURLConnectionOperation.h */,
-				FAFAC8F71A0B251E00BFB43F /* AFURLConnectionOperation.m */,
-				FAFAC8F81A0B251E00BFB43F /* AFURLRequestSerialization.h */,
-				FAFAC8F91A0B251E00BFB43F /* AFURLRequestSerialization.m */,
-				FAFAC8FA1A0B251E00BFB43F /* AFURLResponseSerialization.h */,
-				FAFAC8FB1A0B251E00BFB43F /* AFURLResponseSerialization.m */,
-				FAFAC8FC1A0B251E00BFB43F /* AFURLSessionManager.h */,
-				FAFAC8FD1A0B251E00BFB43F /* AFURLSessionManager.m */,
-			);
-			path = AFNetworking;
-			sourceTree = "<group>";
-		};
-		FAFAC9001A0B251E00BFB43F /* UIKit+AFNetworking */ = {
-			isa = PBXGroup;
-			children = (
-				FAFAC9011A0B251E00BFB43F /* AFNetworkActivityIndicatorManager.h */,
-				FAFAC9021A0B251E00BFB43F /* AFNetworkActivityIndicatorManager.m */,
-				FAFAC9031A0B251E00BFB43F /* UIActivityIndicatorView+AFNetworking.h */,
-				FAFAC9041A0B251E00BFB43F /* UIActivityIndicatorView+AFNetworking.m */,
-				FAFAC9051A0B251E00BFB43F /* UIAlertView+AFNetworking.h */,
-				FAFAC9061A0B251E00BFB43F /* UIAlertView+AFNetworking.m */,
-				FAFAC9071A0B251E00BFB43F /* UIButton+AFNetworking.h */,
-				FAFAC9081A0B251E00BFB43F /* UIButton+AFNetworking.m */,
-				FAFAC9091A0B251E00BFB43F /* UIImageView+AFNetworking.h */,
-				FAFAC90A1A0B251E00BFB43F /* UIImageView+AFNetworking.m */,
-				FAFAC90B1A0B251E00BFB43F /* UIKit+AFNetworking.h */,
-				FAFAC90C1A0B251E00BFB43F /* UIProgressView+AFNetworking.h */,
-				FAFAC90D1A0B251E00BFB43F /* UIProgressView+AFNetworking.m */,
-				FAFAC90E1A0B251E00BFB43F /* UIRefreshControl+AFNetworking.h */,
-				FAFAC90F1A0B251E00BFB43F /* UIRefreshControl+AFNetworking.m */,
-				FAFAC9101A0B251E00BFB43F /* UIWebView+AFNetworking.h */,
-				FAFAC9111A0B251E00BFB43F /* UIWebView+AFNetworking.m */,
-			);
-			path = "UIKit+AFNetworking";
-			sourceTree = "<group>";
-		};
-		FAFAC9121A0B251E00BFB43F /* GDataXML-HTML */ = {
-			isa = PBXGroup;
-			children = (
-				FAFAC9131A0B251E00BFB43F /* LICENSE */,
-				FAFAC9141A0B251E00BFB43F /* Pod */,
-				FAFAC9181A0B251E00BFB43F /* README.md */,
-			);
-			path = "GDataXML-HTML";
-			sourceTree = "<group>";
-		};
-		FAFAC9141A0B251E00BFB43F /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				FAFAC9151A0B251E00BFB43F /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
-		FAFAC9151A0B251E00BFB43F /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				FAFAC9CD1A0B257C00BFB43F /* GDataXMLElement+Addons.h */,
-				FAFAC9CE1A0B257C00BFB43F /* GDataXMLElement+Addons.m */,
-				FAFAC9161A0B251E00BFB43F /* GDataXMLNode.h */,
-				FAFAC9171A0B251E00BFB43F /* GDataXMLNode.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		FAFAC9191A0B251E00BFB43F /* JSONKit */ = {
-			isa = PBXGroup;
-			children = (
-				FAFAC91A1A0B251E00BFB43F /* JSONKit.h */,
-				FAFAC91B1A0B251E00BFB43F /* JSONKit.m */,
-				FAFAC91C1A0B251E00BFB43F /* README.md */,
-			);
-			path = JSONKit;
-			sourceTree = "<group>";
-		};
-		FAFAC91D1A0B251E00BFB43F /* MBProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				FAFAC91E1A0B251E00BFB43F /* LICENSE */,
-				FAFAC91F1A0B251E00BFB43F /* MBProgressHUD.h */,
-				FAFAC9201A0B251E00BFB43F /* MBProgressHUD.m */,
-				FAFAC9211A0B251E00BFB43F /* README.mdown */,
-			);
-			path = MBProgressHUD;
-			sourceTree = "<group>";
-		};
-		FAFAC9221A0B251E00BFB43F /* MJRefresh */ = {
-			isa = PBXGroup;
-			children = (
-				FAFAC9231A0B251E00BFB43F /* MJRefresh.h */,
-				FAFAC9241A0B251E00BFB43F /* MJRefreshBaseView.h */,
-				FAFAC9251A0B251E00BFB43F /* MJRefreshBaseView.m */,
-				FAFAC9261A0B251E00BFB43F /* MJRefreshFooterView.h */,
-				FAFAC9271A0B251E00BFB43F /* MJRefreshFooterView.m */,
-				FAFAC9281A0B251E00BFB43F /* MJRefreshHeaderView.h */,
-				FAFAC9291A0B251E00BFB43F /* MJRefreshHeaderView.m */,
-			);
-			path = MJRefresh;
-			sourceTree = "<group>";
-		};
-		FAFAC92A1A0B251E00BFB43F /* SFHFKeychainUtils */ = {
-			isa = PBXGroup;
-			children = (
-				FAFAC92B1A0B251E00BFB43F /* security */,
-			);
-			path = SFHFKeychainUtils;
-			sourceTree = "<group>";
-		};
-		FAFAC92B1A0B251E00BFB43F /* security */ = {
-			isa = PBXGroup;
-			children = (
-				FAFAC92C1A0B251E00BFB43F /* SFHFKeychainUtils.h */,
-				FAFAC92D1A0B251E00BFB43F /* SFHFKeychainUtils.m */,
-			);
-			path = security;
-			sourceTree = "<group>";
-		};
-		FAFACBD71A0B3D8B00BFB43F /* example */ = {
-			isa = PBXGroup;
-			children = (
-				FAF988871A31797D00B4EFF9 /* Source */,
-				FA0B43511A2D5ACF0093158D /* 1.zip */,
-				FAFACBFC1A0B3DA100BFB43F /* Frameworks */,
-				FAFACBDC1A0B3D8B00BFB43F /* AppDelegate.h */,
-				FAFACBDD1A0B3D8B00BFB43F /* AppDelegate.m */,
-				FAFACBDF1A0B3D8B00BFB43F /* ViewController.h */,
-				FAFACBE01A0B3D8B00BFB43F /* ViewController.m */,
-				FAFACBE21A0B3D8B00BFB43F /* Main.storyboard */,
-				FAFACBE51A0B3D8B00BFB43F /* Images.xcassets */,
-				FAFACBE71A0B3D8B00BFB43F /* LaunchScreen.xib */,
-				FAFACBD81A0B3D8B00BFB43F /* Supporting Files */,
-				FAF988D71A31798C00B4EFF9 /* Test.h */,
-				FAF988D81A31798C00B4EFF9 /* Test.m */,
-			);
-			path = example;
-			sourceTree = "<group>";
-		};
-		FAFACBD81A0B3D8B00BFB43F /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				FAFACBD91A0B3D8B00BFB43F /* Info.plist */,
-				FAFACBDA1A0B3D8B00BFB43F /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		FAFACBF11A0B3D8B00BFB43F /* exampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				FAFACBF41A0B3D8B00BFB43F /* exampleTests.m */,
-				FAFACBF21A0B3D8B00BFB43F /* Supporting Files */,
-			);
-			path = exampleTests;
-			sourceTree = "<group>";
-		};
-		FAFACBF21A0B3D8B00BFB43F /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				FAFACBF31A0B3D8B00BFB43F /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		FAFACBFC1A0B3DA100BFB43F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FAC2143A1A2C7034004D3832 /* SSZipArchive */,
-				FAFACBFD1A0B3DA100BFB43F /* AFNetworking */,
-				FAFACC261A0B3DA100BFB43F /* GDataXML-HTML */,
-				FAFACC2F1A0B3DA100BFB43F /* JSONKit */,
-				FAFACC331A0B3DA100BFB43F /* MBProgressHUD */,
-				FAFACC381A0B3DA100BFB43F /* MJRefresh */,
-				FAFACC401A0B3DA100BFB43F /* SFHFKeychainUtils */,
-			);
-			name = Frameworks;
-			path = SkyCore/Frameworks;
-			sourceTree = SOURCE_ROOT;
-		};
-		FAFACBFD1A0B3DA100BFB43F /* AFNetworking */ = {
-			isa = PBXGroup;
-			children = (
-				FAFACBFE1A0B3DA100BFB43F /* AFNetworking */,
-				FAFACC121A0B3DA100BFB43F /* LICENSE */,
-				FAFACC131A0B3DA100BFB43F /* README.md */,
-				FAFACC141A0B3DA100BFB43F /* UIKit+AFNetworking */,
-			);
-			path = AFNetworking;
-			sourceTree = "<group>";
-		};
-		FAFACBFE1A0B3DA100BFB43F /* AFNetworking */ = {
-			isa = PBXGroup;
-			children = (
-				FAFACBFF1A0B3DA100BFB43F /* AFHTTPRequestOperation.h */,
-				FAFACC001A0B3DA100BFB43F /* AFHTTPRequestOperation.m */,
-				FAFACC011A0B3DA100BFB43F /* AFHTTPRequestOperationManager.h */,
-				FAFACC021A0B3DA100BFB43F /* AFHTTPRequestOperationManager.m */,
-				FAFACC031A0B3DA100BFB43F /* AFHTTPSessionManager.h */,
-				FAFACC041A0B3DA100BFB43F /* AFHTTPSessionManager.m */,
-				FAFACC051A0B3DA100BFB43F /* AFNetworking.h */,
-				FAFACC061A0B3DA100BFB43F /* AFNetworkReachabilityManager.h */,
-				FAFACC071A0B3DA100BFB43F /* AFNetworkReachabilityManager.m */,
-				FAFACC081A0B3DA100BFB43F /* AFSecurityPolicy.h */,
-				FAFACC091A0B3DA100BFB43F /* AFSecurityPolicy.m */,
-				FAFACC0A1A0B3DA100BFB43F /* AFURLConnectionOperation.h */,
-				FAFACC0B1A0B3DA100BFB43F /* AFURLConnectionOperation.m */,
-				FAFACC0C1A0B3DA100BFB43F /* AFURLRequestSerialization.h */,
-				FAFACC0D1A0B3DA100BFB43F /* AFURLRequestSerialization.m */,
-				FAFACC0E1A0B3DA100BFB43F /* AFURLResponseSerialization.h */,
-				FAFACC0F1A0B3DA100BFB43F /* AFURLResponseSerialization.m */,
-				FAFACC101A0B3DA100BFB43F /* AFURLSessionManager.h */,
-				FAFACC111A0B3DA100BFB43F /* AFURLSessionManager.m */,
-			);
-			path = AFNetworking;
-			sourceTree = "<group>";
-		};
-		FAFACC141A0B3DA100BFB43F /* UIKit+AFNetworking */ = {
-			isa = PBXGroup;
-			children = (
-				FAFACC151A0B3DA100BFB43F /* AFNetworkActivityIndicatorManager.h */,
-				FAFACC161A0B3DA100BFB43F /* AFNetworkActivityIndicatorManager.m */,
-				FAFACC171A0B3DA100BFB43F /* UIActivityIndicatorView+AFNetworking.h */,
-				FAFACC181A0B3DA100BFB43F /* UIActivityIndicatorView+AFNetworking.m */,
-				FAFACC191A0B3DA100BFB43F /* UIAlertView+AFNetworking.h */,
-				FAFACC1A1A0B3DA100BFB43F /* UIAlertView+AFNetworking.m */,
-				FAFACC1B1A0B3DA100BFB43F /* UIButton+AFNetworking.h */,
-				FAFACC1C1A0B3DA100BFB43F /* UIButton+AFNetworking.m */,
-				FAFACC1D1A0B3DA100BFB43F /* UIImageView+AFNetworking.h */,
-				FAFACC1E1A0B3DA100BFB43F /* UIImageView+AFNetworking.m */,
-				FAFACC1F1A0B3DA100BFB43F /* UIKit+AFNetworking.h */,
-				FAFACC201A0B3DA100BFB43F /* UIProgressView+AFNetworking.h */,
-				FAFACC211A0B3DA100BFB43F /* UIProgressView+AFNetworking.m */,
-				FAFACC221A0B3DA100BFB43F /* UIRefreshControl+AFNetworking.h */,
-				FAFACC231A0B3DA100BFB43F /* UIRefreshControl+AFNetworking.m */,
-				FAFACC241A0B3DA100BFB43F /* UIWebView+AFNetworking.h */,
-				FAFACC251A0B3DA100BFB43F /* UIWebView+AFNetworking.m */,
-			);
-			path = "UIKit+AFNetworking";
-			sourceTree = "<group>";
-		};
-		FAFACC261A0B3DA100BFB43F /* GDataXML-HTML */ = {
-			isa = PBXGroup;
-			children = (
-				FAFACC271A0B3DA100BFB43F /* LICENSE */,
-				FAFACC281A0B3DA100BFB43F /* Pod */,
-				FAFACC2E1A0B3DA100BFB43F /* README.md */,
-			);
-			path = "GDataXML-HTML";
-			sourceTree = "<group>";
-		};
-		FAFACC281A0B3DA100BFB43F /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				FAFACC291A0B3DA100BFB43F /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
-		FAFACC291A0B3DA100BFB43F /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				FAFACC2A1A0B3DA100BFB43F /* GDataXMLElement+Addons.h */,
-				FAFACC2B1A0B3DA100BFB43F /* GDataXMLElement+Addons.m */,
-				FAFACC2C1A0B3DA100BFB43F /* GDataXMLNode.h */,
-				FAFACC2D1A0B3DA100BFB43F /* GDataXMLNode.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		FAFACC2F1A0B3DA100BFB43F /* JSONKit */ = {
-			isa = PBXGroup;
-			children = (
-				FAFACC301A0B3DA100BFB43F /* JSONKit.h */,
-				FAFACC311A0B3DA100BFB43F /* JSONKit.m */,
-				FAFACC321A0B3DA100BFB43F /* README.md */,
-			);
-			path = JSONKit;
-			sourceTree = "<group>";
-		};
-		FAFACC331A0B3DA100BFB43F /* MBProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				FAFACC341A0B3DA100BFB43F /* LICENSE */,
-				FAFACC351A0B3DA100BFB43F /* MBProgressHUD.h */,
-				FAFACC361A0B3DA100BFB43F /* MBProgressHUD.m */,
-				FAFACC371A0B3DA100BFB43F /* README.mdown */,
-			);
-			path = MBProgressHUD;
-			sourceTree = "<group>";
-		};
-		FAFACC381A0B3DA100BFB43F /* MJRefresh */ = {
-			isa = PBXGroup;
-			children = (
-				FAFACC391A0B3DA100BFB43F /* MJRefresh.h */,
-				FAFACC3A1A0B3DA100BFB43F /* MJRefreshBaseView.h */,
-				FAFACC3B1A0B3DA100BFB43F /* MJRefreshBaseView.m */,
-				FAFACC3C1A0B3DA100BFB43F /* MJRefreshFooterView.h */,
-				FAFACC3D1A0B3DA100BFB43F /* MJRefreshFooterView.m */,
-				FAFACC3E1A0B3DA100BFB43F /* MJRefreshHeaderView.h */,
-				FAFACC3F1A0B3DA100BFB43F /* MJRefreshHeaderView.m */,
-			);
-			path = MJRefresh;
-			sourceTree = "<group>";
-		};
-		FAFACC401A0B3DA100BFB43F /* SFHFKeychainUtils */ = {
-			isa = PBXGroup;
-			children = (
-				FAFACC411A0B3DA100BFB43F /* security */,
-			);
-			path = SFHFKeychainUtils;
-			sourceTree = "<group>";
-		};
-		FAFACC411A0B3DA100BFB43F /* security */ = {
-			isa = PBXGroup;
-			children = (
-				FAFACC421A0B3DA100BFB43F /* SFHFKeychainUtils.h */,
-				FAFACC431A0B3DA100BFB43F /* SFHFKeychainUtils.m */,
-			);
-			path = security;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1215,66 +314,30 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAFAC9921A0B251E00BFB43F /* MJRefresh.h in Headers */,
-				FAFAC98B1A0B251E00BFB43F /* JSONKit.h in Headers */,
-				FAFAC9CF1A0B257C00BFB43F /* GDataXMLElement+Addons.h in Headers */,
-				FAFAC9881A0B251E00BFB43F /* GDataXMLNode.h in Headers */,
-				FAFAC9801A0B251E00BFB43F /* UIKit+AFNetworking.h in Headers */,
-				FAFAC9671A0B251E00BFB43F /* AFNetworking.h in Headers */,
-				FAFAC98F1A0B251E00BFB43F /* MBProgressHUD.h in Headers */,
-				FAFAC9811A0B251E00BFB43F /* UIProgressView+AFNetworking.h in Headers */,
-				FAFAC9721A0B251E00BFB43F /* AFURLSessionManager.h in Headers */,
-				FAFAC9931A0B251E00BFB43F /* MJRefreshBaseView.h in Headers */,
-				FAFAC96E1A0B251E00BFB43F /* AFURLRequestSerialization.h in Headers */,
 				FAE7F9581A02046400DC86BD /* SkyCore.h in Headers */,
-				FAFAC9611A0B251E00BFB43F /* AFHTTPRequestOperation.h in Headers */,
-				FAFAC9651A0B251E00BFB43F /* AFHTTPSessionManager.h in Headers */,
-				FAFAC9991A0B251F00BFB43F /* SFHFKeychainUtils.h in Headers */,
-				FAFAC9851A0B251E00BFB43F /* UIWebView+AFNetworking.h in Headers */,
 				FAF9882C1A314FF600B4EFF9 /* UIButton+Block.h in Headers */,
-				FAC214651A2C7041004D3832 /* ioapi.h in Headers */,
-				FAC214671A2C7041004D3832 /* mztools.h in Headers */,
 				FAF9881C1A314FF600B4EFF9 /* SCCommonTools.h in Headers */,
 				FAF9882A1A314FF600B4EFF9 /* PhotoImageScrollView.h in Headers */,
 				FAF9882E1A314FF600B4EFF9 /* UIButton+VerticalAlign.h in Headers */,
 				FAF9880E1A314FF600B4EFF9 /* NSString+DateFormat.h in Headers */,
 				FAF988301A314FF600B4EFF9 /* UIImage+Addons.h in Headers */,
 				FAF988201A314FF600B4EFF9 /* SCLocationService.h in Headers */,
-				FAC214631A2C7041004D3832 /* crypt.h in Headers */,
-				FAC2146B1A2C7041004D3832 /* zip.h in Headers */,
 				FAF9881A1A314FF600B4EFF9 /* SCBaseService.h in Headers */,
-				FAC214691A2C7041004D3832 /* unzip.h in Headers */,
-				FAF988061A314FF600B4EFF9 /* SCBaseDao.h in Headers */,
 				FAF988241A314FF600B4EFF9 /* DragView.h in Headers */,
 				FAF988081A314FF600B4EFF9 /* NSDate+ChineseCalendar.h in Headers */,
 				FAF988161A314FF600B4EFF9 /* SCBaseManagedDomain.h in Headers */,
 				FAF988181A314FF600B4EFF9 /* SCAppCache.h in Headers */,
-				FAC2146C1A2C7041004D3832 /* SSZipArchive.h in Headers */,
 				FAF988281A314FF600B4EFF9 /* OBShapedButton.h in Headers */,
 				FAF988221A314FF600B4EFF9 /* SCSysconfig.h in Headers */,
 				FAF988261A314FF600B4EFF9 /* MKMapView+ZoomLevel.h in Headers */,
 				FAF9880C1A314FF600B4EFF9 /* NSString+BlankFilter.h in Headers */,
 				FAF988141A314FF600B4EFF9 /* SCBaseDomain.h in Headers */,
 				FAF988101A314FF600B4EFF9 /* NSString+md5.h in Headers */,
-				FAF988321A314FF600B4EFF9 /* UIView+Frame.h in Headers */,
 				FAF9880A1A314FF600B4EFF9 /* NSObject+NotNull.h in Headers */,
 				FAF9881E1A314FF600B4EFF9 /* SCFileOper.h in Headers */,
-				FAF988341A314FF600B4EFF9 /* UIViewController+Addons.h in Headers */,
 				FAF988131A314FF600B4EFF9 /* PinYin.h in Headers */,
-				FAFAC97A1A0B251E00BFB43F /* UIAlertView+AFNetworking.h in Headers */,
-				FAFAC97E1A0B251E00BFB43F /* UIImageView+AFNetworking.h in Headers */,
-				FAFAC96C1A0B251E00BFB43F /* AFURLConnectionOperation.h in Headers */,
-				FAFAC9831A0B251E00BFB43F /* UIRefreshControl+AFNetworking.h in Headers */,
-				FAFAC9681A0B251E00BFB43F /* AFNetworkReachabilityManager.h in Headers */,
-				FAFAC96A1A0B251E00BFB43F /* AFSecurityPolicy.h in Headers */,
-				FAFAC9631A0B251E00BFB43F /* AFHTTPRequestOperationManager.h in Headers */,
-				FAFAC97C1A0B251E00BFB43F /* UIButton+AFNetworking.h in Headers */,
-				FAFAC9701A0B251E00BFB43F /* AFURLResponseSerialization.h in Headers */,
-				FAFAC9761A0B251E00BFB43F /* AFNetworkActivityIndicatorManager.h in Headers */,
-				FAFAC9781A0B251E00BFB43F /* UIActivityIndicatorView+AFNetworking.h in Headers */,
-				FAFAC9971A0B251F00BFB43F /* MJRefreshHeaderView.h in Headers */,
+				33E801031F8E825D00CF5CB4 /* SCBaseDao.h in Headers */,
 				FAF988851A3162A000B4EFF9 /* NSObject+Persistence.h in Headers */,
-				FAFAC9951A0B251F00BFB43F /* MJRefreshFooterView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1285,11 +348,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAABF8931A020276004948E9 /* Build configuration list for PBXNativeTarget "SkyCore" */;
 			buildPhases = (
+				F3223DCCF1D531C3A91D8BCE /* [CP] Check Pods Manifest.lock */,
 				FAABF87C1A020276004948E9 /* Sources */,
 				FAABF87D1A020276004948E9 /* Frameworks */,
 				FAABF87E1A020276004948E9 /* Headers */,
 				FAABF87F1A020276004948E9 /* Resources */,
-				FAABF8801A020276004948E9 /* ShellScript */,
+				5DB808A1075FE68A2DFE43B8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1300,58 +364,14 @@
 			productReference = FAABF8821A020276004948E9 /* SkyCore.framework */;
 			productType = "com.apple.product-type.framework.static";
 		};
-		FAFACBD51A0B3D8B00BFB43F /* example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FAFACBFA1A0B3D8B00BFB43F /* Build configuration list for PBXNativeTarget "example" */;
-			buildPhases = (
-				FAFACBD21A0B3D8B00BFB43F /* Sources */,
-				FAFACBD31A0B3D8B00BFB43F /* Frameworks */,
-				FAFACBD41A0B3D8B00BFB43F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = example;
-			productName = example;
-			productReference = FAFACBD61A0B3D8B00BFB43F /* example.app */;
-			productType = "com.apple.product-type.application";
-		};
-		FAFACBED1A0B3D8B00BFB43F /* exampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FAFACBFB1A0B3D8B00BFB43F /* Build configuration list for PBXNativeTarget "exampleTests" */;
-			buildPhases = (
-				FAFACBEA1A0B3D8B00BFB43F /* Sources */,
-				FAFACBEB1A0B3D8B00BFB43F /* Frameworks */,
-				FAFACBEC1A0B3D8B00BFB43F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FAFACBF01A0B3D8B00BFB43F /* PBXTargetDependency */,
-			);
-			name = exampleTests;
-			productName = exampleTests;
-			productReference = FAFACBEE1A0B3D8B00BFB43F /* exampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		FAABF8781A020276004948E9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = com.grassinfo;
-				TargetAttributes = {
-					FAFACBD51A0B3D8B00BFB43F = {
-						CreatedOnToolsVersion = 6.1;
-					};
-					FAFACBED1A0B3D8B00BFB43F = {
-						CreatedOnToolsVersion = 6.1;
-						TestTargetID = FAFACBD51A0B3D8B00BFB43F;
-					};
-				};
 			};
 			buildConfigurationList = FAABF87B1A020276004948E9 /* Build configuration list for PBXProject "SkyCore" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1367,8 +387,6 @@
 			projectRoot = "";
 			targets = (
 				FAABF8811A020276004948E9 /* SkyCore */,
-				FAFACBD51A0B3D8B00BFB43F /* example */,
-				FAFACBED1A0B3D8B00BFB43F /* exampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -1382,36 +400,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FAFACBD41A0B3D8B00BFB43F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FAFACBE61A0B3D8B00BFB43F /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAFACBEC1A0B3D8B00BFB43F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		FAABF8801A020276004948E9 /* ShellScript */ = {
+		5DB808A1075FE68A2DFE43B8 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /usr/bin/python;
-			shellScript = "# TAG: BUILD SCRIPT (do not remove this comment)\n# Build script generated using https://github.com/kstenerud/iOS-Universal-Framework Mk 8 (beta 2012-06-16)\nimport logging\n\n\n##############################################################################\n#\n# Configuration\n#\n##############################################################################\n\n# Select which kind of framework to build.\n#\n# Note: Due to issues with Xcode's build process, if you select\n#       'embeddedframework', it will still show the regular framework\n#       (as a symlink) along side of the embedded framework. Be sure to\n#       instruct your users to copy/move the embedded framework in this case!\n#\n# If your framework contains resources such as images, nibs, momds, plists,\n# zipfiles and such, choose 'embeddedframework'.\n#\n# If your framework contains no resources, choose 'framework'.\n#\nconfig_framework_type = 'framework'\n#config_framework_type = 'embeddedframework'\n\n# Open the build directory in Finder when the universal framework is\n# successfully built.\n#\n# This value can be overridden by setting the UFW_OPEN_BUILD_DIR env variable\n# to True or False.\n#\n# Recommended setting: True\n#\nconfig_open_build_dir = True\n\n# If true, ensures that all public headers are stored in the framework under\n# the same directory hierarchy as they were in the source tree.\n#\n# Xcode by default places all headers at the same top level, but every other\n# build tool in the known universe preserves directory structure. For simple\n# libraries it doesn't really matter much, but for ports of existing software\n# packages or for bigger libraries, it makes sense to have more structure.\n#\n# The default is set to \"False\" since that's what most Xcode users are used to.\n#\n# Recommended setting: True for deep hierarchy projects, False otherwise.\n#\nconfig_deep_header_hierarchy = False\n\n# Specify where the top of the public header hierarchy is. This path is\n# relative to the project's dir (PROJECT_DIR). You can reference environment\n# variables using templating syntax (e.g. \"${TARGET_NAME}/Some/Subdir\")\n#\n# NOTE: Only used if config_deep_header_hierarchy is True.\n#\n# If this is set to None, the script will attempt to figure out for itself\n# where the top of the header hierarchy is by looking for common path prefixes\n# in the public header files. This process can fail if:\n# - You only have one public header file.\n# - Your source header files don't all have a common root.\n#\n# A common approach is to use \"${TARGET_NAME}\", working under the assumption\n# that all of your header files share the common root of a directory under\n# your project with the same name as your target (which is the Xcode default).\n#\n# Recommended setting: \"${TARGET_NAME}\"\n#\nconfig_deep_header_top = \"${TARGET_NAME}\"\n\n# Warn when \"DerivedData\" is detected in any of the header, library, or\n# framework search paths. In almost all cases, references to directories under\n# DerivedData are added as a result of an Xcode bug and must be manually\n# removed.\n#\n# Recommended setting: True\n#\nconfig_warn_derived_data = True\n\n# Warn if no headers were marked public in this framework.\n#\n# Recommended setting: True\n#\nconfig_warn_no_public_headers = True\n\n# Cause the build to fail if any warnings are issued.\n#\n# Recommended setting: True\n#\nconfig_fail_on_warnings = True\n\n# Minimum log level\n#\n# Recommended setting: logging.INFO\n#\nconfig_log_level = logging.INFO\n\n\n##############################################################################\n#\n# Don't touch anything below here unless you know what you're doing.\n#\n##############################################################################\n\nimport collections\nimport json\nimport os\nimport re\nimport shlex\nimport shutil\nimport string\nimport subprocess\nimport sys\nimport time\nimport traceback\n\n\n##############################################################################\n#\n# Globals\n#\n##############################################################################\n\nlog = logging.getLogger('UFW')\n\nissued_warnings = False\n\n\n##############################################################################\n#\n# Classes\n#\n##############################################################################\n\n# Allows the slave build to communicate with the master build.\n#\nclass BuildState:\n\n    def __init__(self):\n        self.reload()\n\n    def reset(self):\n        self.slave_platform = None\n        self.slave_architectures = []\n        self.slave_linked_archive_paths = []\n        self.slave_built_fw_path = None\n        self.slave_built_embedded_fw_path = None\n\n    def set_slave_properties(self, architectures,\n                             linked_archive_paths,\n                             built_fw_path,\n                             built_embedded_fw_path):\n        self.slave_platform = os.environ['PLATFORM_NAME']\n        self.slave_architectures = architectures\n        self.slave_linked_archive_paths = linked_archive_paths\n        self.slave_built_fw_path = built_fw_path\n        self.slave_built_embedded_fw_path = built_embedded_fw_path\n\n    def get_save_path(self):\n        return os.path.join(os.environ['PROJECT_TEMP_DIR'], \"ufw_build_state.json\")\n\n    def persist(self):\n        filename = self.get_save_path()\n        parent = os.path.dirname(filename)\n        if not os.path.isdir(parent):\n            os.makedirs(parent)\n        with open(filename, \"w\") as f:\n            f.write(json.dumps(self.__dict__))\n\n    def reload(self):\n        self.reset()\n        filename = self.get_save_path()\n        if os.path.exists(filename):\n            with open(filename, \"r\") as f:\n                new_dict = json.loads(f.read())\n                if new_dict is not None:\n                    self.__dict__ = dict(self.__dict__.items() + new_dict.items())\n\n\n# Holds information about the current project and build environment.\n#\nclass Project:\n\n    def __init__(self, filename):\n        sourcecode_types = ['sourcecode.c.c',\n                            'sourcecode.c.objc',\n                            'sourcecode.cpp.cpp',\n                            'sourcecode.cpp.objcpp',\n                            'sourcecode.asm.asm',\n                            'sourcecode.asm.llvm',\n                            'sourcecode.nasm']\n\n        self.build_state = BuildState()\n        self.project_data = self.load_from_file(filename)\n        self.target = filter(lambda x: x['name'] == os.environ['TARGET_NAME'], self.project_data['targets'])[0]\n        self.public_headers = self.get_build_phase_files('PBXHeadersBuildPhase', lambda x: x.get('settings', False) and x['settings'].get('ATTRIBUTES', False) and 'Public' in x['settings']['ATTRIBUTES'])\n        self.static_libraries = self.get_build_phase_files('PBXFrameworksBuildPhase', lambda x: x['fileRef']['fileType'] == 'archive.ar' and x['fileRef']['sourceTree'] not in ['DEVELOPER_DIR', 'SDKROOT'])\n        self.static_frameworks = self.get_build_phase_files('PBXFrameworksBuildPhase', lambda x: x['fileRef']['fileType'] == 'wrapper.framework' and x['fileRef']['sourceTree'] not in ['DEVELOPER_DIR', 'SDKROOT'])\n        self.compilable_sources = self.get_build_phase_files('PBXSourcesBuildPhase', lambda x: x['fileRef']['fileType'] in sourcecode_types)\n        self.header_paths = [os.path.join(*x['pathComponents']) for x in self.public_headers]\n\n        self.headers_dir = os.path.join(os.environ['TARGET_BUILD_DIR'], os.environ['CONTENTS_FOLDER_PATH'], 'Headers')\n        self.libtool_path = os.path.join(os.environ['DT_TOOLCHAIN_DIR'], 'usr', 'bin', 'libtool')\n        self.project_filename = os.path.join(os.environ['PROJECT_FILE_PATH'], \"project.pbxproj\")\n        self.local_exe_path = os.path.join(os.environ['TARGET_BUILD_DIR'], os.environ['EXECUTABLE_PATH'])\n        self.local_architectures = os.environ['ARCHS'].split(' ')\n        self.local_built_fw_path = os.path.join(os.environ['TARGET_BUILD_DIR'], os.environ['WRAPPER_NAME'])\n        self.local_built_embedded_fw_path = os.path.splitext(self.local_built_fw_path)[0] + \".embeddedframework\"\n        self.local_linked_archive_paths = [self.get_linked_ufw_archive_path(arch) for arch in self.local_architectures]\n        self.local_platform = os.environ['PLATFORM_NAME']\n        other_platforms = os.environ['SUPPORTED_PLATFORMS'].split(' ')\n        other_platforms.remove(self.local_platform)\n        self.other_platform = other_platforms[0]\n\n        sdk_name = os.environ['SDK_NAME']\n        if not sdk_name.startswith(self.local_platform):\n            raise Exception(\"%s didn't start with %s\" % (sdk_name, self.local_platform))\n        self.sdk_version = sdk_name[len(self.local_platform):]\n\n    # Load an Xcode project file.\n    #\n    def load_from_file(self, filename):\n        project_file = json.loads(subprocess.check_output([\"plutil\", \"-convert\", \"json\", \"-o\", \"-\", filename]))\n        all_objects = project_file['objects']\n        del project_file['objects']\n        for obj in all_objects.values():\n            self.fix_keys(obj)\n        self.unpack_objects(self.build_dereference_list(all_objects, None, None, project_file))\n        self.unpack_objects(self.build_dereference_list(all_objects, None, None, all_objects.values()))\n        project_data = project_file['rootObject']\n        self.build_full_paths(project_data, splitpath(os.environ['SOURCE_ROOT']))\n        return project_data\n\n    def is_key(self, obj):        \n        return isinstance(obj, basestring) and len(obj) == 24 and re.search('^[0-9a-fA-F]+$', obj) is not None\n    \n    def build_dereference_list(self, all_objects, parent, key, obj):\n        deref_list = []\n        if self.is_key(obj):\n            dereferenced = all_objects.get(obj, obj)\n            if dereferenced is not obj:\n                deref_list.append((parent, key, obj, dereferenced))\n        elif isinstance(obj, collections.Mapping):\n            for k, v in obj.iteritems():\n                deref_list += self.build_dereference_list(all_objects, obj, k, v)\n        elif isinstance(obj, collections.Iterable) and not isinstance(obj, basestring):\n            for item in obj:\n                deref_list += self.build_dereference_list(all_objects, obj, None, item)\n        return deref_list\n    \n    def unpack_objects(self, deref_list):\n        for parent, key, orig, obj in deref_list:\n            if key is None:\n                parent.remove(orig)\n                parent.append(obj)\n            else:\n                parent[key] = obj\n\n    # Store the full path, separated into components, to a node inside the node\n    # as \"pathComponents\". Also recurse into that node if it's a group.\n    #\n    def build_full_paths(self, node, base_path):\n        # Some nodes are relative to a different source tree, specified as an\n        # env variable.\n        if node.get('sourceTree', '<group>') != '<group>':\n            new_base_path = os.environ.get(node['sourceTree'], None)\n            if new_base_path:\n                base_path = splitpath(new_base_path)\n        # Add the current node's path, if any.\n        if node.get('path', False):\n            base_path = base_path + splitpath(node['path'])\n        node['pathComponents'] = base_path\n        # Recurse if this is a group.\n        if node['isa'] == 'PBXGroup':\n            for child in node['children']:\n                self.build_full_paths(child, base_path)\n        elif node['isa'] == 'PBXProject':\n            self.build_full_paths(node['mainGroup'], base_path)\n            self.build_full_paths(node['productRefGroup'], base_path)\n            for child in node['targets']:\n                self.build_full_paths(child, base_path)\n            projectRefs = node.get('projectReferences', None)\n            if projectRefs is not None:\n                for child in projectRefs[0].values():\n                    self.build_full_paths(child, base_path)\n\n    # Fix up any inconvenient keys.\n    #\n    def fix_keys(self, obj):\n        key_remappings = {'lastKnownFileType': 'fileType', 'explicitFileType': 'fileType'}\n        for key in list(set(key_remappings.keys()) & set(obj.keys())):\n            obj[key_remappings[key]] = obj[key]\n            del obj[key]\n\n    # Get the files from a build phase.\n    #\n    def get_build_phase_files(self, build_phase_name, filter_func):\n        build_phase = filter(lambda x: x['isa'] == build_phase_name, self.target['buildPhases'])[0]\n        build_files = filter(filter_func, build_phase['files'])\n        return [x['fileRef'] for x in build_files]\n\n    # Get the truncated paths of all headers that start with the specified\n    # relative path. Paths are read and returned as fully separated lists.\n    # e.g. ['Some', 'Path', 'To', 'A', 'Header'] with relative_path of\n    # ['Some', 'Path'] gets truncated to ['To', 'A', 'Header']\n    #\n    def movable_headers_relative_to(self, relative_path):\n        rel_path_length = len(relative_path)\n        result = filter(lambda path: len(path) >= rel_path_length and\n                                     path[:rel_path_length] == relative_path, self.header_paths)\n        return [path[rel_path_length:] for path in result]\n\n    # Get the full path to where a linkable archive (library or framework)\n    # is supposed to be.\n    #\n    def get_linked_archive_path(self, architecture):\n        return os.path.join(os.environ['OBJECT_FILE_DIR_%s' % os.environ['CURRENT_VARIANT']],\n                            architecture,\n                            os.environ['EXECUTABLE_NAME'])\n\n    # Get the full path to our custom linked archive of the project.\n    #\n    def get_linked_ufw_archive_path(self, architecture):\n        return self.get_linked_archive_path(architecture) + \".ufwbuild\"\n\n    # Get the full path to the executable of an archive.\n    #\n    def get_exe_path(self, node):\n        path = os.path.join(*node['pathComponents'])\n        if node['fileType'] == 'wrapper.framework':\n            # Frameworks are directories, so go one deeper\n            path = os.path.join(path, os.path.splitext(node['pathComponents'][-1])[0])\n        return path\n\n    # Get the path to the directory containing the archive.\n    #\n    def get_containing_path(self, node):\n        return os.path.join(*node['pathComponents'])\n    \n    def get_archive_search_paths(self):\n        log.info(\"Search paths = %s\" % set([self.get_containing_path(fw) for fw in self.static_frameworks] + [self.get_containing_path(fw) for fw in self.static_libraries]))\n        return set([self.get_containing_path(fw) for fw in self.static_frameworks] + [self.get_containing_path(fw) for fw in self.static_libraries])\n\n    # Command to link all objects of a single architecture.\n    #\n    def get_single_arch_link_command(self, architecture):\n        cmd = [self.libtool_path,\n               \"-static\",\n               \"-arch_only\", architecture,\n               \"-syslibroot\", os.environ['SDKROOT'],\n               \"-L%s\" % os.environ['TARGET_BUILD_DIR'],\n               \"-filelist\", os.environ['LINK_FILE_LIST_%s_%s' % (os.environ['CURRENT_VARIANT'], architecture)]]\n        if os.environ.get('OTHER_LDFLAGS', False):\n            cmd += [os.environ['OTHER_LDFLAGS']]\n        if os.environ.get('WARNING_LDFLAGS', False):\n            cmd += [os.environ['WARNING_LDFLAGS']]\n#        cmd += [\"-L%s\" % libpath for libpath in self.get_archive_search_paths()]\n        cmd += [self.get_exe_path(fw) for fw in self.static_frameworks]\n        cmd += [self.get_exe_path(lib) for lib in self.static_libraries]\n        cmd += [\"-o\", self.get_linked_ufw_archive_path(architecture)]\n        return cmd\n\n    # Command to link all local architectures for the current configuration\n    # into an archive. This reads all libraries + the UFW-built archives and\n    # overwrites the final product.\n    #\n    def get_local_archs_link_command(self):\n        cmd = [self.libtool_path,\n               \"-static\"]\n        cmd += self.local_linked_archive_paths\n        cmd += [self.get_exe_path(fw) for fw in self.static_frameworks]\n        cmd += [self.get_exe_path(lib) for lib in self.static_libraries]\n        cmd += [\"-o\", os.path.join(os.environ['TARGET_BUILD_DIR'], os.environ['EXECUTABLE_PATH'])]\n        return cmd\n\n    # Command to link all architectures into a universal archive.\n    # This reads all UFW-built archives and overwrites the final product.\n    #\n    def get_all_archs_link_command(self):\n        cmd = [self.libtool_path,\n               \"-static\"]\n        cmd += self.local_linked_archive_paths + self.build_state.slave_linked_archive_paths\n        cmd += [\"-o\", os.path.join(os.environ['TARGET_BUILD_DIR'], os.environ['EXECUTABLE_PATH'])]\n        return cmd\n\n    # Build up an environment for the slave process. This uses BUILD_ROOT\n    # and TEMP_ROOT to convert all environment variables to values suitable\n    # for the slave build environment so that xcodebuild doesn't try to build\n    # in the project directory under \"build\".\n    #\n    def get_slave_environment(self):\n        ignored = ['LD_MAP_FILE_PATH',\n        'HEADER_SEARCH_PATHS',\n        'LIBRARY_SEARCH_PATHS',\n        'FRAMEWORK_SEARCH_PATHS']\n        build_root = os.environ['BUILD_ROOT']\n        temp_root = os.environ['TEMP_ROOT']\n        newenv = {}\n        for key, value in os.environ.items():\n            if key not in ignored and not key.startswith('LINK_FILE_LIST_') and not key.startswith('LD_DEPENDENCY_'):\n                if build_root in value or temp_root in value:\n                    newenv[key] = value.replace(self.local_platform, self.other_platform)\n        return newenv\n\n    # Command to invoke xcodebuild on the slave platform.\n    #\n    def get_slave_project_build_command(self):\n        cmd = [\"xcodebuild\",\n               \"-project\",\n               os.environ['PROJECT_FILE_PATH'],\n               \"-target\",\n               os.environ['TARGET_NAME'],\n               \"-configuration\",\n               os.environ['CONFIGURATION'],\n               \"-sdk\",\n               self.other_platform + self.sdk_version]\n        cmd += [\"%s=%s\" % (key, value) for key, value in self.get_slave_environment().items()]\n        cmd += [\"UFW_MASTER_PLATFORM=\" + os.environ['PLATFORM_NAME']]\n        cmd += [os.environ['ACTION']]\n        return cmd\n\n\n\n##############################################################################\n#\n# Utility Functions\n#\n##############################################################################\n\n# Split a path into a list of path components.\n#\ndef splitpath(path, maxdepth=20):\n     (head, tail) = os.path.split(path)\n     return splitpath(head, maxdepth - 1) + [tail] if maxdepth and head and head != path else [ head or tail ]\n\n# Remove all subdirectories under a path.\n#\ndef remove_subdirs(path, ignore_files):\n    if os.path.exists(path):\n        for filename in filter(lambda x: x not in ignore_files, os.listdir(path)):\n            fullpath = os.path.join(path, filename)\n            if os.path.isdir(fullpath):\n                log.info(\"Remove %s\" % fullpath)\n                shutil.rmtree(fullpath)\n\n# Make whatever parent paths are necessary for a path to exist.\n#\ndef ensure_path_exists(path):\n    if not os.path.isdir(path):\n        os.makedirs(path)\n\n# Make whatever parent paths are necessary for a path's parent to exist.\n#\ndef ensure_parent_exists(path):\n    parent = os.path.dirname(path)\n    if not os.path.isdir(parent):\n        os.makedirs(parent)\n\n# Remove a file or dir if it exists.\n#\ndef remove_path(path):\n    if os.path.exists(path):\n        if os.path.isdir(path) and not os.path.islink(path):\n            shutil.rmtree(path)\n        else:\n            os.remove(path)\n\n# Move a file or dir, replacing the destination if it exists.\n#\ndef move_file(src, dst):\n    if src == dst or not os.path.isfile(src):\n        return\n    log.info(\"Move %s to %s\" % (src, dst))\n    ensure_parent_exists(dst)\n    remove_path(dst)\n    shutil.move(src, dst)\n\n# Copy a file or dir, replacing the destination if it exists already.\n#\ndef copy_overwrite(src, dst):\n    if src != dst:\n        remove_path(dst)\n        ensure_parent_exists(dst)\n        shutil.copytree(src, dst, symlinks=True)\n\n# Attempt to symlink link_path -> link_to.\n# link_to must be a path relative to link_path's parent and must exist.\n# If link_path already exists, do nothing.\n#\ndef attempt_symlink(link_path, link_to):\n    # Only allow linking to an existing file\n    os.stat(os.path.abspath(os.path.join(link_path, \"..\", link_to)))\n\n    # Only make the link if it hasn't already been made\n    if not os.path.exists(link_path):\n        log.info(\"Symlink %s -> %s\" % (link_path, link_to))\n        os.symlink(link_to, link_path)\n\n# Takes the last entry in an array-based path and returns a normal path\n# relative to base_path.\n#\ndef top_level_file_path(base_path, path_list):\n    return os.path.join(base_path, os.path.split(path_list[-1])[-1])\n\n# Takes all entries in an array-based path and returns a normal path\n# relative to base_path.\n#\ndef full_file_path(base_path, path_list):\n    return os.path.join(*([base_path] + path_list))\n\n# Print a command before executing it.\n# Also print out all output from the command to STDOUT.\n#\ndef print_and_call(cmd):\n    log.info(\"Cmd \" + \" \".join(cmd))\n    p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)\n    result = p.communicate()[0]\n    if len(result) > 0:\n        log.info(result)\n    if p.returncode != 0:\n        raise subprocess.CalledProcessError(p.returncode, cmd)\n\n# Special print-and-call command for the slave build that strips out\n# xcodebuild's spammy list of environment variables.\n#\ndef print_and_call_slave_build(cmd, other_platform):\n    separator = '=== BUILD NATIVE TARGET '\n    p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)\n    result = p.communicate()[0].split(separator)\n    if len(result) == 1:\n        result = result[0]\n    else:\n        result = separator + result[1]\n    log.info(\"Cmd \" + \" \".join(cmd) + \"\\n\" + result)\n    if p.returncode != 0:\n        raise subprocess.CalledProcessError(p.returncode, cmd)\n\n# Issue a warning and record that a warning has been issued.\n#\ndef issue_warning(msg, *args, **kwargs):\n    global issued_warnings\n    issued_warnings = True\n    log.warn(msg, *args, **kwargs)\n\n\n\n##############################################################################\n#\n# Main Application\n#\n##############################################################################\n\n# Check if we are running as master.\n#\ndef is_master():\n    return os.environ.get('UFW_MASTER_PLATFORM', os.environ['PLATFORM_NAME']) == os.environ['PLATFORM_NAME']\n\n# DerivedData should almost never appear in any framework, library, or header\n# search paths. However, Xcode will sometimes add them in, so we check to make\n# sure.\n#\ndef check_for_derived_data_in_search_paths(project):\n    search_path_keys = [\"FRAMEWORK_SEARCH_PATHS\", \"LIBRARY_SEARCH_PATHS\", \"HEADER_SEARCH_PATHS\"]\n    build_configs = project.target['buildConfigurationList']['buildConfigurations']\n    build_settings = filter(lambda x: x['name'] == os.environ['CONFIGURATION'], build_configs)[0]['buildSettings']\n    \n    found_something = False\n    for path_key in filter(lambda x: x in build_settings, search_path_keys):\n        path = build_settings[path_key]\n        if \"DerivedData\" in path:\n            found_something = True\n            log.warn(\"Derived data in %s\" % path)\n            issue_warning(\"'%s' contains reference to 'DerivedData'.\" % path_key)\n    if found_something:\n        log.warn(\"Check your build settings and remove any entries that contain paths inside the DerivedData folder.\")\n        log.warn(\"Otherwise you can disable this warning by changing 'config_warn_derived_data' in this script.\")\n\n# Link local architectures into their respective archives.\n#\ndef link_local_archs(project):\n    for arch in project.local_architectures:\n        print_and_call(project.get_single_arch_link_command(arch))\n\n# Link only the local architectures into the final product, not the slave\n# architectures. For iphoneos, this will be armv6, armv7. For simulator, this\n# will be i386.\n#\ndef link_combine_local_archs(project):\n    print_and_call(project.get_local_archs_link_command())\n\n# Link all architectures into the final product.\n#\ndef link_combine_all_archs(project):\n    print_and_call(project.get_all_archs_link_command())\n\n# Check if we should open the build directory after a successful build.\n#\ndef should_open_build_dir():\n    env_setting = os.environ.get('UFW_OPEN_BUILD_DIR', None)\n    if env_setting is not None:\n        return env_setting\n\n    return config_open_build_dir\n\n# Open the build dir in Finder.\n#\ndef open_build_dir():\n    print_and_call(['open', os.environ['TARGET_BUILD_DIR']])\n\n# Check if the build was started by selecting \"Archive\" under \"Product\" in\n# Xcode.\n#\ndef is_archive_build():\n    # ACTION is always 'build', but perhaps Apple will fix this someday?\n    archive_build = os.environ['ACTION'] == 'archive'\n\n    if not archive_build:\n        # This can be passed in as an env variable when building from command line.\n        archive_build = os.environ.get('UFW_ACTION', None) == 'archive'\n\n    build_dir = splitpath(os.environ['BUILD_DIR'])\n    if not archive_build:\n        # This partial path is used when you select \"archive\" from within Xcode.\n        archive_build = 'ArchiveIntermediates' in build_dir\n\n    # It only counts as a full archive build if this target is being built into\n    # its own build dir (not being built as a dependency of another target)\n    if archive_build:\n        archive_build = os.environ['TARGET_NAME'] in build_dir\n    \n    return archive_build\n\n# Xcode by default throws all public headers into the top level directory.\n# This function moves them to their expected deep hierarchy.\n#\ndef build_deep_header_hierarchy(project):\n    header_path_top = config_deep_header_top\n    if not header_path_top:\n        header_path_top = os.path.commonprefix(project.header_paths)\n    else:\n        header_path_top = splitpath(header_path_top)\n\n    built_headers_path = os.path.join(os.environ['TARGET_BUILD_DIR'], os.environ['PUBLIC_HEADERS_FOLDER_PATH'])\n    movable_headers = project.movable_headers_relative_to(header_path_top)\n\n    # Remove subdirs if they only contain files that have been rebuilt\n    ignore_headers = filter(lambda x: not os.path.isfile(top_level_file_path(built_headers_path, x)), movable_headers)\n    remove_subdirs(built_headers_path, [file[0] for file in ignore_headers])\n\n    # Move rebuilt headers into their proper subdirs\n    for header in movable_headers:\n        move_file(top_level_file_path(built_headers_path, header), full_file_path(built_headers_path, header))\n\n# Add all symlinks needed to make a full framework structure:\n#\n# MyFramework.framework\n# |-- MyFramework -> Versions/Current/MyFramework\n# |-- Headers -> Versions/Current/Headers\n# |-- Resources -> Versions/Current/Resources\n# `-- Versions\n#     |-- A\n#     |   |-- MyFramework\n#     |   |-- Headers\n#     |   |   `-- MyFramework.h\n#     |   `-- Resources\n#     |       |-- Info.plist\n#     |       |-- MyViewController.nib\n#     |       `-- en.lproj\n#     |           `-- InfoPlist.strings\n#     `-- Current -> A\n#\ndef add_symlinks_to_framework(project):\n    base_dir = project.local_built_fw_path\n    attempt_symlink(os.path.join(base_dir, \"Versions\", \"Current\"), os.environ['FRAMEWORK_VERSION'])\n    if os.path.isdir(os.path.join(base_dir, \"Versions\", \"Current\", \"Headers\")):\n        attempt_symlink(os.path.join(base_dir, \"Headers\"), os.path.join(\"Versions\", \"Current\", \"Headers\"))\n    if os.path.isdir(os.path.join(base_dir, \"Versions\", \"Current\", \"Resources\")):\n        attempt_symlink(os.path.join(base_dir, \"Resources\"), os.path.join(\"Versions\", \"Current\", \"Resources\"))\n    attempt_symlink(os.path.join(base_dir, os.environ['EXECUTABLE_NAME']), os.path.join(\"Versions\", \"Current\", os.environ['EXECUTABLE_NAME']))\n\n# Build an embedded framework structure.\n# An embedded framework contains the actual framework, plus a \"Resources\"\n# directory containing symlinks to all resources found in the actual framework,\n# with the exception of \"Info.plist\" and anything ending in \".lproj\":\n#\n# MyFramework.embeddedframework\n# |-- MyFramework.framework\n# |   |-- MyFramework -> Versions/Current/MyFramework\n# |   |-- Headers -> Versions/Current/Headers\n# |   |-- Resources -> Versions/Current/Resources\n# |   `-- Versions\n# |       |-- A\n# |       |   |-- MyFramework\n# |       |   |-- Headers\n# |       |   |   `-- MyFramework.h\n# |       |   `-- Resources\n# |       |       |-- Info.plist\n# |       |       |-- MyViewController.nib\n# |       |       `-- en.lproj\n# |       |           `-- InfoPlist.strings\n# |       `-- Current -> A\n# `-- Resources\n#     `-- MyViewController.nib -> ../MyFramework.framework/Resources/MyViewController.nib\n#\ndef build_embedded_framework(project):\n    fw_path = project.local_built_fw_path\n    embedded_path = project.local_built_embedded_fw_path\n    fw_name = os.environ['WRAPPER_NAME']\n\n    if (os.path.islink(fw_path)):\n        # If the framework path is a link, the build result already in embeddedframework.\n        # Just recreate embeddedframework's Resources\n        remove_path(os.path.join(embedded_path, \"Resources\"))\n    else:\n        remove_path(embedded_path)\n        ensure_path_exists(embedded_path)\n        copy_overwrite(fw_path, os.path.join(embedded_path, fw_name))\n\n    # Create embeddedframework's Resources        \n    ensure_path_exists(os.path.join(embedded_path, \"Resources\"))\n    symlink_source = os.path.join(\"..\", fw_name, \"Resources\")\n    symlink_path = os.path.join(embedded_path, \"Resources\")\n    if os.path.isdir(os.path.join(fw_path, \"Resources\")):\n        for file in filter(lambda x: x != \"Info.plist\" and not x.endswith(\".lproj\"), os.listdir(os.path.join(fw_path, \"Resources\"))):\n            attempt_symlink(os.path.join(symlink_path, file), os.path.join(symlink_source, file))\n\n    # Remove the normal framework and replace it with a symlink to the copy\n    # in the embedded framework. This is needed because Xcode runs its strip\n    # phase AFTER the script runs.\n    embed_fw_wrapper = os.path.splitext(os.environ['WRAPPER_NAME'])[0] + \".embeddedframework\"\n    remove_path(fw_path)\n    attempt_symlink(fw_path, os.path.join(embed_fw_wrapper, os.environ['WRAPPER_NAME']))\n\n\n# Run the build process in slave mode to build the other configuration\n# (device/simulator).\n#\ndef run_slave_build(project):\n    print_and_call_slave_build(project.get_slave_project_build_command(), project.other_platform)\n\n# Run the build process.\n#\ndef run_build():\n    project = Project(os.path.join(os.environ['PROJECT_FILE_PATH'], \"project.pbxproj\"))\n\n    # Issue warnings only if we're master.\n    if is_master():\n        if len(project.compilable_sources) == 0:\n            raise Exception(\"No compilable sources found. Please add at least one source file to build target %s.\" % os.environ['TARGET_NAME'])\n\n        if config_warn_derived_data:\n            check_for_derived_data_in_search_paths(project)\n        if config_warn_no_public_headers and len(project.public_headers) == 0:\n            issue_warning('No headers in build target %s were marked public. Please move at least one header to \"Public\" in the \"Copy Headers\" build phase.' % os.environ['TARGET_NAME'])\n\n    # Only build slave if this is an archive build.\n    if is_archive_build():\n        if is_master():\n            log.debug(\"Building as MASTER\")\n            # The slave-side linker tries to include this (nonexistent) path as\n            # a library path.\n            ensure_path_exists(project.get_slave_environment()['BUILT_PRODUCTS_DIR'])\n            project.build_state.persist()\n            run_slave_build(project)\n            project.build_state.reload()\n        else:\n            log.debug(\"Building as SLAVE\")\n            project.build_state.reload()\n            project.build_state.set_slave_properties(project.local_architectures,\n                                                     project.local_linked_archive_paths,\n                                                     project.local_built_fw_path,\n                                                     project.local_built_embedded_fw_path)\n            project.build_state.persist()\n\n    link_local_archs(project)\n    \n    # Only do a universal binary when building an archive.\n    if is_archive_build() and is_master():\n        link_combine_all_archs(project)\n    else:\n        link_combine_local_archs(project)\n\n    if config_deep_header_hierarchy:\n        build_deep_header_hierarchy(project)\n\n    add_symlinks_to_framework(project)\n    \n    if is_master():\n        if config_framework_type == 'embeddedframework':\n            build_embedded_framework(project)\n        elif config_framework_type != 'framework':\n            raise Exception(\"%s: Unknown framework type for config_framework_type\" % config_framework_type)\n\n\nif __name__ == \"__main__\":\n    log_handler = logging.StreamHandler()\n    log_handler.setFormatter(logging.Formatter(\"%(name)s (\" + os.environ['PLATFORM_NAME'] + \"): %(levelname)s: %(message)s\"))\n    log.addHandler(log_handler)\n    log.setLevel(config_log_level)\n\n    error_code = 0\n    prefix = \"M\" if is_master() else \"S\"\n    log_handler.setFormatter(logging.Formatter(\"%(name)s (\" + prefix + \" \" + os.environ['PLATFORM_NAME'] + \"): %(levelname)s: %(message)s\"))\n\n    log.debug(\"Begin build process\")\n\n    if config_deep_header_top:\n        config_deep_header_top = string.Template(config_deep_header_top).substitute(os.environ)\n\n    try:\n        run_build()\n        if issued_warnings:\n            if config_fail_on_warnings:\n                error_code = 1\n            log.warn(\"Build completed with warnings\")\n        else:\n            log.info(\"Build completed\")\n        if not is_archive_build():\n            log.info(\"Note: This is *NOT* a universal framework build. To build as a universal framework, do an archive build.\")\n            log.info(\"To do an archive build from command line, use \\\"xcodebuild -configuration Release UFW_ACTION=archive clean build\\\"\")\n    except Exception:\n        traceback.print_exc(file=sys.stdout)\n        error_code = 1\n        log.error(\"Build failed\")\n    finally:\n        if error_code == 0 and is_archive_build() and is_master():\n            log.info(\"Built framework is in \" + os.environ['TARGET_BUILD_DIR'])\n            if should_open_build_dir():\n                open_build_dir()\n        sys.exit(error_code)\n";
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SkyCore/Pods-SkyCore-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3223DCCF1D531C3A91D8BCE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1421,153 +440,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAC214681A2C7041004D3832 /* unzip.c in Sources */,
-				FAFAC96D1A0B251E00BFB43F /* AFURLConnectionOperation.m in Sources */,
 				FAF988191A314FF600B4EFF9 /* SCAppCache.m in Sources */,
 				FAF9880D1A314FF600B4EFF9 /* NSString+BlankFilter.m in Sources */,
-				FAFAC9711A0B251E00BFB43F /* AFURLResponseSerialization.m in Sources */,
-				FAFAC9981A0B251F00BFB43F /* MJRefreshHeaderView.m in Sources */,
-				FAFAC97B1A0B251E00BFB43F /* UIAlertView+AFNetworking.m in Sources */,
-				FAFAC9621A0B251E00BFB43F /* AFHTTPRequestOperation.m in Sources */,
 				FAF9882F1A314FF600B4EFF9 /* UIButton+VerticalAlign.m in Sources */,
-				FAABF8901A020276004948E9 /* SkyCore.m in Sources */,
 				FAF9881D1A314FF600B4EFF9 /* SCCommonTools.m in Sources */,
 				FAF9882D1A314FF600B4EFF9 /* UIButton+Block.m in Sources */,
-				FAFAC9941A0B251F00BFB43F /* MJRefreshBaseView.m in Sources */,
 				FAF988121A314FF600B4EFF9 /* PinYin.c in Sources */,
-				FAFAC9691A0B251E00BFB43F /* AFNetworkReachabilityManager.m in Sources */,
-				FAFAC9901A0B251E00BFB43F /* MBProgressHUD.m in Sources */,
 				FAF988111A314FF600B4EFF9 /* NSString+md5.m in Sources */,
 				FAF988231A314FF600B4EFF9 /* SCSysconfig.m in Sources */,
-				FAFAC9731A0B251E00BFB43F /* AFURLSessionManager.m in Sources */,
 				FAF988311A314FF600B4EFF9 /* UIImage+Addons.m in Sources */,
-				FAF988331A314FF600B4EFF9 /* UIView+Frame.m in Sources */,
 				FAF9880B1A314FF600B4EFF9 /* NSObject+NotNull.m in Sources */,
 				FAF988271A314FF600B4EFF9 /* MKMapView+ZoomLevel.m in Sources */,
 				FAF988091A314FF600B4EFF9 /* NSDate+ChineseCalendar.m in Sources */,
-				FAFAC9641A0B251E00BFB43F /* AFHTTPRequestOperationManager.m in Sources */,
 				FAF9881F1A314FF600B4EFF9 /* SCFileOper.m in Sources */,
 				FAF9881B1A314FF600B4EFF9 /* SCBaseService.m in Sources */,
-				FAFAC9961A0B251F00BFB43F /* MJRefreshFooterView.m in Sources */,
-				FAC2146A1A2C7041004D3832 /* zip.c in Sources */,
-				FAFAC9821A0B251E00BFB43F /* UIProgressView+AFNetworking.m in Sources */,
-				FAFAC98C1A0B251E00BFB43F /* JSONKit.m in Sources */,
 				FAF988171A314FF600B4EFF9 /* SCBaseManagedDomain.m in Sources */,
-				FAFAC99A1A0B251F00BFB43F /* SFHFKeychainUtils.m in Sources */,
-				FAFAC96B1A0B251E00BFB43F /* AFSecurityPolicy.m in Sources */,
 				FAF9880F1A314FF600B4EFF9 /* NSString+DateFormat.m in Sources */,
-				FAFAC9771A0B251E00BFB43F /* AFNetworkActivityIndicatorManager.m in Sources */,
-				FAC214641A2C7041004D3832 /* ioapi.c in Sources */,
-				FAFAC9661A0B251E00BFB43F /* AFHTTPSessionManager.m in Sources */,
-				FAFAC97F1A0B251E00BFB43F /* UIImageView+AFNetworking.m in Sources */,
+				33E801041F8E825D00CF5CB4 /* SCBaseDao.m in Sources */,
 				FAF988151A314FF600B4EFF9 /* SCBaseDomain.m in Sources */,
-				FAFAC97D1A0B251E00BFB43F /* UIButton+AFNetworking.m in Sources */,
-				FAFAC9841A0B251E00BFB43F /* UIRefreshControl+AFNetworking.m in Sources */,
-				FAC214661A2C7041004D3832 /* mztools.c in Sources */,
 				FAF988291A314FF600B4EFF9 /* OBShapedButton.m in Sources */,
 				FAF988251A314FF600B4EFF9 /* DragView.m in Sources */,
 				FAF988861A3162A000B4EFF9 /* NSObject+Persistence.m in Sources */,
-				FAFAC9861A0B251E00BFB43F /* UIWebView+AFNetworking.m in Sources */,
-				FAFAC9D01A0B257C00BFB43F /* GDataXMLElement+Addons.m in Sources */,
 				FAF988211A314FF600B4EFF9 /* SCLocationService.m in Sources */,
-				FAF988351A314FF600B4EFF9 /* UIViewController+Addons.m in Sources */,
-				FAFAC9891A0B251E00BFB43F /* GDataXMLNode.m in Sources */,
 				FAF9882B1A314FF600B4EFF9 /* PhotoImageScrollView.m in Sources */,
-				FAF988071A314FF600B4EFF9 /* SCBaseDao.m in Sources */,
-				FAFAC96F1A0B251E00BFB43F /* AFURLRequestSerialization.m in Sources */,
-				FAC2146D1A2C7041004D3832 /* SSZipArchive.m in Sources */,
-				FAFAC9791A0B251E00BFB43F /* UIActivityIndicatorView+AFNetworking.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAFACBD21A0B3D8B00BFB43F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FAFACC851A0B3DA200BFB43F /* UIProgressView+AFNetworking.m in Sources */,
-				FAF988D91A31798C00B4EFF9 /* Test.m in Sources */,
-				FAF988D01A31797D00B4EFF9 /* OBShapedButton.m in Sources */,
-				FAFACC831A0B3DA200BFB43F /* UIButton+AFNetworking.m in Sources */,
-				FAFACC861A0B3DA200BFB43F /* UIRefreshControl+AFNetworking.m in Sources */,
-				FAFACC821A0B3DA200BFB43F /* UIAlertView+AFNetworking.m in Sources */,
-				FAFACC8D1A0B3DA200BFB43F /* README.md in Sources */,
-				FAC2144E1A2C7034004D3832 /* unzip.c in Sources */,
-				FAFACC931A0B3DA200BFB43F /* MJRefreshHeaderView.m in Sources */,
-				FAF988C21A31797D00B4EFF9 /* NSString+BlankFilter.m in Sources */,
-				FAFACC751A0B3DA200BFB43F /* AFHTTPRequestOperation.m in Sources */,
-				FAFACBE11A0B3D8B00BFB43F /* ViewController.m in Sources */,
-				FAF988C31A31797D00B4EFF9 /* NSString+DateFormat.m in Sources */,
-				FAFACC8B1A0B3DA200BFB43F /* README.md in Sources */,
-				FAC2144D1A2C7034004D3832 /* mztools.c in Sources */,
-				FAF988C61A31797D00B4EFF9 /* SCBaseDomain.m in Sources */,
-				FAC214501A2C7034004D3832 /* SSZipArchive.m in Sources */,
-				FAC2144B1A2C7034004D3832 /* Readme.markdown in Sources */,
-				FAF988CA1A31797D00B4EFF9 /* SCCommonTools.m in Sources */,
-				FAFACC761A0B3DA200BFB43F /* AFHTTPRequestOperationManager.m in Sources */,
-				FAF988BF1A31797D00B4EFF9 /* NSDate+ChineseCalendar.m in Sources */,
-				FAC2144F1A2C7034004D3832 /* zip.c in Sources */,
-				FAFACC901A0B3DA200BFB43F /* README.mdown in Sources */,
-				FAF988D21A31797D00B4EFF9 /* UIButton+Block.m in Sources */,
-				FAFACC8A1A0B3DA200BFB43F /* GDataXMLNode.m in Sources */,
-				FAFACC891A0B3DA200BFB43F /* GDataXMLElement+Addons.m in Sources */,
-				FAF988CB1A31797D00B4EFF9 /* SCFileOper.m in Sources */,
-				FAFACC921A0B3DA200BFB43F /* MJRefreshFooterView.m in Sources */,
-				FAF988CD1A31797D00B4EFF9 /* SCSysconfig.m in Sources */,
-				FAF988C51A31797D00B4EFF9 /* PinYin.c in Sources */,
-				FAF988BE1A31797D00B4EFF9 /* SCBaseDao.m in Sources */,
-				FAFACC781A0B3DA200BFB43F /* AFNetworkReachabilityManager.m in Sources */,
-				FAFACC7F1A0B3DA200BFB43F /* README.md in Sources */,
-				FAF988D51A31797D00B4EFF9 /* UIView+Frame.m in Sources */,
-				FAF988CC1A31797D00B4EFF9 /* SCLocationService.m in Sources */,
-				FAF988D11A31797D00B4EFF9 /* PhotoImageScrollView.m in Sources */,
-				FAFACC8F1A0B3DA200BFB43F /* MBProgressHUD.m in Sources */,
-				FAFACC841A0B3DA200BFB43F /* UIImageView+AFNetworking.m in Sources */,
-				FAFACC941A0B3DA200BFB43F /* SFHFKeychainUtils.m in Sources */,
-				FAF988D61A31797D00B4EFF9 /* UIViewController+Addons.m in Sources */,
-				FAFACC7C1A0B3DA200BFB43F /* AFURLResponseSerialization.m in Sources */,
-				FAFACC811A0B3DA200BFB43F /* UIActivityIndicatorView+AFNetworking.m in Sources */,
-				FAFACC7A1A0B3DA200BFB43F /* AFURLConnectionOperation.m in Sources */,
-				FAFACC791A0B3DA200BFB43F /* AFSecurityPolicy.m in Sources */,
-				FAF988C81A31797D00B4EFF9 /* SCAppCache.m in Sources */,
-				FAF988C01A31797D00B4EFF9 /* NSObject+NotNull.m in Sources */,
-				FAC2144C1A2C7034004D3832 /* ioapi.c in Sources */,
-				FAFACC771A0B3DA200BFB43F /* AFHTTPSessionManager.m in Sources */,
-				FAFACC7B1A0B3DA200BFB43F /* AFURLRequestSerialization.m in Sources */,
-				FAF988C71A31797D00B4EFF9 /* SCBaseManagedDomain.m in Sources */,
-				FAFACC911A0B3DA200BFB43F /* MJRefreshBaseView.m in Sources */,
-				FAFACC7D1A0B3DA200BFB43F /* AFURLSessionManager.m in Sources */,
-				FAF988C91A31797D00B4EFF9 /* SCBaseService.m in Sources */,
-				FAFACC871A0B3DA200BFB43F /* UIWebView+AFNetworking.m in Sources */,
-				FAFACBDE1A0B3D8B00BFB43F /* AppDelegate.m in Sources */,
-				FAF988CF1A31797D00B4EFF9 /* MKMapView+ZoomLevel.m in Sources */,
-				FAF988D41A31797D00B4EFF9 /* UIImage+Addons.m in Sources */,
-				FAFACC801A0B3DA200BFB43F /* AFNetworkActivityIndicatorManager.m in Sources */,
-				FAF988C11A31797D00B4EFF9 /* NSObject+Persistence.m in Sources */,
-				FAF988C41A31797D00B4EFF9 /* NSString+md5.m in Sources */,
-				FAFACBDB1A0B3D8B00BFB43F /* main.m in Sources */,
-				FAF988D31A31797D00B4EFF9 /* UIButton+VerticalAlign.m in Sources */,
-				FAFACC8C1A0B3DA200BFB43F /* JSONKit.m in Sources */,
-				FAF988CE1A31797D00B4EFF9 /* DragView.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAFACBEA1A0B3D8B00BFB43F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FAFACBF51A0B3D8B00BFB43F /* exampleTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		FAFACBF01A0B3D8B00BFB43F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FAFACBD51A0B3D8B00BFB43F /* example */;
-			targetProxy = FAFACBEF1A0B3D8B00BFB43F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FAABF88A1A020276004948E9 /* InfoPlist.strings */ = {
@@ -1576,22 +475,6 @@
 				FAABF88B1A020276004948E9 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		FAFACBE21A0B3D8B00BFB43F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FAFACBE31A0B3D8B00BFB43F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		FAFACBE71A0B3D8B00BFB43F /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FAFACBE81A0B3D8B00BFB43F /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1605,17 +488,29 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREFIX_HEADER = "SkyCore/SkyCore-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1629,10 +524,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "$(inherited)";
-				SDKROOT = iphoneos6.1;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -1644,17 +539,28 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "SkyCore/SkyCore-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -1662,17 +568,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "$(inherited)";
-				SDKROOT = iphoneos6.1;
+				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		FAABF8941A020276004948E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A6B8C140C952B04102DA86B /* Pods-SkyCore.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
@@ -1684,10 +590,11 @@
 					/usr/include/libxml2,
 				);
 				INFOPLIST_FILE = "SkyCore/SkyCore-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				OTHER_LDFLAGS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.grassinfo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos6.1;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				VALID_ARCHS = "$(ARCHS_STANDARD)";
 				WRAPPER_EXTENSION = framework;
@@ -1696,8 +603,8 @@
 		};
 		FAABF8951A020276004948E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBD12DFA68BB5B110D086D63 /* Pods-SkyCore.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
@@ -1709,109 +616,14 @@
 					/usr/include/libxml2,
 				);
 				INFOPLIST_FILE = "SkyCore/SkyCore-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				OTHER_LDFLAGS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.grassinfo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos6.1;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				VALID_ARCHS = "$(ARCHS_STANDARD)";
 				WRAPPER_EXTENSION = framework;
-			};
-			name = Release;
-		};
-		FAFACBF61A0B3D8B00BFB43F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					/usr/include/libxml2,
-				);
-				INFOPLIST_FILE = example/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"$(inherited)",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos6.1;
-			};
-			name = Debug;
-		};
-		FAFACBF71A0B3D8B00BFB43F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					/usr/include/libxml2,
-				);
-				INFOPLIST_FILE = example/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"$(inherited)",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos6.1;
-			};
-			name = Release;
-		};
-		FAFACBF81A0B3D8B00BFB43F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = exampleTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/example.app/example";
-			};
-			name = Debug;
-		};
-		FAFACBF91A0B3D8B00BFB43F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = exampleTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/example.app/example";
 			};
 			name = Release;
 		};
@@ -1832,24 +644,6 @@
 			buildConfigurations = (
 				FAABF8941A020276004948E9 /* Debug */,
 				FAABF8951A020276004948E9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FAFACBFA1A0B3D8B00BFB43F /* Build configuration list for PBXNativeTarget "example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FAFACBF61A0B3D8B00BFB43F /* Debug */,
-				FAFACBF71A0B3D8B00BFB43F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FAFACBFB1A0B3D8B00BFB43F /* Build configuration list for PBXNativeTarget "exampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FAFACBF81A0B3D8B00BFB43F /* Debug */,
-				FAFACBF91A0B3D8B00BFB43F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
