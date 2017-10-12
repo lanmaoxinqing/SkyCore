@@ -13,8 +13,7 @@
 #import <SkyCore/SCBaseManagedDomain.h>
 #import <SkyCore/SCBaseService.h>
 #import <SkyCore/NSObject+NotNull.h>
-#import <SkyCore/UIViewController+Addons.h>
-#import <SkyCore/UIView+Frame.h>
+#import <SkyCore/SCStore.h>
 
 @interface SkyCore : NSObject
 

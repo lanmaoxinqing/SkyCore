@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		33E801031F8E825D00CF5CB4 /* SCBaseDao.h in Headers */ = {isa = PBXBuildFile; fileRef = 33E801011F8E825D00CF5CB4 /* SCBaseDao.h */; };
+		33A89DE21F8E8CF500EB38F0 /* SCStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 33A89DE01F8E8CF500EB38F0 /* SCStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33A89DE31F8E8CF500EB38F0 /* SCStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A89DE11F8E8CF500EB38F0 /* SCStore.m */; };
+		33A89DEB1F8E8F5600EB38F0 /* SkyCoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A89DEA1F8E8F5600EB38F0 /* SkyCoreTests.m */; };
+		33A89DF11F8E8FAB00EB38F0 /* StoreTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A89DF01F8E8FAB00EB38F0 /* StoreTest.m */; };
+		33BC0CE51F8FC1C40062FC5C /* SkyCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAABF8821A020276004948E9 /* SkyCore.framework */; };
+		33E801031F8E825D00CF5CB4 /* SCBaseDao.h in Headers */ = {isa = PBXBuildFile; fileRef = 33E801011F8E825D00CF5CB4 /* SCBaseDao.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		33E801041F8E825D00CF5CB4 /* SCBaseDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E801021F8E825D00CF5CB4 /* SCBaseDao.m */; };
 		BD82C7FB592A309C7034EFCF /* libPods-SkyCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F3718501A78E7166D2B316 /* libPods-SkyCore.a */; };
 		FAABF88C1A020276004948E9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAABF88A1A020276004948E9 /* InfoPlist.strings */; };
@@ -66,6 +71,12 @@
 /* Begin PBXFileReference section */
 		182179C94103E7C1F3C81F56 /* Pods-example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example.release.xcconfig"; path = "Pods/Target Support Files/Pods-example/Pods-example.release.xcconfig"; sourceTree = "<group>"; };
 		30F136BBFA816E563E49B995 /* Pods-example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-example/Pods-example.debug.xcconfig"; sourceTree = "<group>"; };
+		33A89DE01F8E8CF500EB38F0 /* SCStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCStore.h; sourceTree = "<group>"; };
+		33A89DE11F8E8CF500EB38F0 /* SCStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCStore.m; sourceTree = "<group>"; };
+		33A89DE81F8E8F5500EB38F0 /* SkyCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		33A89DEA1F8E8F5600EB38F0 /* SkyCoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SkyCoreTests.m; sourceTree = "<group>"; };
+		33A89DEC1F8E8F5600EB38F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33A89DF01F8E8FAB00EB38F0 /* StoreTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreTest.m; sourceTree = "<group>"; };
 		33E801011F8E825D00CF5CB4 /* SCBaseDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBaseDao.h; sourceTree = "<group>"; };
 		33E801021F8E825D00CF5CB4 /* SCBaseDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBaseDao.m; sourceTree = "<group>"; };
 		3A6B8C140C952B04102DA86B /* Pods-SkyCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyCore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SkyCore/Pods-SkyCore.debug.xcconfig"; sourceTree = "<group>"; };
@@ -136,6 +147,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		33A89DE51F8E8F5500EB38F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33BC0CE51F8FC1C40062FC5C /* SkyCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FAABF87D1A020276004948E9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -165,6 +184,25 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		33A89DDF1F8E8CDF00EB38F0 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				33A89DE01F8E8CF500EB38F0 /* SCStore.h */,
+				33A89DE11F8E8CF500EB38F0 /* SCStore.m */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		33A89DE91F8E8F5500EB38F0 /* SkyCoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				33A89DEA1F8E8F5600EB38F0 /* SkyCoreTests.m */,
+				33A89DEC1F8E8F5600EB38F0 /* Info.plist */,
+				33A89DF01F8E8FAB00EB38F0 /* StoreTest.m */,
+			);
+			path = SkyCoreTests;
+			sourceTree = "<group>";
+		};
 		33E801001F8E825D00CF5CB4 /* dao */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				FAABF8871A020276004948E9 /* SkyCore */,
+				33A89DE91F8E8F5500EB38F0 /* SkyCoreTests */,
 				FAABF8841A020276004948E9 /* Frameworks */,
 				FAABF8831A020276004948E9 /* Products */,
 				1EBD306A6637E4A2F5C6248C /* Pods */,
@@ -188,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				FAABF8821A020276004948E9 /* SkyCore.framework */,
+				33A89DE81F8E8F5500EB38F0 /* SkyCoreTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -234,6 +274,7 @@
 		FAF987D11A314FF600B4EFF9 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				33A89DDF1F8E8CDF00EB38F0 /* Store */,
 				33E801001F8E825D00CF5CB4 /* dao */,
 				FAF987D51A314FF600B4EFF9 /* domain */,
 				FAF987E61A314FF600B4EFF9 /* service */,
@@ -336,6 +377,7 @@
 				FAF9880A1A314FF600B4EFF9 /* NSObject+NotNull.h in Headers */,
 				FAF9881E1A314FF600B4EFF9 /* SCFileOper.h in Headers */,
 				FAF988131A314FF600B4EFF9 /* PinYin.h in Headers */,
+				33A89DE21F8E8CF500EB38F0 /* SCStore.h in Headers */,
 				33E801031F8E825D00CF5CB4 /* SCBaseDao.h in Headers */,
 				FAF988851A3162A000B4EFF9 /* NSObject+Persistence.h in Headers */,
 			);
@@ -344,6 +386,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		33A89DE71F8E8F5500EB38F0 /* SkyCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33A89DED1F8E8F5600EB38F0 /* Build configuration list for PBXNativeTarget "SkyCoreTests" */;
+			buildPhases = (
+				33A89DE41F8E8F5500EB38F0 /* Sources */,
+				33A89DE51F8E8F5500EB38F0 /* Frameworks */,
+				33A89DE61F8E8F5500EB38F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkyCoreTests;
+			productName = SkyCoreTests;
+			productReference = 33A89DE81F8E8F5500EB38F0 /* SkyCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		FAABF8811A020276004948E9 /* SkyCore */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAABF8931A020276004948E9 /* Build configuration list for PBXNativeTarget "SkyCore" */;
@@ -372,6 +431,13 @@
 			attributes = {
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = com.grassinfo;
+				TargetAttributes = {
+					33A89DE71F8E8F5500EB38F0 = {
+						CreatedOnToolsVersion = 9.0;
+						DevelopmentTeam = W6N382B5V9;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = FAABF87B1A020276004948E9 /* Build configuration list for PBXProject "SkyCore" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -387,11 +453,19 @@
 			projectRoot = "";
 			targets = (
 				FAABF8811A020276004948E9 /* SkyCore */,
+				33A89DE71F8E8F5500EB38F0 /* SkyCoreTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		33A89DE61F8E8F5500EB38F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FAABF87F1A020276004948E9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -436,6 +510,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		33A89DE41F8E8F5500EB38F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33A89DEB1F8E8F5600EB38F0 /* SkyCoreTests.m in Sources */,
+				33A89DF11F8E8FAB00EB38F0 /* StoreTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FAABF87C1A020276004948E9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -447,6 +530,7 @@
 				FAF9882D1A314FF600B4EFF9 /* UIButton+Block.m in Sources */,
 				FAF988121A314FF600B4EFF9 /* PinYin.c in Sources */,
 				FAF988111A314FF600B4EFF9 /* NSString+md5.m in Sources */,
+				33A89DE31F8E8CF500EB38F0 /* SCStore.m in Sources */,
 				FAF988231A314FF600B4EFF9 /* SCSysconfig.m in Sources */,
 				FAF988311A314FF600B4EFF9 /* UIImage+Addons.m in Sources */,
 				FAF9880B1A314FF600B4EFF9 /* NSObject+NotNull.m in Sources */,
@@ -480,8 +564,60 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		33A89DEE1F8E8F5600EB38F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A6B8C140C952B04102DA86B /* Pods-SkyCore.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = W6N382B5V9;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = SkyCoreTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = sky.SkyCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		33A89DEF1F8E8F5600EB38F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBD12DFA68BB5B110D086D63 /* Pods-SkyCore.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = W6N382B5V9;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = SkyCoreTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = sky.SkyCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		FAABF8911A020276004948E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A6B8C140C952B04102DA86B /* Pods-SkyCore.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -533,6 +669,7 @@
 		};
 		FAABF8921A020276004948E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBD12DFA68BB5B110D086D63 /* Pods-SkyCore.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -630,6 +767,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		33A89DED1F8E8F5600EB38F0 /* Build configuration list for PBXNativeTarget "SkyCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33A89DEE1F8E8F5600EB38F0 /* Debug */,
+				33A89DEF1F8E8F5600EB38F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FAABF87B1A020276004948E9 /* Build configuration list for PBXProject "SkyCore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
