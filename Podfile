@@ -11,6 +11,8 @@ target 'SkyCore' do
 	pod 'BlocksKit', '~> 2.2.5'
 	pod 'Masonry', '~> 1.0.2'
    pod 'SSZipArchive', '~> 1.6.2'
+      pod 'SDWebImage', '~> 3.8.2'
+
 
   # Pods for SkyCore
 
