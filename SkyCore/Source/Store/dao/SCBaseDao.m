@@ -300,13 +300,13 @@ static NSManagedObjectModel         *_model;        //数据模板
         //对象已存在,更新
         if(obj!=nil){
             //        NSLog(@"update");
-            [obj valueFrom:entity];
+            [obj sync:entity];
             [[self context] refreshObject:obj mergeChanges:YES];
         }
         //对象不存在,新增
         else{
             obj=[NSEntityDescription insertNewObjectForEntityForName:className inManagedObjectContext:[self context]];
-            [obj valueFrom:entity];
+            [obj sync:entity];
             //        NSLog(@"insert");
         }
         return obj;

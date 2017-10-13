@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SCBaseDomain.h"
 /**
 	临时缓存,应用关闭后消失
  */

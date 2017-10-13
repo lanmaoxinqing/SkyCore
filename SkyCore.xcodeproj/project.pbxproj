@@ -14,8 +14,10 @@
 		33E331E81F903353003F428D /* SCApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = 33E331E61F903353003F428D /* SCApplication.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		33E331E91F903353003F428D /* SCApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E331E71F903353003F428D /* SCApplication.m */; };
 		33E331EB1F903946003F428D /* ApplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E331EA1F903946003F428D /* ApplicationTests.m */; };
-		33E801031F8E825D00CF5CB4 /* SCBaseDao.h in Headers */ = {isa = PBXBuildFile; fileRef = 33E801011F8E825D00CF5CB4 /* SCBaseDao.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		33E801041F8E825D00CF5CB4 /* SCBaseDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E801021F8E825D00CF5CB4 /* SCBaseDao.m */; };
+		33E331F51F9187AA003F428D /* SCBaseDao.h in Headers */ = {isa = PBXBuildFile; fileRef = 33E331F11F9187AA003F428D /* SCBaseDao.h */; };
+		33E331F61F9187AA003F428D /* SCBaseDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E331F21F9187AA003F428D /* SCBaseDao.m */; };
+		33E331F71F9187AA003F428D /* SCBaseManagedDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = 33E331F31F9187AA003F428D /* SCBaseManagedDomain.h */; };
+		33E331F81F9187AA003F428D /* SCBaseManagedDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E331F41F9187AA003F428D /* SCBaseManagedDomain.m */; };
 		BD82C7FB592A309C7034EFCF /* libPods-SkyCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F3718501A78E7166D2B316 /* libPods-SkyCore.a */; };
 		FAABF88C1A020276004948E9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAABF88A1A020276004948E9 /* InfoPlist.strings */; };
 		FAABF9A61A0202DA004948E9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAABF99B1A0202DA004948E9 /* Security.framework */; };
@@ -24,22 +26,6 @@
 		FAABF9AB1A0202DA004948E9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAABF9A01A0202DA004948E9 /* SystemConfiguration.framework */; };
 		FAABF9AD1A0202DA004948E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAABF9A21A0202DA004948E9 /* UIKit.framework */; };
 		FAE7F9581A02046400DC86BD /* SkyCore.h in Headers */ = {isa = PBXBuildFile; fileRef = FAABF88E1A020276004948E9 /* SkyCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAF988081A314FF600B4EFF9 /* NSDate+ChineseCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF987D61A314FF600B4EFF9 /* NSDate+ChineseCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAF988091A314FF600B4EFF9 /* NSDate+ChineseCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF987D71A314FF600B4EFF9 /* NSDate+ChineseCalendar.m */; };
-		FAF9880A1A314FF600B4EFF9 /* NSObject+NotNull.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF987D81A314FF600B4EFF9 /* NSObject+NotNull.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAF9880B1A314FF600B4EFF9 /* NSObject+NotNull.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF987D91A314FF600B4EFF9 /* NSObject+NotNull.m */; };
-		FAF9880C1A314FF600B4EFF9 /* NSString+BlankFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF987DA1A314FF600B4EFF9 /* NSString+BlankFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAF9880D1A314FF600B4EFF9 /* NSString+BlankFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF987DB1A314FF600B4EFF9 /* NSString+BlankFilter.m */; };
-		FAF9880E1A314FF600B4EFF9 /* NSString+DateFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF987DC1A314FF600B4EFF9 /* NSString+DateFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAF9880F1A314FF600B4EFF9 /* NSString+DateFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF987DD1A314FF600B4EFF9 /* NSString+DateFormat.m */; };
-		FAF988101A314FF600B4EFF9 /* NSString+md5.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF987DE1A314FF600B4EFF9 /* NSString+md5.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAF988111A314FF600B4EFF9 /* NSString+md5.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF987DF1A314FF600B4EFF9 /* NSString+md5.m */; };
-		FAF988121A314FF600B4EFF9 /* PinYin.c in Sources */ = {isa = PBXBuildFile; fileRef = FAF987E01A314FF600B4EFF9 /* PinYin.c */; };
-		FAF988131A314FF600B4EFF9 /* PinYin.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF987E11A314FF600B4EFF9 /* PinYin.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAF988141A314FF600B4EFF9 /* SCBaseDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF987E21A314FF600B4EFF9 /* SCBaseDomain.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAF988151A314FF600B4EFF9 /* SCBaseDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF987E31A314FF600B4EFF9 /* SCBaseDomain.m */; };
-		FAF988161A314FF600B4EFF9 /* SCBaseManagedDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF987E41A314FF600B4EFF9 /* SCBaseManagedDomain.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAF988171A314FF600B4EFF9 /* SCBaseManagedDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF987E51A314FF600B4EFF9 /* SCBaseManagedDomain.m */; };
 		FAF988181A314FF600B4EFF9 /* SCAppCache.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF987E71A314FF600B4EFF9 /* SCAppCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FAF988191A314FF600B4EFF9 /* SCAppCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF987E81A314FF600B4EFF9 /* SCAppCache.m */; };
 		FAF9881A1A314FF600B4EFF9 /* SCBaseService.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF987E91A314FF600B4EFF9 /* SCBaseService.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -66,8 +52,6 @@
 		FAF9882F1A314FF600B4EFF9 /* UIButton+VerticalAlign.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF987FF1A314FF600B4EFF9 /* UIButton+VerticalAlign.m */; };
 		FAF988301A314FF600B4EFF9 /* UIImage+Addons.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF988001A314FF600B4EFF9 /* UIImage+Addons.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FAF988311A314FF600B4EFF9 /* UIImage+Addons.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF988011A314FF600B4EFF9 /* UIImage+Addons.m */; };
-		FAF988851A3162A000B4EFF9 /* NSObject+Persistence.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF988831A3162A000B4EFF9 /* NSObject+Persistence.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAF988861A3162A000B4EFF9 /* NSObject+Persistence.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF988841A3162A000B4EFF9 /* NSObject+Persistence.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,8 +65,22 @@
 		33E331E61F903353003F428D /* SCApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCApplication.h; sourceTree = "<group>"; };
 		33E331E71F903353003F428D /* SCApplication.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCApplication.m; sourceTree = "<group>"; };
 		33E331EA1F903946003F428D /* ApplicationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplicationTests.m; sourceTree = "<group>"; };
-		33E801011F8E825D00CF5CB4 /* SCBaseDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBaseDao.h; sourceTree = "<group>"; };
-		33E801021F8E825D00CF5CB4 /* SCBaseDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBaseDao.m; sourceTree = "<group>"; };
+		33E331F11F9187AA003F428D /* SCBaseDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBaseDao.h; sourceTree = "<group>"; };
+		33E331F21F9187AA003F428D /* SCBaseDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBaseDao.m; sourceTree = "<group>"; };
+		33E331F31F9187AA003F428D /* SCBaseManagedDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBaseManagedDomain.h; sourceTree = "<group>"; };
+		33E331F41F9187AA003F428D /* SCBaseManagedDomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBaseManagedDomain.m; sourceTree = "<group>"; };
+		33E331FA1F9187CC003F428D /* NSDate+ChineseCalendar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+ChineseCalendar.h"; sourceTree = "<group>"; };
+		33E331FB1F9187CC003F428D /* NSDate+ChineseCalendar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ChineseCalendar.m"; sourceTree = "<group>"; };
+		33E331FC1F9187CC003F428D /* NSObject+NotNull.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+NotNull.h"; sourceTree = "<group>"; };
+		33E331FD1F9187CC003F428D /* NSObject+NotNull.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NotNull.m"; sourceTree = "<group>"; };
+		33E331FE1F9187CC003F428D /* NSString+BlankFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+BlankFilter.h"; sourceTree = "<group>"; };
+		33E331FF1F9187CC003F428D /* NSString+BlankFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+BlankFilter.m"; sourceTree = "<group>"; };
+		33E332001F9187CC003F428D /* NSString+DateFormat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+DateFormat.h"; sourceTree = "<group>"; };
+		33E332011F9187CC003F428D /* NSString+DateFormat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+DateFormat.m"; sourceTree = "<group>"; };
+		33E332021F9187CC003F428D /* NSString+md5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+md5.h"; sourceTree = "<group>"; };
+		33E332031F9187CC003F428D /* NSString+md5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+md5.m"; sourceTree = "<group>"; };
+		33E332041F9187CC003F428D /* PinYin.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = PinYin.c; sourceTree = "<group>"; };
+		33E332051F9187CC003F428D /* PinYin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PinYin.h; sourceTree = "<group>"; };
 		50F3718501A78E7166D2B316 /* libPods-SkyCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SkyCore.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70B2FFF89965B4477989845B /* Pods-SkyCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyCore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SkyCore/Pods-SkyCore.debug.xcconfig"; sourceTree = "<group>"; };
 		AEC855E36DF5BB1C8EC30209 /* Pods-exampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-exampleTests/Pods-exampleTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -104,22 +102,6 @@
 		FAABF9A11A0202DA004948E9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FAABF9A21A0202DA004948E9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FAABF9A31A0202DA004948E9 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
-		FAF987D61A314FF600B4EFF9 /* NSDate+ChineseCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ChineseCalendar.h"; sourceTree = "<group>"; };
-		FAF987D71A314FF600B4EFF9 /* NSDate+ChineseCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ChineseCalendar.m"; sourceTree = "<group>"; };
-		FAF987D81A314FF600B4EFF9 /* NSObject+NotNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+NotNull.h"; sourceTree = "<group>"; };
-		FAF987D91A314FF600B4EFF9 /* NSObject+NotNull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NotNull.m"; sourceTree = "<group>"; };
-		FAF987DA1A314FF600B4EFF9 /* NSString+BlankFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BlankFilter.h"; sourceTree = "<group>"; };
-		FAF987DB1A314FF600B4EFF9 /* NSString+BlankFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BlankFilter.m"; sourceTree = "<group>"; };
-		FAF987DC1A314FF600B4EFF9 /* NSString+DateFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DateFormat.h"; sourceTree = "<group>"; };
-		FAF987DD1A314FF600B4EFF9 /* NSString+DateFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DateFormat.m"; sourceTree = "<group>"; };
-		FAF987DE1A314FF600B4EFF9 /* NSString+md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+md5.h"; sourceTree = "<group>"; };
-		FAF987DF1A314FF600B4EFF9 /* NSString+md5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+md5.m"; sourceTree = "<group>"; };
-		FAF987E01A314FF600B4EFF9 /* PinYin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PinYin.c; sourceTree = "<group>"; };
-		FAF987E11A314FF600B4EFF9 /* PinYin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinYin.h; sourceTree = "<group>"; };
-		FAF987E21A314FF600B4EFF9 /* SCBaseDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBaseDomain.h; sourceTree = "<group>"; };
-		FAF987E31A314FF600B4EFF9 /* SCBaseDomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBaseDomain.m; sourceTree = "<group>"; };
-		FAF987E41A314FF600B4EFF9 /* SCBaseManagedDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBaseManagedDomain.h; sourceTree = "<group>"; };
-		FAF987E51A314FF600B4EFF9 /* SCBaseManagedDomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBaseManagedDomain.m; sourceTree = "<group>"; };
 		FAF987E71A314FF600B4EFF9 /* SCAppCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAppCache.h; sourceTree = "<group>"; };
 		FAF987E81A314FF600B4EFF9 /* SCAppCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAppCache.m; sourceTree = "<group>"; };
 		FAF987E91A314FF600B4EFF9 /* SCBaseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBaseService.h; sourceTree = "<group>"; };
@@ -146,8 +128,6 @@
 		FAF987FF1A314FF600B4EFF9 /* UIButton+VerticalAlign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+VerticalAlign.m"; sourceTree = "<group>"; };
 		FAF988001A314FF600B4EFF9 /* UIImage+Addons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Addons.h"; sourceTree = "<group>"; };
 		FAF988011A314FF600B4EFF9 /* UIImage+Addons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Addons.m"; sourceTree = "<group>"; };
-		FAF988831A3162A000B4EFF9 /* NSObject+Persistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Persistence.h"; sourceTree = "<group>"; };
-		FAF988841A3162A000B4EFF9 /* NSObject+Persistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Persistence.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +171,7 @@
 		33A89DDF1F8E8CDF00EB38F0 /* Store */ = {
 			isa = PBXGroup;
 			children = (
+				33E331F01F9187AA003F428D /* dao */,
 				33A89DE01F8E8CF500EB38F0 /* SCStore.h */,
 				33A89DE11F8E8CF500EB38F0 /* SCStore.m */,
 			);
@@ -207,13 +188,34 @@
 			path = SkyCoreTests;
 			sourceTree = "<group>";
 		};
-		33E801001F8E825D00CF5CB4 /* dao */ = {
+		33E331F01F9187AA003F428D /* dao */ = {
 			isa = PBXGroup;
 			children = (
-				33E801011F8E825D00CF5CB4 /* SCBaseDao.h */,
-				33E801021F8E825D00CF5CB4 /* SCBaseDao.m */,
+				33E331F11F9187AA003F428D /* SCBaseDao.h */,
+				33E331F21F9187AA003F428D /* SCBaseDao.m */,
+				33E331F31F9187AA003F428D /* SCBaseManagedDomain.h */,
+				33E331F41F9187AA003F428D /* SCBaseManagedDomain.m */,
 			);
 			path = dao;
+			sourceTree = "<group>";
+		};
+		33E331F91F9187CC003F428D /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				33E331FA1F9187CC003F428D /* NSDate+ChineseCalendar.h */,
+				33E331FB1F9187CC003F428D /* NSDate+ChineseCalendar.m */,
+				33E331FC1F9187CC003F428D /* NSObject+NotNull.h */,
+				33E331FD1F9187CC003F428D /* NSObject+NotNull.m */,
+				33E331FE1F9187CC003F428D /* NSString+BlankFilter.h */,
+				33E331FF1F9187CC003F428D /* NSString+BlankFilter.m */,
+				33E332001F9187CC003F428D /* NSString+DateFormat.h */,
+				33E332011F9187CC003F428D /* NSString+DateFormat.m */,
+				33E332021F9187CC003F428D /* NSString+md5.h */,
+				33E332031F9187CC003F428D /* NSString+md5.m */,
+				33E332041F9187CC003F428D /* PinYin.c */,
+				33E332051F9187CC003F428D /* PinYin.h */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		FAABF8771A020276004948E9 = {
@@ -278,38 +280,12 @@
 		FAF987D11A314FF600B4EFF9 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				33E331F91F9187CC003F428D /* Category */,
 				33A89DDF1F8E8CDF00EB38F0 /* Store */,
-				33E801001F8E825D00CF5CB4 /* dao */,
-				FAF987D51A314FF600B4EFF9 /* domain */,
 				FAF987E61A314FF600B4EFF9 /* service */,
 				FAF987F31A314FF600B4EFF9 /* view */,
 			);
 			path = Source;
-			sourceTree = "<group>";
-		};
-		FAF987D51A314FF600B4EFF9 /* domain */ = {
-			isa = PBXGroup;
-			children = (
-				FAF987D61A314FF600B4EFF9 /* NSDate+ChineseCalendar.h */,
-				FAF987D71A314FF600B4EFF9 /* NSDate+ChineseCalendar.m */,
-				FAF987D81A314FF600B4EFF9 /* NSObject+NotNull.h */,
-				FAF987D91A314FF600B4EFF9 /* NSObject+NotNull.m */,
-				FAF987DA1A314FF600B4EFF9 /* NSString+BlankFilter.h */,
-				FAF987DB1A314FF600B4EFF9 /* NSString+BlankFilter.m */,
-				FAF987DC1A314FF600B4EFF9 /* NSString+DateFormat.h */,
-				FAF987DD1A314FF600B4EFF9 /* NSString+DateFormat.m */,
-				FAF987DE1A314FF600B4EFF9 /* NSString+md5.h */,
-				FAF987DF1A314FF600B4EFF9 /* NSString+md5.m */,
-				FAF987E01A314FF600B4EFF9 /* PinYin.c */,
-				FAF987E11A314FF600B4EFF9 /* PinYin.h */,
-				FAF987E21A314FF600B4EFF9 /* SCBaseDomain.h */,
-				FAF987E31A314FF600B4EFF9 /* SCBaseDomain.m */,
-				FAF987E41A314FF600B4EFF9 /* SCBaseManagedDomain.h */,
-				FAF987E51A314FF600B4EFF9 /* SCBaseManagedDomain.m */,
-				FAF988831A3162A000B4EFF9 /* NSObject+Persistence.h */,
-				FAF988841A3162A000B4EFF9 /* NSObject+Persistence.m */,
-			);
-			path = domain;
 			sourceTree = "<group>";
 		};
 		FAF987E61A314FF600B4EFF9 /* service */ = {
@@ -363,30 +339,22 @@
 			files = (
 				FAE7F9581A02046400DC86BD /* SkyCore.h in Headers */,
 				FAF9882C1A314FF600B4EFF9 /* UIButton+Block.h in Headers */,
+				33E331F51F9187AA003F428D /* SCBaseDao.h in Headers */,
 				FAF9881C1A314FF600B4EFF9 /* SCCommonTools.h in Headers */,
 				FAF9882A1A314FF600B4EFF9 /* PhotoImageScrollView.h in Headers */,
 				FAF9882E1A314FF600B4EFF9 /* UIButton+VerticalAlign.h in Headers */,
-				FAF9880E1A314FF600B4EFF9 /* NSString+DateFormat.h in Headers */,
 				FAF988301A314FF600B4EFF9 /* UIImage+Addons.h in Headers */,
 				FAF988201A314FF600B4EFF9 /* SCLocationService.h in Headers */,
 				FAF9881A1A314FF600B4EFF9 /* SCBaseService.h in Headers */,
 				FAF988241A314FF600B4EFF9 /* DragView.h in Headers */,
-				FAF988081A314FF600B4EFF9 /* NSDate+ChineseCalendar.h in Headers */,
-				FAF988161A314FF600B4EFF9 /* SCBaseManagedDomain.h in Headers */,
 				FAF988181A314FF600B4EFF9 /* SCAppCache.h in Headers */,
 				FAF988281A314FF600B4EFF9 /* OBShapedButton.h in Headers */,
 				FAF988221A314FF600B4EFF9 /* SCSysconfig.h in Headers */,
 				33E331E81F903353003F428D /* SCApplication.h in Headers */,
 				FAF988261A314FF600B4EFF9 /* MKMapView+ZoomLevel.h in Headers */,
-				FAF9880C1A314FF600B4EFF9 /* NSString+BlankFilter.h in Headers */,
-				FAF988141A314FF600B4EFF9 /* SCBaseDomain.h in Headers */,
-				FAF988101A314FF600B4EFF9 /* NSString+md5.h in Headers */,
-				FAF9880A1A314FF600B4EFF9 /* NSObject+NotNull.h in Headers */,
+				33E331F71F9187AA003F428D /* SCBaseManagedDomain.h in Headers */,
 				FAF9881E1A314FF600B4EFF9 /* SCFileOper.h in Headers */,
-				FAF988131A314FF600B4EFF9 /* PinYin.h in Headers */,
 				33A89DE21F8E8CF500EB38F0 /* SCStore.h in Headers */,
-				33E801031F8E825D00CF5CB4 /* SCBaseDao.h in Headers */,
-				FAF988851A3162A000B4EFF9 /* NSObject+Persistence.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,27 +499,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAF988191A314FF600B4EFF9 /* SCAppCache.m in Sources */,
-				FAF9880D1A314FF600B4EFF9 /* NSString+BlankFilter.m in Sources */,
 				FAF9882F1A314FF600B4EFF9 /* UIButton+VerticalAlign.m in Sources */,
 				FAF9881D1A314FF600B4EFF9 /* SCCommonTools.m in Sources */,
 				FAF9882D1A314FF600B4EFF9 /* UIButton+Block.m in Sources */,
-				FAF988121A314FF600B4EFF9 /* PinYin.c in Sources */,
-				FAF988111A314FF600B4EFF9 /* NSString+md5.m in Sources */,
 				33A89DE31F8E8CF500EB38F0 /* SCStore.m in Sources */,
+				33E331F81F9187AA003F428D /* SCBaseManagedDomain.m in Sources */,
 				FAF988231A314FF600B4EFF9 /* SCSysconfig.m in Sources */,
 				FAF988311A314FF600B4EFF9 /* UIImage+Addons.m in Sources */,
-				FAF9880B1A314FF600B4EFF9 /* NSObject+NotNull.m in Sources */,
 				FAF988271A314FF600B4EFF9 /* MKMapView+ZoomLevel.m in Sources */,
-				FAF988091A314FF600B4EFF9 /* NSDate+ChineseCalendar.m in Sources */,
 				FAF9881F1A314FF600B4EFF9 /* SCFileOper.m in Sources */,
 				FAF9881B1A314FF600B4EFF9 /* SCBaseService.m in Sources */,
-				FAF988171A314FF600B4EFF9 /* SCBaseManagedDomain.m in Sources */,
-				FAF9880F1A314FF600B4EFF9 /* NSString+DateFormat.m in Sources */,
-				33E801041F8E825D00CF5CB4 /* SCBaseDao.m in Sources */,
-				FAF988151A314FF600B4EFF9 /* SCBaseDomain.m in Sources */,
 				FAF988291A314FF600B4EFF9 /* OBShapedButton.m in Sources */,
+				33E331F61F9187AA003F428D /* SCBaseDao.m in Sources */,
 				FAF988251A314FF600B4EFF9 /* DragView.m in Sources */,
-				FAF988861A3162A000B4EFF9 /* NSObject+Persistence.m in Sources */,
 				FAF988211A314FF600B4EFF9 /* SCLocationService.m in Sources */,
 				FAF9882B1A314FF600B4EFF9 /* PhotoImageScrollView.m in Sources */,
 				33E331E91F903353003F428D /* SCApplication.m in Sources */,
