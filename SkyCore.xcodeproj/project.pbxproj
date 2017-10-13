@@ -9,9 +9,11 @@
 /* Begin PBXBuildFile section */
 		33A89DE21F8E8CF500EB38F0 /* SCStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 33A89DE01F8E8CF500EB38F0 /* SCStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		33A89DE31F8E8CF500EB38F0 /* SCStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A89DE11F8E8CF500EB38F0 /* SCStore.m */; };
-		33A89DEB1F8E8F5600EB38F0 /* SkyCoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A89DEA1F8E8F5600EB38F0 /* SkyCoreTests.m */; };
 		33A89DF11F8E8FAB00EB38F0 /* StoreTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A89DF01F8E8FAB00EB38F0 /* StoreTest.m */; };
 		33BC0CE51F8FC1C40062FC5C /* SkyCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAABF8821A020276004948E9 /* SkyCore.framework */; };
+		33E331E81F903353003F428D /* SCApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = 33E331E61F903353003F428D /* SCApplication.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33E331E91F903353003F428D /* SCApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E331E71F903353003F428D /* SCApplication.m */; };
+		33E331EB1F903946003F428D /* ApplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E331EA1F903946003F428D /* ApplicationTests.m */; };
 		33E801031F8E825D00CF5CB4 /* SCBaseDao.h in Headers */ = {isa = PBXBuildFile; fileRef = 33E801011F8E825D00CF5CB4 /* SCBaseDao.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		33E801041F8E825D00CF5CB4 /* SCBaseDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E801021F8E825D00CF5CB4 /* SCBaseDao.m */; };
 		BD82C7FB592A309C7034EFCF /* libPods-SkyCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F3718501A78E7166D2B316 /* libPods-SkyCore.a */; };
@@ -74,9 +76,11 @@
 		33A89DE01F8E8CF500EB38F0 /* SCStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCStore.h; sourceTree = "<group>"; };
 		33A89DE11F8E8CF500EB38F0 /* SCStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCStore.m; sourceTree = "<group>"; };
 		33A89DE81F8E8F5500EB38F0 /* SkyCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		33A89DEA1F8E8F5600EB38F0 /* SkyCoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SkyCoreTests.m; sourceTree = "<group>"; };
 		33A89DEC1F8E8F5600EB38F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33A89DF01F8E8FAB00EB38F0 /* StoreTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreTest.m; sourceTree = "<group>"; };
+		33E331E61F903353003F428D /* SCApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCApplication.h; sourceTree = "<group>"; };
+		33E331E71F903353003F428D /* SCApplication.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCApplication.m; sourceTree = "<group>"; };
+		33E331EA1F903946003F428D /* ApplicationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplicationTests.m; sourceTree = "<group>"; };
 		33E801011F8E825D00CF5CB4 /* SCBaseDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBaseDao.h; sourceTree = "<group>"; };
 		33E801021F8E825D00CF5CB4 /* SCBaseDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBaseDao.m; sourceTree = "<group>"; };
 		3A6B8C140C952B04102DA86B /* Pods-SkyCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyCore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SkyCore/Pods-SkyCore.debug.xcconfig"; sourceTree = "<group>"; };
@@ -196,9 +200,9 @@
 		33A89DE91F8E8F5500EB38F0 /* SkyCoreTests */ = {
 			isa = PBXGroup;
 			children = (
-				33A89DEA1F8E8F5600EB38F0 /* SkyCoreTests.m */,
 				33A89DEC1F8E8F5600EB38F0 /* Info.plist */,
 				33A89DF01F8E8FAB00EB38F0 /* StoreTest.m */,
+				33E331EA1F903946003F428D /* ApplicationTests.m */,
 			);
 			path = SkyCoreTests;
 			sourceTree = "<group>";
@@ -323,6 +327,8 @@
 				FAF987F01A314FF600B4EFF9 /* SCLocationService.m */,
 				FAF987F11A314FF600B4EFF9 /* SCSysconfig.h */,
 				FAF987F21A314FF600B4EFF9 /* SCSysconfig.m */,
+				33E331E61F903353003F428D /* SCApplication.h */,
+				33E331E71F903353003F428D /* SCApplication.m */,
 			);
 			path = service;
 			sourceTree = "<group>";
@@ -370,6 +376,7 @@
 				FAF988181A314FF600B4EFF9 /* SCAppCache.h in Headers */,
 				FAF988281A314FF600B4EFF9 /* OBShapedButton.h in Headers */,
 				FAF988221A314FF600B4EFF9 /* SCSysconfig.h in Headers */,
+				33E331E81F903353003F428D /* SCApplication.h in Headers */,
 				FAF988261A314FF600B4EFF9 /* MKMapView+ZoomLevel.h in Headers */,
 				FAF9880C1A314FF600B4EFF9 /* NSString+BlankFilter.h in Headers */,
 				FAF988141A314FF600B4EFF9 /* SCBaseDomain.h in Headers */,
@@ -514,8 +521,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33A89DEB1F8E8F5600EB38F0 /* SkyCoreTests.m in Sources */,
 				33A89DF11F8E8FAB00EB38F0 /* StoreTest.m in Sources */,
+				33E331EB1F903946003F428D /* ApplicationTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,6 +554,7 @@
 				FAF988861A3162A000B4EFF9 /* NSObject+Persistence.m in Sources */,
 				FAF988211A314FF600B4EFF9 /* SCLocationService.m in Sources */,
 				FAF9882B1A314FF600B4EFF9 /* PhotoImageScrollView.m in Sources */,
+				33E331E91F903353003F428D /* SCApplication.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
