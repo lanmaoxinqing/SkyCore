@@ -7,10 +7,12 @@
 //
 
 #import "SCStore.h"
+#import "SCApplication.h"
 
 @interface SCStore()
 
 @property(nonatomic, strong) NSUserDefaults *userDefaults;
+@property (nonatomic, copy) NSString *rootPath;
 
 @end
 
@@ -30,6 +32,17 @@
     self = [super init];
     if (self) {
         self.userDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"com.sky.core"];
+        self.rootPath = [[NSHomeDirectory() stringByAppendingPathComponent:@"Cache"] stringByAppendingPathComponent:SCApplication.bundleIdentifier];
+        BOOL isDirectory;
+        BOOL fileExists = [[NSFileManager defaultManager] fileExistsAtPath:self.rootPath isDirectory:&isDirectory];
+        if (!fileExists || !isDirectory) {
+            NSError *error = nil;
+            [[NSFileManager defaultManager] createDirectoryAtPath:self.rootPath withIntermediateDirectories:YES attributes:nil error:&error];
+            if (error) {
+                NSString *errorInfo = [NSString stringWithFormat:@"文件缓存根目录创建失败！\n%@", error.localizedDescription];
+                NSAssert(NO, errorInfo);
+            }
+        }
     }
     return self;
 }
@@ -129,7 +142,45 @@
 
 @end
 
+@implementation SCStoreFile
+@end
+
 @implementation SCStore (File)
+
+- (NSString *)pathForKey:(NSString *)key {
+    return [self.rootPath stringByAppendingPathComponent:key];
+}
+
+- (void)file_setData:(NSData *)data forKey:(NSString *)key {
+    [data writeToFile:[self pathForKey:key] atomically:YES];
+}
+
+- (void)file_setObject:(id<NSCoding>)obj forKey:(NSString *)key {
+    [NSKeyedArchiver archiveRootObject:obj toFile:[self pathForKey:key]];
+}
+
+- (id<NSCoding>)file_objectForKey:(NSString *)key {
+    return [NSKeyedUnarchiver unarchiveObjectWithFile:[self pathForKey:key]];
+}
+
+-(SCStoreFile *)fileForKey:(NSString *)key {
+    NSData *fileData = nil;
+    NSDate *lastModifyDate = nil;
+    NSString *fileFullPath = [self pathForKey:key];
+    if (fileFullPath.length > 0) {
+        NSFileManager *fileMgr = [NSFileManager defaultManager];
+        fileData = [fileMgr contentsAtPath:fileFullPath];
+        NSDictionary *fileAttributes = [fileMgr attributesOfItemAtPath:fileFullPath error:nil];
+        lastModifyDate = fileAttributes[NSFileModificationDate] ?: fileAttributes[NSFileCreationDate];
+    }
+    
+    SCStoreFile *file = [SCStoreFile new];
+    file.path = fileFullPath;
+    file.data = fileData;
+    file.lastModifyDate = lastModifyDate;
+    
+    return file;
+}
 
 @end
 

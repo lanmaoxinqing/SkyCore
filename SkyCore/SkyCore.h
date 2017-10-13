@@ -14,6 +14,7 @@
 #import <SkyCore/SCBaseService.h>
 #import <SkyCore/NSObject+NotNull.h>
 #import <SkyCore/SCStore.h>
+#import <SkyCore/SCApplication.h>
 
 @interface SkyCore : NSObject
 

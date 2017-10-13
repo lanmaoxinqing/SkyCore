@@ -40,23 +40,39 @@
 - (void)testUserDefaults {
     NSString *key = @"test";
     [[SCStore defaultStore] ud_setObject:@"111" forKey:key];
-    XCTAssert([[[SCStore defaultStore] ud_stringForKey:key] isEqualToString:@"111"]);
+    XCTAssertEqualObjects([[SCStore defaultStore] ud_stringForKey:key], @"111");
     
     [[SCStore defaultStore] ud_setObject:@100 forKey:key];
-    XCTAssert([[SCStore defaultStore] ud_integerForKey:key] == 100);
+    XCTAssertEqual([[SCStore defaultStore] ud_integerForKey:key], 100);
     
     NSArray *arr = @[@"aaa", @"bbb"];
     [[SCStore defaultStore] ud_setObject:arr forKey:key];
-    XCTAssert([[[SCStore defaultStore] ud_arrayForKey:key][0] isEqualToString:@"aaa"]);
+    XCTAssertEqualObjects([[SCStore defaultStore] ud_arrayForKey:key][0], @"aaa");
 
     NSDictionary *dict = @{
                            @"key" : @"value"
                            };
     [[SCStore defaultStore] ud_setObject:dict forKey:key];
-    XCTAssert([[[SCStore defaultStore] ud_dictionaryForKey:key][@"key"] isEqualToString:@"value"]);
+    XCTAssertEqualObjects([[SCStore defaultStore] ud_dictionaryForKey:key][@"key"], @"value");
     
     [[SCStore defaultStore] ud_setObject:@YES forKey:key];
-    XCTAssert([[SCStore defaultStore] ud_boolForKey:key]);
+    XCTAssertTrue([[SCStore defaultStore] ud_boolForKey:key]);
 }
+
+- (void)testFileStore {
+    NSArray *arr = @[@"aaa", @"bbb"];
+    [[SCStore defaultStore] file_setObject:arr forKey:@"arr"];
+    NSArray *resultArr = (NSArray *)[[SCStore defaultStore] file_objectForKey:@"arr"];
+    XCTAssertEqualObjects(resultArr[0], @"aaa");
+    
+    SCStoreFile *file = [[SCStore defaultStore] fileForKey:@"arr"];
+    XCTAssertNotNil(file);
+    NSArray *resultArr2 = [NSKeyedUnarchiver unarchiveObjectWithData:file.data];
+    XCTAssertEqualObjects(resultArr2[0], @"aaa");
+    XCTAssertNotNil(file.lastModifyDate);
+    XCTAssertEqualObjects(file.path, [[SCStore defaultStore] pathForKey:@"arr"]);
+    
+}
+
 
 @end
