@@ -11,14 +11,14 @@
 
 @implementation NSObject(NotNull)
 
--(BOOL)isNotNull{
+- (BOOL)isNotNull{
     if(self!=nil && self!=NULL && (NSNull *)self!=[NSNull null]){
         return YES;
     }
     return NO;
 }
 
--(BOOL)isNotEmpty{
+- (BOOL)isNotEmpty{
     if([self isKindOfClass:[NSArray class]] ||
        [self isKindOfClass:[NSMutableArray class]] ||
        [self isKindOfClass:[NSSet class]] ||

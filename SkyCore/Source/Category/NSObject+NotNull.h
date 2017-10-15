@@ -15,11 +15,11 @@
  *
  *  @return 是否为空
  */
--(BOOL) isNotNull;
+- (BOOL)isNotNull;
 /**
  *  数据内容非空判断,字符串数组字典如已初始化,但内容为空,判断为NO
  *
  *  @return 是否为空
  */
--(BOOL) isNotEmpty;
+- (BOOL)isNotEmpty;
 @end

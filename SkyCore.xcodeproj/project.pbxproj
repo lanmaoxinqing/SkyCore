@@ -18,6 +18,9 @@
 		33E331F61F9187AA003F428D /* SCBaseDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E331F21F9187AA003F428D /* SCBaseDao.m */; };
 		33E331F71F9187AA003F428D /* SCBaseManagedDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = 33E331F31F9187AA003F428D /* SCBaseManagedDomain.h */; };
 		33E331F81F9187AA003F428D /* SCBaseManagedDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E331F41F9187AA003F428D /* SCBaseManagedDomain.m */; };
+		33E332081F918992003F428D /* NSString+SCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 33E332061F918992003F428D /* NSString+SCUtils.h */; };
+		33E332091F918992003F428D /* NSString+SCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E332071F918992003F428D /* NSString+SCUtils.m */; };
+		33E3320C1F918B1A003F428D /* NSArray+SCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E3320B1F918B1A003F428D /* NSArray+SCUtils.m */; };
 		BD82C7FB592A309C7034EFCF /* libPods-SkyCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F3718501A78E7166D2B316 /* libPods-SkyCore.a */; };
 		FAABF88C1A020276004948E9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAABF88A1A020276004948E9 /* InfoPlist.strings */; };
 		FAABF9A61A0202DA004948E9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAABF99B1A0202DA004948E9 /* Security.framework */; };
@@ -81,6 +84,10 @@
 		33E332031F9187CC003F428D /* NSString+md5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+md5.m"; sourceTree = "<group>"; };
 		33E332041F9187CC003F428D /* PinYin.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = PinYin.c; sourceTree = "<group>"; };
 		33E332051F9187CC003F428D /* PinYin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PinYin.h; sourceTree = "<group>"; };
+		33E332061F918992003F428D /* NSString+SCUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+SCUtils.h"; sourceTree = "<group>"; };
+		33E332071F918992003F428D /* NSString+SCUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+SCUtils.m"; sourceTree = "<group>"; };
+		33E3320A1F918B1A003F428D /* NSArray+SCUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+SCUtils.h"; sourceTree = "<group>"; };
+		33E3320B1F918B1A003F428D /* NSArray+SCUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SCUtils.m"; sourceTree = "<group>"; };
 		50F3718501A78E7166D2B316 /* libPods-SkyCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SkyCore.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70B2FFF89965B4477989845B /* Pods-SkyCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyCore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SkyCore/Pods-SkyCore.debug.xcconfig"; sourceTree = "<group>"; };
 		AEC855E36DF5BB1C8EC30209 /* Pods-exampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-exampleTests/Pods-exampleTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -202,6 +209,8 @@
 		33E331F91F9187CC003F428D /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				33E3320A1F918B1A003F428D /* NSArray+SCUtils.h */,
+				33E3320B1F918B1A003F428D /* NSArray+SCUtils.m */,
 				33E331FA1F9187CC003F428D /* NSDate+ChineseCalendar.h */,
 				33E331FB1F9187CC003F428D /* NSDate+ChineseCalendar.m */,
 				33E331FC1F9187CC003F428D /* NSObject+NotNull.h */,
@@ -214,6 +223,8 @@
 				33E332031F9187CC003F428D /* NSString+md5.m */,
 				33E332041F9187CC003F428D /* PinYin.c */,
 				33E332051F9187CC003F428D /* PinYin.h */,
+				33E332061F918992003F428D /* NSString+SCUtils.h */,
+				33E332071F918992003F428D /* NSString+SCUtils.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -346,6 +357,7 @@
 				FAF988301A314FF600B4EFF9 /* UIImage+Addons.h in Headers */,
 				FAF988201A314FF600B4EFF9 /* SCLocationService.h in Headers */,
 				FAF9881A1A314FF600B4EFF9 /* SCBaseService.h in Headers */,
+				33E332081F918992003F428D /* NSString+SCUtils.h in Headers */,
 				FAF988241A314FF600B4EFF9 /* DragView.h in Headers */,
 				FAF988181A314FF600B4EFF9 /* SCAppCache.h in Headers */,
 				FAF988281A314FF600B4EFF9 /* OBShapedButton.h in Headers */,
@@ -505,6 +517,8 @@
 				33A89DE31F8E8CF500EB38F0 /* SCStore.m in Sources */,
 				33E331F81F9187AA003F428D /* SCBaseManagedDomain.m in Sources */,
 				FAF988231A314FF600B4EFF9 /* SCSysconfig.m in Sources */,
+				33E332091F918992003F428D /* NSString+SCUtils.m in Sources */,
+				33E3320C1F918B1A003F428D /* NSArray+SCUtils.m in Sources */,
 				FAF988311A314FF600B4EFF9 /* UIImage+Addons.m in Sources */,
 				FAF988271A314FF600B4EFF9 /* MKMapView+ZoomLevel.m in Sources */,
 				FAF9881F1A314FF600B4EFF9 /* SCFileOper.m in Sources */,
