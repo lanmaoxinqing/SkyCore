@@ -9,66 +9,15 @@
 #import "NSString+SCUtils.h"
 #import "NSArray+SCUtils.h"
 
-@implementation NSString (SCUtils)
-@end
-
 @implementation NSString (SCBlankFilter)
-
--(NSString *)stringByDeletingBlank{
-    NSString *str=[self stringByReplacingOccurrencesOfString:@" " withString:@""];
-    str=[str stringByReplacingOccurrencesOfString:@"    " withString:@""];
-    return str;
-}
-
--(NSString *)stringbyTrimmingBlank{
-    return [self stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"     "]];
-}
-
--(NSString *)stringByMergeBlank{
-    NSMutableString *resultStr=[self mutableCopy];
-    BOOL isFind = NO;
-    for(NSInteger i=[self length]-1;i>=0;i--){
-        unichar c=[self characterAtIndex:i];
-        //找到空格或tab制表符,统一替换为空格
-        if(!isFind && (c==' ' || c=='    ')){
-            [resultStr replaceCharactersInRange:NSMakeRange(i, 1) withString:@" "];
-            isFind=YES;
-        }
-        //连续找到空格或tab制表符,删除
-        else if(isFind && (c==' ' || c=='    ')){
-            [resultStr deleteCharactersInRange:NSMakeRange(i, 1)];
-        }
-        //重置状态
-        else{
-            isFind=NO;
-        }
-        //        if(c==' ' || c=='    '){
-        //            if(isFind){//多个空格，删除
-        //            }else{//第一个空格或Tab，统一替换为空格
-        //            }
-        //        }else{//其他字符，重置搜索状态
-        //            isFind=NO;
-        //        }
-    }
-    return resultStr;
-}
-
--(NSArray *)componentsSeparatedByBlank{
-    //合并空格
-    NSString *str=[self stringByMergeBlank];
-    //删除多余空格
-    str=[str stringbyTrimmingBlank];
-    //分割
-    return [str componentsSeparatedByString:@" "];
-}
 
 - (NSString *)sc_stringByMergeContinuousWhiteSpaceAndNewline __attribute__((const))
 {
-    NSString *mergedString = [[[self componentsSeparatedByString:@" "] sc_filter:^BOOL(NSString *obj) {
+    NSString *mergedString = [[[self componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] sc_filter:^BOOL(NSString *obj) {
         return [obj stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]].length > 0;
     }] componentsJoinedByString:@" "];
     
-    mergedString = [[[mergedString componentsSeparatedByString:@"\n"] sc_filter:^BOOL(NSString *obj) {
+    mergedString = [[[mergedString componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]] sc_filter:^BOOL(NSString *obj) {
         return [obj stringByTrimmingCharactersInSet:[NSCharacterSet newlineCharacterSet]].length > 0;
     }] componentsJoinedByString:@"\n"];
     return mergedString;
@@ -76,8 +25,8 @@
 
 - (NSString *)sc_stringByMergeContinuousNewline __attribute__((const))
 {
-    NSString *mergedString = [[[self componentsSeparatedByString:@"\n"] sc_filter:^BOOL(NSString *obj) {
-        return [obj stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]].length > 0;
+    NSString *mergedString = [[[self componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]] sc_filter:^BOOL(NSString *obj) {
+        return [obj stringByTrimmingCharactersInSet:[NSCharacterSet newlineCharacterSet]].length > 0;
     }] componentsJoinedByString:@"\n"];
     return mergedString;
 }
@@ -89,7 +38,7 @@
     }] componentsJoinedByString:@" "];
 }
 
-- (NSString *)sc_trim __attribute__((const))
+- (NSString *)sc_trimWhitespaceAndNewline __attribute__((const))
 {
     return [self stringByTrimmingCharactersInSet:
             [NSCharacterSet whitespaceAndNewlineCharacterSet]];
@@ -105,6 +54,102 @@
     return [NSString stringWithString:str];
 }
 
+@end
+
+//MARK:- 拼音
+@implementation NSString (SCChineseLetters)
+
+- (NSString *)firstLetter {
+    return [NSString firstLetterOfString:self];
+}
+
+- (NSString *)firstLetterForCharactorAtIndex:(NSInteger)index {
+    return [NSString firstLetterForCharactorAtIndex:index ofString:self];
+}
+
++ (NSString *)firstLetterOfString:(NSString *)str {
+    return [self firstLetterForCharactorAtIndex:0 ofString:str];
+}
+
++ (NSString *)firstLetterForCharactorAtIndex:(NSInteger)index ofString:(NSString *)str {
+    if (str.length == 0 || index >= str.length) {
+        return @"";
+    }
+    NSRange range = NSMakeRange(index, 1);
+    NSMutableString *aStr = [[str substringWithRange:range] mutableCopy];
+    //先转换为带声调的拼音
+    CFStringTransform((CFMutableStringRef)aStr,NULL, kCFStringTransformMandarinLatin,NO);
+    //再转换为不带声调的拼音
+    CFStringTransform((CFMutableStringRef)aStr,NULL, kCFStringTransformStripDiacritics,NO);
+    //转化为大写拼音
+    NSString *pinYin = [aStr capitalizedString];
+    //获取并返回首字母
+    if (pinYin.length == 0) {
+        return @"";
+    }
+    return [pinYin substringToIndex:1];
+}
+
+- (NSString *)letters {
+    if (self.length == 0) {
+        return @"";
+    }
+    NSMutableString *aStr = [self mutableCopy];
+    //先转换为带声调的拼音
+    CFStringTransform((CFMutableStringRef)aStr,NULL, kCFStringTransformMandarinLatin,NO);
+    //再转换为不带声调的拼音
+    CFStringTransform((CFMutableStringRef)aStr,NULL, kCFStringTransformStripDiacritics,NO);
+    //转化为大写拼音
+    return [aStr uppercaseString];
+}
 
 @end
 
+//MARK:- emoji
+@implementation NSString (MZEmoji)
+
+- (NSString *)emoji_substringFromIndex:(NSUInteger)from {
+    NSRange range = NSMakeRange(from, self.length - from);
+    return [self emoji_substringWithRange:range];
+}
+
+- (NSString *)emoji_substringWithRange:(NSRange)range {
+    NSRange emojiRange = [self rangeOfComposedCharacterSequencesForRange:range];
+    return [self substringWithRange:emojiRange];
+}
+
+- (NSString *)emoji_substringToIndex:(NSUInteger)to {
+    if (to > self.length) {
+        to = self.length;
+    }
+    NSRange range = NSMakeRange(0, to);
+    return [self emoji_substringWithRange:range];
+}
+
+@end
+
+//MARK:- Secret
+@implementation NSString (SCSecret)
+
+- (NSString *)stringByCoverString:(NSString *)cover inRange:(NSRange)range {
+    //起点超过长度,不更改
+    if (range.location > self.length - 1) {
+        return self;
+    }
+    if (cover.length == 0) {
+        cover = @"*";
+    }
+    range.length = MIN(range.length, self.length - range.location);
+    NSMutableString *fixedCover = [NSMutableString string];
+    if (cover.length >= range.length) {
+        [fixedCover appendString:[cover emoji_substringToIndex:range.length]];
+    } else {
+        while (fixedCover.length < range.length) {
+            [fixedCover appendString:cover];
+        }
+        fixedCover = [[fixedCover emoji_substringToIndex:range.length] mutableCopy];
+    }
+    return [self stringByReplacingCharactersInRange:range withString:fixedCover];
+}
+
+@end

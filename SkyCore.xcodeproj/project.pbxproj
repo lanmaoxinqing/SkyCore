@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31D25B4B1F9772740016C93B /* SkyCoreUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31D25B421F9772740016C93B /* SkyCoreUtils.framework */; };
+		31D25B501F9772750016C93B /* SkyCoreUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D25B4F1F9772750016C93B /* SkyCoreUtilsTests.m */; };
+		31D25B521F9772750016C93B /* SkyCoreUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 31D25B441F9772740016C93B /* SkyCoreUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31D25B5C1F9772BC0016C93B /* NSDate+ChineseCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 31D25B5A1F9772BC0016C93B /* NSDate+ChineseCalendar.h */; };
+		31D25B5D1F9772BC0016C93B /* NSDate+ChineseCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D25B5B1F9772BC0016C93B /* NSDate+ChineseCalendar.m */; };
+		31D25B5F1F9786930016C93B /* StringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D25B5E1F9786930016C93B /* StringTests.m */; };
 		33A89DE21F8E8CF500EB38F0 /* SCStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 33A89DE01F8E8CF500EB38F0 /* SCStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		33A89DE31F8E8CF500EB38F0 /* SCStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A89DE11F8E8CF500EB38F0 /* SCStore.m */; };
 		33A89DF11F8E8FAB00EB38F0 /* StoreTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A89DF01F8E8FAB00EB38F0 /* StoreTest.m */; };
@@ -18,7 +24,7 @@
 		33E331F61F9187AA003F428D /* SCBaseDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E331F21F9187AA003F428D /* SCBaseDao.m */; };
 		33E331F71F9187AA003F428D /* SCBaseManagedDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = 33E331F31F9187AA003F428D /* SCBaseManagedDomain.h */; };
 		33E331F81F9187AA003F428D /* SCBaseManagedDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E331F41F9187AA003F428D /* SCBaseManagedDomain.m */; };
-		33E332081F918992003F428D /* NSString+SCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 33E332061F918992003F428D /* NSString+SCUtils.h */; };
+		33E332081F918992003F428D /* NSString+SCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 33E332061F918992003F428D /* NSString+SCUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		33E332091F918992003F428D /* NSString+SCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E332071F918992003F428D /* NSString+SCUtils.m */; };
 		33E3320C1F918B1A003F428D /* NSArray+SCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E3320B1F918B1A003F428D /* NSArray+SCUtils.m */; };
 		BD82C7FB592A309C7034EFCF /* libPods-SkyCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F3718501A78E7166D2B316 /* libPods-SkyCore.a */; };
@@ -57,9 +63,28 @@
 		FAF988311A314FF600B4EFF9 /* UIImage+Addons.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF988011A314FF600B4EFF9 /* UIImage+Addons.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		31D25B4C1F9772740016C93B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAABF8781A020276004948E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31D25B411F9772740016C93B;
+			remoteInfo = SkyCoreUtils;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		182179C94103E7C1F3C81F56 /* Pods-example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example.release.xcconfig"; path = "Pods/Target Support Files/Pods-example/Pods-example.release.xcconfig"; sourceTree = "<group>"; };
 		30F136BBFA816E563E49B995 /* Pods-example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-example/Pods-example.debug.xcconfig"; sourceTree = "<group>"; };
+		31D25B421F9772740016C93B /* SkyCoreUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SkyCoreUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31D25B441F9772740016C93B /* SkyCoreUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SkyCoreUtils.h; sourceTree = "<group>"; };
+		31D25B451F9772740016C93B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31D25B4A1F9772740016C93B /* SkyCoreUtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyCoreUtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		31D25B4F1F9772750016C93B /* SkyCoreUtilsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SkyCoreUtilsTests.m; sourceTree = "<group>"; };
+		31D25B511F9772750016C93B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31D25B5A1F9772BC0016C93B /* NSDate+ChineseCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ChineseCalendar.h"; sourceTree = "<group>"; };
+		31D25B5B1F9772BC0016C93B /* NSDate+ChineseCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ChineseCalendar.m"; sourceTree = "<group>"; };
+		31D25B5E1F9786930016C93B /* StringTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringTests.m; sourceTree = "<group>"; };
 		33A89DE01F8E8CF500EB38F0 /* SCStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCStore.h; sourceTree = "<group>"; };
 		33A89DE11F8E8CF500EB38F0 /* SCStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCStore.m; sourceTree = "<group>"; };
 		33A89DE81F8E8F5500EB38F0 /* SkyCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,16 +97,12 @@
 		33E331F21F9187AA003F428D /* SCBaseDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBaseDao.m; sourceTree = "<group>"; };
 		33E331F31F9187AA003F428D /* SCBaseManagedDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBaseManagedDomain.h; sourceTree = "<group>"; };
 		33E331F41F9187AA003F428D /* SCBaseManagedDomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBaseManagedDomain.m; sourceTree = "<group>"; };
-		33E331FA1F9187CC003F428D /* NSDate+ChineseCalendar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+ChineseCalendar.h"; sourceTree = "<group>"; };
-		33E331FB1F9187CC003F428D /* NSDate+ChineseCalendar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ChineseCalendar.m"; sourceTree = "<group>"; };
 		33E331FC1F9187CC003F428D /* NSObject+NotNull.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+NotNull.h"; sourceTree = "<group>"; };
 		33E331FD1F9187CC003F428D /* NSObject+NotNull.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NotNull.m"; sourceTree = "<group>"; };
-		33E331FE1F9187CC003F428D /* NSString+BlankFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+BlankFilter.h"; sourceTree = "<group>"; };
-		33E331FF1F9187CC003F428D /* NSString+BlankFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+BlankFilter.m"; sourceTree = "<group>"; };
 		33E332001F9187CC003F428D /* NSString+DateFormat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+DateFormat.h"; sourceTree = "<group>"; };
 		33E332011F9187CC003F428D /* NSString+DateFormat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+DateFormat.m"; sourceTree = "<group>"; };
-		33E332021F9187CC003F428D /* NSString+md5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+md5.h"; sourceTree = "<group>"; };
-		33E332031F9187CC003F428D /* NSString+md5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+md5.m"; sourceTree = "<group>"; };
+		33E332021F9187CC003F428D /* NSString+MD5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		33E332031F9187CC003F428D /* NSString+MD5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
 		33E332041F9187CC003F428D /* PinYin.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = PinYin.c; sourceTree = "<group>"; };
 		33E332051F9187CC003F428D /* PinYin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PinYin.h; sourceTree = "<group>"; };
 		33E332061F918992003F428D /* NSString+SCUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+SCUtils.h"; sourceTree = "<group>"; };
@@ -138,6 +159,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		31D25B3E1F9772740016C93B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31D25B471F9772740016C93B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31D25B4B1F9772740016C93B /* SkyCoreUtils.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		33A89DE51F8E8F5500EB38F0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -175,6 +211,34 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		31D25B431F9772740016C93B /* SkyCoreUtils */ = {
+			isa = PBXGroup;
+			children = (
+				31D25B591F9772900016C93B /* Category */,
+				31D25B441F9772740016C93B /* SkyCoreUtils.h */,
+				31D25B451F9772740016C93B /* Info.plist */,
+			);
+			path = SkyCoreUtils;
+			sourceTree = "<group>";
+		};
+		31D25B4E1F9772750016C93B /* SkyCoreUtilsTests */ = {
+			isa = PBXGroup;
+			children = (
+				31D25B4F1F9772750016C93B /* SkyCoreUtilsTests.m */,
+				31D25B511F9772750016C93B /* Info.plist */,
+			);
+			path = SkyCoreUtilsTests;
+			sourceTree = "<group>";
+		};
+		31D25B591F9772900016C93B /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				31D25B5A1F9772BC0016C93B /* NSDate+ChineseCalendar.h */,
+				31D25B5B1F9772BC0016C93B /* NSDate+ChineseCalendar.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		33A89DDF1F8E8CDF00EB38F0 /* Store */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +255,7 @@
 				33A89DEC1F8E8F5600EB38F0 /* Info.plist */,
 				33A89DF01F8E8FAB00EB38F0 /* StoreTest.m */,
 				33E331EA1F903946003F428D /* ApplicationTests.m */,
+				31D25B5E1F9786930016C93B /* StringTests.m */,
 			);
 			path = SkyCoreTests;
 			sourceTree = "<group>";
@@ -211,16 +276,12 @@
 			children = (
 				33E3320A1F918B1A003F428D /* NSArray+SCUtils.h */,
 				33E3320B1F918B1A003F428D /* NSArray+SCUtils.m */,
-				33E331FA1F9187CC003F428D /* NSDate+ChineseCalendar.h */,
-				33E331FB1F9187CC003F428D /* NSDate+ChineseCalendar.m */,
 				33E331FC1F9187CC003F428D /* NSObject+NotNull.h */,
 				33E331FD1F9187CC003F428D /* NSObject+NotNull.m */,
-				33E331FE1F9187CC003F428D /* NSString+BlankFilter.h */,
-				33E331FF1F9187CC003F428D /* NSString+BlankFilter.m */,
 				33E332001F9187CC003F428D /* NSString+DateFormat.h */,
 				33E332011F9187CC003F428D /* NSString+DateFormat.m */,
-				33E332021F9187CC003F428D /* NSString+md5.h */,
-				33E332031F9187CC003F428D /* NSString+md5.m */,
+				33E332021F9187CC003F428D /* NSString+MD5.h */,
+				33E332031F9187CC003F428D /* NSString+MD5.m */,
 				33E332041F9187CC003F428D /* PinYin.c */,
 				33E332051F9187CC003F428D /* PinYin.h */,
 				33E332061F918992003F428D /* NSString+SCUtils.h */,
@@ -234,6 +295,8 @@
 			children = (
 				FAABF8871A020276004948E9 /* SkyCore */,
 				33A89DE91F8E8F5500EB38F0 /* SkyCoreTests */,
+				31D25B431F9772740016C93B /* SkyCoreUtils */,
+				31D25B4E1F9772750016C93B /* SkyCoreUtilsTests */,
 				FAABF8841A020276004948E9 /* Frameworks */,
 				FAABF8831A020276004948E9 /* Products */,
 				1EBD306A6637E4A2F5C6248C /* Pods */,
@@ -245,6 +308,8 @@
 			children = (
 				FAABF8821A020276004948E9 /* SkyCore.framework */,
 				33A89DE81F8E8F5500EB38F0 /* SkyCoreTests.xctest */,
+				31D25B421F9772740016C93B /* SkyCoreUtils.framework */,
+				31D25B4A1F9772740016C93B /* SkyCoreUtilsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -344,6 +409,15 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		31D25B3F1F9772740016C93B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31D25B521F9772750016C93B /* SkyCoreUtils.h in Headers */,
+				31D25B5C1F9772BC0016C93B /* NSDate+ChineseCalendar.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FAABF87E1A020276004948E9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -357,13 +431,13 @@
 				FAF988301A314FF600B4EFF9 /* UIImage+Addons.h in Headers */,
 				FAF988201A314FF600B4EFF9 /* SCLocationService.h in Headers */,
 				FAF9881A1A314FF600B4EFF9 /* SCBaseService.h in Headers */,
-				33E332081F918992003F428D /* NSString+SCUtils.h in Headers */,
 				FAF988241A314FF600B4EFF9 /* DragView.h in Headers */,
 				FAF988181A314FF600B4EFF9 /* SCAppCache.h in Headers */,
 				FAF988281A314FF600B4EFF9 /* OBShapedButton.h in Headers */,
 				FAF988221A314FF600B4EFF9 /* SCSysconfig.h in Headers */,
 				33E331E81F903353003F428D /* SCApplication.h in Headers */,
 				FAF988261A314FF600B4EFF9 /* MKMapView+ZoomLevel.h in Headers */,
+				33E332081F918992003F428D /* NSString+SCUtils.h in Headers */,
 				33E331F71F9187AA003F428D /* SCBaseManagedDomain.h in Headers */,
 				FAF9881E1A314FF600B4EFF9 /* SCFileOper.h in Headers */,
 				33A89DE21F8E8CF500EB38F0 /* SCStore.h in Headers */,
@@ -373,6 +447,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		31D25B411F9772740016C93B /* SkyCoreUtils */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31D25B571F9772750016C93B /* Build configuration list for PBXNativeTarget "SkyCoreUtils" */;
+			buildPhases = (
+				31D25B3D1F9772740016C93B /* Sources */,
+				31D25B3E1F9772740016C93B /* Frameworks */,
+				31D25B3F1F9772740016C93B /* Headers */,
+				31D25B401F9772740016C93B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkyCoreUtils;
+			productName = SkyCoreUtils;
+			productReference = 31D25B421F9772740016C93B /* SkyCoreUtils.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		31D25B491F9772740016C93B /* SkyCoreUtilsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31D25B581F9772750016C93B /* Build configuration list for PBXNativeTarget "SkyCoreUtilsTests" */;
+			buildPhases = (
+				31D25B461F9772740016C93B /* Sources */,
+				31D25B471F9772740016C93B /* Frameworks */,
+				31D25B481F9772740016C93B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				31D25B4D1F9772740016C93B /* PBXTargetDependency */,
+			);
+			name = SkyCoreUtilsTests;
+			productName = SkyCoreUtilsTests;
+			productReference = 31D25B4A1F9772740016C93B /* SkyCoreUtilsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		33A89DE71F8E8F5500EB38F0 /* SkyCoreTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 33A89DED1F8E8F5600EB38F0 /* Build configuration list for PBXNativeTarget "SkyCoreTests" */;
@@ -419,6 +529,14 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = com.grassinfo;
 				TargetAttributes = {
+					31D25B411F9772740016C93B = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					31D25B491F9772740016C93B = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
 					33A89DE71F8E8F5500EB38F0 = {
 						CreatedOnToolsVersion = 9.0;
 						DevelopmentTeam = W6N382B5V9;
@@ -440,12 +558,28 @@
 			projectRoot = "";
 			targets = (
 				FAABF8811A020276004948E9 /* SkyCore */,
+				31D25B411F9772740016C93B /* SkyCoreUtils */,
 				33A89DE71F8E8F5500EB38F0 /* SkyCoreTests */,
+				31D25B491F9772740016C93B /* SkyCoreUtilsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		31D25B401F9772740016C93B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31D25B481F9772740016C93B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		33A89DE61F8E8F5500EB38F0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -497,11 +631,28 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		31D25B3D1F9772740016C93B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31D25B5D1F9772BC0016C93B /* NSDate+ChineseCalendar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31D25B461F9772740016C93B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31D25B501F9772750016C93B /* SkyCoreUtilsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		33A89DE41F8E8F5500EB38F0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				33A89DF11F8E8FAB00EB38F0 /* StoreTest.m in Sources */,
+				31D25B5F1F9786930016C93B /* StringTests.m in Sources */,
 				33E331EB1F903946003F428D /* ApplicationTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -534,6 +685,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		31D25B4D1F9772740016C93B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31D25B411F9772740016C93B /* SkyCoreUtils */;
+			targetProxy = 31D25B4C1F9772740016C93B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		FAABF88A1A020276004948E9 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -546,6 +705,116 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		31D25B531F9772750016C93B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = SkyCoreUtils/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neteaseyx.SkyCoreUtils;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		31D25B541F9772750016C93B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = SkyCoreUtils/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neteaseyx.SkyCoreUtils;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		31D25B551F9772750016C93B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = SkyCoreUtilsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neteaseyx.SkyCoreUtilsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		31D25B561F9772750016C93B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = SkyCoreUtilsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neteaseyx.SkyCoreUtilsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		33A89DEE1F8E8F5600EB38F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -558,12 +827,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = W6N382B5V9;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = SkyCoreTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = sky.SkyCoreTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -583,12 +856,16 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = W6N382B5V9;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = SkyCoreTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = sky.SkyCoreTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -639,7 +916,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/usr/include/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
@@ -683,7 +962,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/usr/include/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -745,6 +1026,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		31D25B571F9772750016C93B /* Build configuration list for PBXNativeTarget "SkyCoreUtils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31D25B531F9772750016C93B /* Debug */,
+				31D25B541F9772750016C93B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31D25B581F9772750016C93B /* Build configuration list for PBXNativeTarget "SkyCoreUtilsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31D25B551F9772750016C93B /* Debug */,
+				31D25B561F9772750016C93B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		33A89DED1F8E8F5600EB38F0 /* Build configuration list for PBXNativeTarget "SkyCoreTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

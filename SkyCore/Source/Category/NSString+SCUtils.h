@@ -8,27 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSString (BlankFilter)
-/**
- 对空格和Tab进行合并，将合并后的字符串去除首尾空格，然后按空格分割
- @returns 分割好的数组
- */
-- (NSArray *)componentsSeparatedByBlank;
-/**
- 合并空格和Tab制表符为1个空格
- @returns 合并后的字符串
- */
-- (NSString *)stringByMergeBlank;
-/**
- 过滤两端空格和Tab制表符
- @returns 过滤后的字符串
- */
--(NSString *)stringbyTrimmingBlank;
-/**
- 删除字符串中的空格和Tab制表符
- @returns 删除后的字符串
- */
--(NSString *)stringByDeletingBlank;
+@interface NSString (SCBlankFilter)
 /**
  *  合并多个连续空格为一个，多个连续回车为一个
  *  @code
@@ -52,7 +32,7 @@
  */
 - (NSString *)sc_stringByMergeContinuousWhiteSpaceOrNewline __attribute__((const));
 
-- (NSString *)sc_trim __attribute__((const));
+- (NSString *)sc_trimWhitespaceAndNewline __attribute__((const));
 
 /**
  *  删除 html 标签
@@ -60,5 +40,86 @@
  *  @return 新的字符串
  */
 - (NSString *)sc_stringByRemovingHTMLTags __attribute__((const));
+
 @end
 
+//MARK:- 拼音
+@interface NSString (SCChineseLetters)
+
+/**
+ 将中文字符串转换为拼音字符串
+
+ @return 拼音字符串
+ */
+- (NSString *)letters;
+/**
+ 获取首个字符的首字母
+
+ @return 首字母
+ */
+- (NSString *)firstLetter;
+/**
+  获取首个字符的首字母
+ 
+ @param str 字符串
+ @return 首字母
+ */
++ (NSString *)firstLetterOfString:(NSString *)str;
+/**
+ 获取指定字符的第一个字母
+
+ @param index 字符索引
+ @return 首字母
+ */
+- (NSString *)firstLetterForCharactorAtIndex:(NSInteger)index;
+/**
+ 获取指定字符的第一个字母
+
+ @param index 字符索引
+ @param str 字符串
+ @return 首字母
+ */
++ (NSString *)firstLetterForCharactorAtIndex:(NSInteger)index ofString:(NSString *)str;
+
+@end
+
+//MARK:- emoji
+@interface NSString (SCEmoji)
+
+/**
+ 子字符串截取时考虑emoji情况。
+ 
+ @param from 开始截取字符的索引，如处于emoji中间，会后移排除。
+ @return 子字符串
+ */
+- (NSString *)emoji_substringFromIndex:(NSUInteger)from;
+
+/**
+ 子字符串截取时考虑emoji情况。
+ 
+ @param to 截取字符的终点索引，如处于emoji中间，会前移排除。
+ @return 子字符串
+ */
+- (NSString *)emoji_substringToIndex:(NSUInteger)to;
+/**
+ 子字符串截取时考虑emoji情况。如处于emoji中间，会排除该emoji。
+ 
+ @param range 截取的字符串区间。
+ @return 子字符串
+ */
+- (NSString *)emoji_substringWithRange:(NSRange)range;
+
+@end
+
+//MARK:- Secret
+@interface NSString (SCSecret)
+/**
+ 将指定区域用指定字符串顺序替换.
+
+ @param cover 用于替换的字符串,默认为'*'.长度超过替换区域会被截断,不足则重复
+ @param range 替换区域.`location`超过字符串长度时不替换,`length`超过字符串长度时替换至末尾
+ @return 替换后的字符串
+ */
+- (NSString *)stringByCoverString:(NSString *)cover inRange:(NSRange)range;
+
+@end

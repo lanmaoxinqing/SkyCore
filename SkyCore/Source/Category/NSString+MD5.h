@@ -9,11 +9,12 @@
 #import <Foundation/Foundation.h>
 
 
-@interface NSString(md5)
+@interface NSString(MD5)
 /**
- *  将字符串MD5加密
- *
- *  @return 加密后的字符串
+ MD5加密
+ 
+ @return 加密后的字符串
  */
--(NSString *) md5HexDigest;
+- (NSString *)MD5;
+
 @end
