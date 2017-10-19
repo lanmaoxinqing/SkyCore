@@ -13,6 +13,10 @@
 		31D25B5C1F9772BC0016C93B /* NSDate+ChineseCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 31D25B5A1F9772BC0016C93B /* NSDate+ChineseCalendar.h */; };
 		31D25B5D1F9772BC0016C93B /* NSDate+ChineseCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D25B5B1F9772BC0016C93B /* NSDate+ChineseCalendar.m */; };
 		31D25B5F1F9786930016C93B /* StringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D25B5E1F9786930016C93B /* StringTests.m */; };
+		3374A4761F98E82300C88BBF /* UIImage+SCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3374A4741F98E82300C88BBF /* UIImage+SCUtils.h */; };
+		3374A4771F98E82300C88BBF /* UIImage+SCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3374A4751F98E82300C88BBF /* UIImage+SCUtils.m */; };
+		3374A47A1F98EA3100C88BBF /* UIView+SCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3374A4781F98EA3100C88BBF /* UIView+SCUtils.h */; };
+		3374A47B1F98EA3100C88BBF /* UIView+SCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3374A4791F98EA3100C88BBF /* UIView+SCUtils.m */; };
 		33955BCE1F98C11600B9A84E /* SCBaseDao.h in Headers */ = {isa = PBXBuildFile; fileRef = 33955BCA1F98C11600B9A84E /* SCBaseDao.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		33955BCF1F98C11600B9A84E /* SCBaseDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 33955BCB1F98C11600B9A84E /* SCBaseDao.m */; };
 		33955BD01F98C11600B9A84E /* SCBaseManagedDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = 33955BCC1F98C11600B9A84E /* SCBaseManagedDomain.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -47,20 +51,6 @@
 		FAF988211A314FF600B4EFF9 /* SCLocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF987F01A314FF600B4EFF9 /* SCLocationService.m */; };
 		FAF988221A314FF600B4EFF9 /* SCSysconfig.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF987F11A314FF600B4EFF9 /* SCSysconfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FAF988231A314FF600B4EFF9 /* SCSysconfig.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF987F21A314FF600B4EFF9 /* SCSysconfig.m */; };
-		FAF988241A314FF600B4EFF9 /* DragView.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF987F41A314FF600B4EFF9 /* DragView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAF988251A314FF600B4EFF9 /* DragView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF987F51A314FF600B4EFF9 /* DragView.m */; };
-		FAF988261A314FF600B4EFF9 /* MKMapView+ZoomLevel.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF987F61A314FF600B4EFF9 /* MKMapView+ZoomLevel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAF988271A314FF600B4EFF9 /* MKMapView+ZoomLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF987F71A314FF600B4EFF9 /* MKMapView+ZoomLevel.m */; };
-		FAF988281A314FF600B4EFF9 /* OBShapedButton.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF987F81A314FF600B4EFF9 /* OBShapedButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAF988291A314FF600B4EFF9 /* OBShapedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF987F91A314FF600B4EFF9 /* OBShapedButton.m */; };
-		FAF9882A1A314FF600B4EFF9 /* PhotoImageScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF987FA1A314FF600B4EFF9 /* PhotoImageScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAF9882B1A314FF600B4EFF9 /* PhotoImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF987FB1A314FF600B4EFF9 /* PhotoImageScrollView.m */; };
-		FAF9882C1A314FF600B4EFF9 /* UIButton+Block.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF987FC1A314FF600B4EFF9 /* UIButton+Block.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAF9882D1A314FF600B4EFF9 /* UIButton+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF987FD1A314FF600B4EFF9 /* UIButton+Block.m */; };
-		FAF9882E1A314FF600B4EFF9 /* UIButton+VerticalAlign.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF987FE1A314FF600B4EFF9 /* UIButton+VerticalAlign.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAF9882F1A314FF600B4EFF9 /* UIButton+VerticalAlign.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF987FF1A314FF600B4EFF9 /* UIButton+VerticalAlign.m */; };
-		FAF988301A314FF600B4EFF9 /* UIImage+Addons.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF988001A314FF600B4EFF9 /* UIImage+Addons.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAF988311A314FF600B4EFF9 /* UIImage+Addons.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF988011A314FF600B4EFF9 /* UIImage+Addons.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +75,12 @@
 		31D25B5A1F9772BC0016C93B /* NSDate+ChineseCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ChineseCalendar.h"; sourceTree = "<group>"; };
 		31D25B5B1F9772BC0016C93B /* NSDate+ChineseCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ChineseCalendar.m"; sourceTree = "<group>"; };
 		31D25B5E1F9786930016C93B /* StringTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringTests.m; sourceTree = "<group>"; };
+		3374A4721F98E34100C88BBF /* PhotoImageScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoImageScrollView.h; sourceTree = "<group>"; };
+		3374A4731F98E34100C88BBF /* PhotoImageScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoImageScrollView.m; sourceTree = "<group>"; };
+		3374A4741F98E82300C88BBF /* UIImage+SCUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+SCUtils.h"; sourceTree = "<group>"; };
+		3374A4751F98E82300C88BBF /* UIImage+SCUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SCUtils.m"; sourceTree = "<group>"; };
+		3374A4781F98EA3100C88BBF /* UIView+SCUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+SCUtils.h"; sourceTree = "<group>"; };
+		3374A4791F98EA3100C88BBF /* UIView+SCUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+SCUtils.m"; sourceTree = "<group>"; };
 		33955BCA1F98C11600B9A84E /* SCBaseDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBaseDao.h; sourceTree = "<group>"; };
 		33955BCB1F98C11600B9A84E /* SCBaseDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBaseDao.m; sourceTree = "<group>"; };
 		33955BCC1F98C11600B9A84E /* SCBaseManagedDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBaseManagedDomain.h; sourceTree = "<group>"; };
@@ -99,8 +95,6 @@
 		33E331EA1F903946003F428D /* ApplicationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplicationTests.m; sourceTree = "<group>"; };
 		33E331FC1F9187CC003F428D /* NSObject+NotNull.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+NotNull.h"; sourceTree = "<group>"; };
 		33E331FD1F9187CC003F428D /* NSObject+NotNull.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NotNull.m"; sourceTree = "<group>"; };
-		33E332001F9187CC003F428D /* NSString+DateFormat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+DateFormat.h"; sourceTree = "<group>"; };
-		33E332011F9187CC003F428D /* NSString+DateFormat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+DateFormat.m"; sourceTree = "<group>"; };
 		33E332021F9187CC003F428D /* NSString+MD5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
 		33E332031F9187CC003F428D /* NSString+MD5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
 		33E332041F9187CC003F428D /* PinYin.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = PinYin.c; sourceTree = "<group>"; };
@@ -142,20 +136,6 @@
 		FAF987F01A314FF600B4EFF9 /* SCLocationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLocationService.m; sourceTree = "<group>"; };
 		FAF987F11A314FF600B4EFF9 /* SCSysconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSysconfig.h; sourceTree = "<group>"; };
 		FAF987F21A314FF600B4EFF9 /* SCSysconfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSysconfig.m; sourceTree = "<group>"; };
-		FAF987F41A314FF600B4EFF9 /* DragView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragView.h; sourceTree = "<group>"; };
-		FAF987F51A314FF600B4EFF9 /* DragView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragView.m; sourceTree = "<group>"; };
-		FAF987F61A314FF600B4EFF9 /* MKMapView+ZoomLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+ZoomLevel.h"; sourceTree = "<group>"; };
-		FAF987F71A314FF600B4EFF9 /* MKMapView+ZoomLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+ZoomLevel.m"; sourceTree = "<group>"; };
-		FAF987F81A314FF600B4EFF9 /* OBShapedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBShapedButton.h; sourceTree = "<group>"; };
-		FAF987F91A314FF600B4EFF9 /* OBShapedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBShapedButton.m; sourceTree = "<group>"; };
-		FAF987FA1A314FF600B4EFF9 /* PhotoImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoImageScrollView.h; sourceTree = "<group>"; };
-		FAF987FB1A314FF600B4EFF9 /* PhotoImageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoImageScrollView.m; sourceTree = "<group>"; };
-		FAF987FC1A314FF600B4EFF9 /* UIButton+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Block.h"; sourceTree = "<group>"; };
-		FAF987FD1A314FF600B4EFF9 /* UIButton+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Block.m"; sourceTree = "<group>"; };
-		FAF987FE1A314FF600B4EFF9 /* UIButton+VerticalAlign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+VerticalAlign.h"; sourceTree = "<group>"; };
-		FAF987FF1A314FF600B4EFF9 /* UIButton+VerticalAlign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+VerticalAlign.m"; sourceTree = "<group>"; };
-		FAF988001A314FF600B4EFF9 /* UIImage+Addons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Addons.h"; sourceTree = "<group>"; };
-		FAF988011A314FF600B4EFF9 /* UIImage+Addons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Addons.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +219,15 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		3374A46F1F98E34100C88BBF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3374A4721F98E34100C88BBF /* PhotoImageScrollView.h */,
+				3374A4731F98E34100C88BBF /* PhotoImageScrollView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		33955BC91F98C11600B9A84E /* dao */ = {
 			isa = PBXGroup;
 			children = (
@@ -278,14 +267,16 @@
 				33E3320B1F918B1A003F428D /* NSArray+SCUtils.m */,
 				33E331FC1F9187CC003F428D /* NSObject+NotNull.h */,
 				33E331FD1F9187CC003F428D /* NSObject+NotNull.m */,
-				33E332001F9187CC003F428D /* NSString+DateFormat.h */,
-				33E332011F9187CC003F428D /* NSString+DateFormat.m */,
 				33E332021F9187CC003F428D /* NSString+MD5.h */,
 				33E332031F9187CC003F428D /* NSString+MD5.m */,
 				33E332041F9187CC003F428D /* PinYin.c */,
 				33E332051F9187CC003F428D /* PinYin.h */,
 				33E332061F918992003F428D /* NSString+SCUtils.h */,
 				33E332071F918992003F428D /* NSString+SCUtils.m */,
+				3374A4741F98E82300C88BBF /* UIImage+SCUtils.h */,
+				3374A4751F98E82300C88BBF /* UIImage+SCUtils.m */,
+				3374A4781F98EA3100C88BBF /* UIView+SCUtils.h */,
+				3374A4791F98EA3100C88BBF /* UIView+SCUtils.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -356,10 +347,10 @@
 		FAF987D11A314FF600B4EFF9 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				3374A46F1F98E34100C88BBF /* View */,
 				33E331F91F9187CC003F428D /* Category */,
 				33A89DDF1F8E8CDF00EB38F0 /* Store */,
 				FAF987E61A314FF600B4EFF9 /* service */,
-				FAF987F31A314FF600B4EFF9 /* view */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -385,27 +376,6 @@
 			path = service;
 			sourceTree = "<group>";
 		};
-		FAF987F31A314FF600B4EFF9 /* view */ = {
-			isa = PBXGroup;
-			children = (
-				FAF987F41A314FF600B4EFF9 /* DragView.h */,
-				FAF987F51A314FF600B4EFF9 /* DragView.m */,
-				FAF987F61A314FF600B4EFF9 /* MKMapView+ZoomLevel.h */,
-				FAF987F71A314FF600B4EFF9 /* MKMapView+ZoomLevel.m */,
-				FAF987F81A314FF600B4EFF9 /* OBShapedButton.h */,
-				FAF987F91A314FF600B4EFF9 /* OBShapedButton.m */,
-				FAF987FA1A314FF600B4EFF9 /* PhotoImageScrollView.h */,
-				FAF987FB1A314FF600B4EFF9 /* PhotoImageScrollView.m */,
-				FAF987FC1A314FF600B4EFF9 /* UIButton+Block.h */,
-				FAF987FD1A314FF600B4EFF9 /* UIButton+Block.m */,
-				FAF987FE1A314FF600B4EFF9 /* UIButton+VerticalAlign.h */,
-				FAF987FF1A314FF600B4EFF9 /* UIButton+VerticalAlign.m */,
-				FAF988001A314FF600B4EFF9 /* UIImage+Addons.h */,
-				FAF988011A314FF600B4EFF9 /* UIImage+Addons.m */,
-			);
-			path = view;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -423,24 +393,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAE7F9581A02046400DC86BD /* SkyCore.h in Headers */,
-				FAF9882C1A314FF600B4EFF9 /* UIButton+Block.h in Headers */,
 				FAF9881C1A314FF600B4EFF9 /* SCCommonTools.h in Headers */,
-				FAF9882A1A314FF600B4EFF9 /* PhotoImageScrollView.h in Headers */,
-				FAF9882E1A314FF600B4EFF9 /* UIButton+VerticalAlign.h in Headers */,
-				FAF988301A314FF600B4EFF9 /* UIImage+Addons.h in Headers */,
 				FAF988201A314FF600B4EFF9 /* SCLocationService.h in Headers */,
 				FAF9881A1A314FF600B4EFF9 /* SCBaseService.h in Headers */,
-				FAF988241A314FF600B4EFF9 /* DragView.h in Headers */,
 				FAF988181A314FF600B4EFF9 /* SCAppCache.h in Headers */,
-				FAF988281A314FF600B4EFF9 /* OBShapedButton.h in Headers */,
+				3374A4761F98E82300C88BBF /* UIImage+SCUtils.h in Headers */,
 				33955BCE1F98C11600B9A84E /* SCBaseDao.h in Headers */,
 				FAF988221A314FF600B4EFF9 /* SCSysconfig.h in Headers */,
 				33E331E81F903353003F428D /* SCApplication.h in Headers */,
 				33955BD01F98C11600B9A84E /* SCBaseManagedDomain.h in Headers */,
-				FAF988261A314FF600B4EFF9 /* MKMapView+ZoomLevel.h in Headers */,
 				33E332081F918992003F428D /* NSString+SCUtils.h in Headers */,
 				FAF9881E1A314FF600B4EFF9 /* SCFileOper.h in Headers */,
 				33A89DE21F8E8CF500EB38F0 /* SCStore.h in Headers */,
+				3374A47A1F98EA3100C88BBF /* UIView+SCUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -661,24 +626,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3374A47B1F98EA3100C88BBF /* UIView+SCUtils.m in Sources */,
 				FAF988191A314FF600B4EFF9 /* SCAppCache.m in Sources */,
-				FAF9882F1A314FF600B4EFF9 /* UIButton+VerticalAlign.m in Sources */,
+				3374A4771F98E82300C88BBF /* UIImage+SCUtils.m in Sources */,
 				FAF9881D1A314FF600B4EFF9 /* SCCommonTools.m in Sources */,
-				FAF9882D1A314FF600B4EFF9 /* UIButton+Block.m in Sources */,
 				33A89DE31F8E8CF500EB38F0 /* SCStore.m in Sources */,
 				FAF988231A314FF600B4EFF9 /* SCSysconfig.m in Sources */,
 				33E332091F918992003F428D /* NSString+SCUtils.m in Sources */,
 				33955BD11F98C11600B9A84E /* SCBaseManagedDomain.m in Sources */,
 				33955BCF1F98C11600B9A84E /* SCBaseDao.m in Sources */,
 				33E3320C1F918B1A003F428D /* NSArray+SCUtils.m in Sources */,
-				FAF988311A314FF600B4EFF9 /* UIImage+Addons.m in Sources */,
-				FAF988271A314FF600B4EFF9 /* MKMapView+ZoomLevel.m in Sources */,
 				FAF9881F1A314FF600B4EFF9 /* SCFileOper.m in Sources */,
 				FAF9881B1A314FF600B4EFF9 /* SCBaseService.m in Sources */,
-				FAF988291A314FF600B4EFF9 /* OBShapedButton.m in Sources */,
-				FAF988251A314FF600B4EFF9 /* DragView.m in Sources */,
 				FAF988211A314FF600B4EFF9 /* SCLocationService.m in Sources */,
-				FAF9882B1A314FF600B4EFF9 /* PhotoImageScrollView.m in Sources */,
 				33E331E91F903353003F428D /* SCApplication.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
