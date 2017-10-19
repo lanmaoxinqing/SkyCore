@@ -17,6 +17,8 @@
 		3374A4771F98E82300C88BBF /* UIImage+SCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3374A4751F98E82300C88BBF /* UIImage+SCUtils.m */; };
 		3374A47A1F98EA3100C88BBF /* UIView+SCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3374A4781F98EA3100C88BBF /* UIView+SCUtils.h */; };
 		3374A47B1F98EA3100C88BBF /* UIView+SCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3374A4791F98EA3100C88BBF /* UIView+SCUtils.m */; };
+		3374A47E1F98ECA000C88BBF /* UIColor+SCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3374A47C1F98ECA000C88BBF /* UIColor+SCUtils.h */; };
+		3374A47F1F98ECA000C88BBF /* UIColor+SCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3374A47D1F98ECA000C88BBF /* UIColor+SCUtils.m */; };
 		33955BCE1F98C11600B9A84E /* SCBaseDao.h in Headers */ = {isa = PBXBuildFile; fileRef = 33955BCA1F98C11600B9A84E /* SCBaseDao.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		33955BCF1F98C11600B9A84E /* SCBaseDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 33955BCB1F98C11600B9A84E /* SCBaseDao.m */; };
 		33955BD01F98C11600B9A84E /* SCBaseManagedDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = 33955BCC1F98C11600B9A84E /* SCBaseManagedDomain.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -81,6 +83,8 @@
 		3374A4751F98E82300C88BBF /* UIImage+SCUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SCUtils.m"; sourceTree = "<group>"; };
 		3374A4781F98EA3100C88BBF /* UIView+SCUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+SCUtils.h"; sourceTree = "<group>"; };
 		3374A4791F98EA3100C88BBF /* UIView+SCUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+SCUtils.m"; sourceTree = "<group>"; };
+		3374A47C1F98ECA000C88BBF /* UIColor+SCUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+SCUtils.h"; sourceTree = "<group>"; };
+		3374A47D1F98ECA000C88BBF /* UIColor+SCUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SCUtils.m"; sourceTree = "<group>"; };
 		33955BCA1F98C11600B9A84E /* SCBaseDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBaseDao.h; sourceTree = "<group>"; };
 		33955BCB1F98C11600B9A84E /* SCBaseDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBaseDao.m; sourceTree = "<group>"; };
 		33955BCC1F98C11600B9A84E /* SCBaseManagedDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBaseManagedDomain.h; sourceTree = "<group>"; };
@@ -277,6 +281,8 @@
 				3374A4751F98E82300C88BBF /* UIImage+SCUtils.m */,
 				3374A4781F98EA3100C88BBF /* UIView+SCUtils.h */,
 				3374A4791F98EA3100C88BBF /* UIView+SCUtils.m */,
+				3374A47C1F98ECA000C88BBF /* UIColor+SCUtils.h */,
+				3374A47D1F98ECA000C88BBF /* UIColor+SCUtils.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -396,6 +402,7 @@
 				FAF9881C1A314FF600B4EFF9 /* SCCommonTools.h in Headers */,
 				FAF988201A314FF600B4EFF9 /* SCLocationService.h in Headers */,
 				FAF9881A1A314FF600B4EFF9 /* SCBaseService.h in Headers */,
+				3374A47E1F98ECA000C88BBF /* UIColor+SCUtils.h in Headers */,
 				FAF988181A314FF600B4EFF9 /* SCAppCache.h in Headers */,
 				3374A4761F98E82300C88BBF /* UIImage+SCUtils.h in Headers */,
 				33955BCE1F98C11600B9A84E /* SCBaseDao.h in Headers */,
@@ -630,6 +637,7 @@
 				FAF988191A314FF600B4EFF9 /* SCAppCache.m in Sources */,
 				3374A4771F98E82300C88BBF /* UIImage+SCUtils.m in Sources */,
 				FAF9881D1A314FF600B4EFF9 /* SCCommonTools.m in Sources */,
+				3374A47F1F98ECA000C88BBF /* UIColor+SCUtils.m in Sources */,
 				33A89DE31F8E8CF500EB38F0 /* SCStore.m in Sources */,
 				FAF988231A314FF600B4EFF9 /* SCSysconfig.m in Sources */,
 				33E332091F918992003F428D /* NSString+SCUtils.m in Sources */,
