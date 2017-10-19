@@ -13,6 +13,10 @@
 		31D25B5C1F9772BC0016C93B /* NSDate+ChineseCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 31D25B5A1F9772BC0016C93B /* NSDate+ChineseCalendar.h */; };
 		31D25B5D1F9772BC0016C93B /* NSDate+ChineseCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D25B5B1F9772BC0016C93B /* NSDate+ChineseCalendar.m */; };
 		31D25B5F1F9786930016C93B /* StringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D25B5E1F9786930016C93B /* StringTests.m */; };
+		33955BCE1F98C11600B9A84E /* SCBaseDao.h in Headers */ = {isa = PBXBuildFile; fileRef = 33955BCA1F98C11600B9A84E /* SCBaseDao.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33955BCF1F98C11600B9A84E /* SCBaseDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 33955BCB1F98C11600B9A84E /* SCBaseDao.m */; };
+		33955BD01F98C11600B9A84E /* SCBaseManagedDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = 33955BCC1F98C11600B9A84E /* SCBaseManagedDomain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33955BD11F98C11600B9A84E /* SCBaseManagedDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 33955BCD1F98C11600B9A84E /* SCBaseManagedDomain.m */; };
 		33A89DE21F8E8CF500EB38F0 /* SCStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 33A89DE01F8E8CF500EB38F0 /* SCStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		33A89DE31F8E8CF500EB38F0 /* SCStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A89DE11F8E8CF500EB38F0 /* SCStore.m */; };
 		33A89DF11F8E8FAB00EB38F0 /* StoreTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A89DF01F8E8FAB00EB38F0 /* StoreTest.m */; };
@@ -20,10 +24,6 @@
 		33E331E81F903353003F428D /* SCApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = 33E331E61F903353003F428D /* SCApplication.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		33E331E91F903353003F428D /* SCApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E331E71F903353003F428D /* SCApplication.m */; };
 		33E331EB1F903946003F428D /* ApplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E331EA1F903946003F428D /* ApplicationTests.m */; };
-		33E331F51F9187AA003F428D /* SCBaseDao.h in Headers */ = {isa = PBXBuildFile; fileRef = 33E331F11F9187AA003F428D /* SCBaseDao.h */; };
-		33E331F61F9187AA003F428D /* SCBaseDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E331F21F9187AA003F428D /* SCBaseDao.m */; };
-		33E331F71F9187AA003F428D /* SCBaseManagedDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = 33E331F31F9187AA003F428D /* SCBaseManagedDomain.h */; };
-		33E331F81F9187AA003F428D /* SCBaseManagedDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E331F41F9187AA003F428D /* SCBaseManagedDomain.m */; };
 		33E332081F918992003F428D /* NSString+SCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 33E332061F918992003F428D /* NSString+SCUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		33E332091F918992003F428D /* NSString+SCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E332071F918992003F428D /* NSString+SCUtils.m */; };
 		33E3320C1F918B1A003F428D /* NSArray+SCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E3320B1F918B1A003F428D /* NSArray+SCUtils.m */; };
@@ -85,6 +85,10 @@
 		31D25B5A1F9772BC0016C93B /* NSDate+ChineseCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ChineseCalendar.h"; sourceTree = "<group>"; };
 		31D25B5B1F9772BC0016C93B /* NSDate+ChineseCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ChineseCalendar.m"; sourceTree = "<group>"; };
 		31D25B5E1F9786930016C93B /* StringTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringTests.m; sourceTree = "<group>"; };
+		33955BCA1F98C11600B9A84E /* SCBaseDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBaseDao.h; sourceTree = "<group>"; };
+		33955BCB1F98C11600B9A84E /* SCBaseDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBaseDao.m; sourceTree = "<group>"; };
+		33955BCC1F98C11600B9A84E /* SCBaseManagedDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBaseManagedDomain.h; sourceTree = "<group>"; };
+		33955BCD1F98C11600B9A84E /* SCBaseManagedDomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBaseManagedDomain.m; sourceTree = "<group>"; };
 		33A89DE01F8E8CF500EB38F0 /* SCStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCStore.h; sourceTree = "<group>"; };
 		33A89DE11F8E8CF500EB38F0 /* SCStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCStore.m; sourceTree = "<group>"; };
 		33A89DE81F8E8F5500EB38F0 /* SkyCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,10 +97,6 @@
 		33E331E61F903353003F428D /* SCApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCApplication.h; sourceTree = "<group>"; };
 		33E331E71F903353003F428D /* SCApplication.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCApplication.m; sourceTree = "<group>"; };
 		33E331EA1F903946003F428D /* ApplicationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplicationTests.m; sourceTree = "<group>"; };
-		33E331F11F9187AA003F428D /* SCBaseDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBaseDao.h; sourceTree = "<group>"; };
-		33E331F21F9187AA003F428D /* SCBaseDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBaseDao.m; sourceTree = "<group>"; };
-		33E331F31F9187AA003F428D /* SCBaseManagedDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBaseManagedDomain.h; sourceTree = "<group>"; };
-		33E331F41F9187AA003F428D /* SCBaseManagedDomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBaseManagedDomain.m; sourceTree = "<group>"; };
 		33E331FC1F9187CC003F428D /* NSObject+NotNull.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+NotNull.h"; sourceTree = "<group>"; };
 		33E331FD1F9187CC003F428D /* NSObject+NotNull.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NotNull.m"; sourceTree = "<group>"; };
 		33E332001F9187CC003F428D /* NSString+DateFormat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+DateFormat.h"; sourceTree = "<group>"; };
@@ -239,10 +239,21 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		33955BC91F98C11600B9A84E /* dao */ = {
+			isa = PBXGroup;
+			children = (
+				33955BCA1F98C11600B9A84E /* SCBaseDao.h */,
+				33955BCB1F98C11600B9A84E /* SCBaseDao.m */,
+				33955BCC1F98C11600B9A84E /* SCBaseManagedDomain.h */,
+				33955BCD1F98C11600B9A84E /* SCBaseManagedDomain.m */,
+			);
+			path = dao;
+			sourceTree = "<group>";
+		};
 		33A89DDF1F8E8CDF00EB38F0 /* Store */ = {
 			isa = PBXGroup;
 			children = (
-				33E331F01F9187AA003F428D /* dao */,
+				33955BC91F98C11600B9A84E /* dao */,
 				33A89DE01F8E8CF500EB38F0 /* SCStore.h */,
 				33A89DE11F8E8CF500EB38F0 /* SCStore.m */,
 			);
@@ -258,17 +269,6 @@
 				31D25B5E1F9786930016C93B /* StringTests.m */,
 			);
 			path = SkyCoreTests;
-			sourceTree = "<group>";
-		};
-		33E331F01F9187AA003F428D /* dao */ = {
-			isa = PBXGroup;
-			children = (
-				33E331F11F9187AA003F428D /* SCBaseDao.h */,
-				33E331F21F9187AA003F428D /* SCBaseDao.m */,
-				33E331F31F9187AA003F428D /* SCBaseManagedDomain.h */,
-				33E331F41F9187AA003F428D /* SCBaseManagedDomain.m */,
-			);
-			path = dao;
 			sourceTree = "<group>";
 		};
 		33E331F91F9187CC003F428D /* Category */ = {
@@ -424,7 +424,6 @@
 			files = (
 				FAE7F9581A02046400DC86BD /* SkyCore.h in Headers */,
 				FAF9882C1A314FF600B4EFF9 /* UIButton+Block.h in Headers */,
-				33E331F51F9187AA003F428D /* SCBaseDao.h in Headers */,
 				FAF9881C1A314FF600B4EFF9 /* SCCommonTools.h in Headers */,
 				FAF9882A1A314FF600B4EFF9 /* PhotoImageScrollView.h in Headers */,
 				FAF9882E1A314FF600B4EFF9 /* UIButton+VerticalAlign.h in Headers */,
@@ -434,11 +433,12 @@
 				FAF988241A314FF600B4EFF9 /* DragView.h in Headers */,
 				FAF988181A314FF600B4EFF9 /* SCAppCache.h in Headers */,
 				FAF988281A314FF600B4EFF9 /* OBShapedButton.h in Headers */,
+				33955BCE1F98C11600B9A84E /* SCBaseDao.h in Headers */,
 				FAF988221A314FF600B4EFF9 /* SCSysconfig.h in Headers */,
 				33E331E81F903353003F428D /* SCApplication.h in Headers */,
+				33955BD01F98C11600B9A84E /* SCBaseManagedDomain.h in Headers */,
 				FAF988261A314FF600B4EFF9 /* MKMapView+ZoomLevel.h in Headers */,
 				33E332081F918992003F428D /* NSString+SCUtils.h in Headers */,
-				33E331F71F9187AA003F428D /* SCBaseManagedDomain.h in Headers */,
 				FAF9881E1A314FF600B4EFF9 /* SCFileOper.h in Headers */,
 				33A89DE21F8E8CF500EB38F0 /* SCStore.h in Headers */,
 			);
@@ -666,16 +666,16 @@
 				FAF9881D1A314FF600B4EFF9 /* SCCommonTools.m in Sources */,
 				FAF9882D1A314FF600B4EFF9 /* UIButton+Block.m in Sources */,
 				33A89DE31F8E8CF500EB38F0 /* SCStore.m in Sources */,
-				33E331F81F9187AA003F428D /* SCBaseManagedDomain.m in Sources */,
 				FAF988231A314FF600B4EFF9 /* SCSysconfig.m in Sources */,
 				33E332091F918992003F428D /* NSString+SCUtils.m in Sources */,
+				33955BD11F98C11600B9A84E /* SCBaseManagedDomain.m in Sources */,
+				33955BCF1F98C11600B9A84E /* SCBaseDao.m in Sources */,
 				33E3320C1F918B1A003F428D /* NSArray+SCUtils.m in Sources */,
 				FAF988311A314FF600B4EFF9 /* UIImage+Addons.m in Sources */,
 				FAF988271A314FF600B4EFF9 /* MKMapView+ZoomLevel.m in Sources */,
 				FAF9881F1A314FF600B4EFF9 /* SCFileOper.m in Sources */,
 				FAF9881B1A314FF600B4EFF9 /* SCBaseService.m in Sources */,
 				FAF988291A314FF600B4EFF9 /* OBShapedButton.m in Sources */,
-				33E331F61F9187AA003F428D /* SCBaseDao.m in Sources */,
 				FAF988251A314FF600B4EFF9 /* DragView.m in Sources */,
 				FAF988211A314FF600B4EFF9 /* SCLocationService.m in Sources */,
 				FAF9882B1A314FF600B4EFF9 /* PhotoImageScrollView.m in Sources */,
@@ -707,6 +707,7 @@
 /* Begin XCBuildConfiguration section */
 		31D25B531F9772750016C93B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70B2FFF89965B4477989845B /* Pods-SkyCore.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -739,6 +740,7 @@
 		};
 		31D25B541F9772750016C93B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D91E32DC0093993061DB3F66 /* Pods-SkyCore.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -772,6 +774,7 @@
 		};
 		31D25B551F9772750016C93B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70B2FFF89965B4477989845B /* Pods-SkyCore.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -794,6 +797,7 @@
 		};
 		31D25B561F9772750016C93B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D91E32DC0093993061DB3F66 /* Pods-SkyCore.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -817,6 +821,7 @@
 		};
 		33A89DEE1F8E8F5600EB38F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70B2FFF89965B4477989845B /* Pods-SkyCore.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -836,6 +841,7 @@
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
+					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sky.SkyCoreTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -845,6 +851,7 @@
 		};
 		33A89DEF1F8E8F5600EB38F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D91E32DC0093993061DB3F66 /* Pods-SkyCore.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -865,6 +872,7 @@
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
+					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sky.SkyCoreTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -874,6 +882,7 @@
 		};
 		FAABF8911A020276004948E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70B2FFF89965B4477989845B /* Pods-SkyCore.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -927,6 +936,7 @@
 		};
 		FAABF8921A020276004948E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D91E32DC0093993061DB3F66 /* Pods-SkyCore.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";

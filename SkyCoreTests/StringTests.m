@@ -26,10 +26,31 @@
 }
 
 - (void)testCover {
-    NSString *str = @"123456789123456789";
+    NSString *str = @"01234567890123456789";
     NSString *cover = @"*";
     NSRange range = NSMakeRange(0, 1);
-    XCTAssertEqualObjects([str stringByCoverLetter], <#expression2, ...#>)
+    XCTAssertEqualObjects([str stringByCoverString:cover inRange:range], @"*1234567890123456789");
+    
+    cover = @"?*";
+    range = NSMakeRange(0, 1);
+    XCTAssertEqualObjects([str stringByCoverString:cover inRange:range], @"?1234567890123456789");
+
+    cover = @"?*";
+    range = NSMakeRange(0, 2);
+    XCTAssertEqualObjects([str stringByCoverString:cover inRange:range], @"?*234567890123456789");
+
+    cover = @"?*";
+    range = NSMakeRange(0, 3);
+    XCTAssertEqualObjects([str stringByCoverString:cover inRange:range], @"?*?34567890123456789");
+    
+    cover = @"??????????";
+    range = NSMakeRange(19, 4);
+    XCTAssertEqualObjects([str stringByCoverString:cover inRange:range], @"0123456789012345678?");
+    
+    cover = @"??????????";
+    range = NSMakeRange(30, 4);
+    XCTAssertEqualObjects([str stringByCoverString:cover inRange:range], @"01234567890123456789");
+
 }
 
 @end

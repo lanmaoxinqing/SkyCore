@@ -9,10 +9,8 @@
 #import <SkyCore/SCSysconfig.h>
 #import <SkyCore/SCAppCache.h>
 #import <SkyCore/SCBaseDao.h>
-#import <SkyCore/SCBaseDomain.h>
 #import <SkyCore/SCBaseManagedDomain.h>
 #import <SkyCore/SCBaseService.h>
-#import <SkyCore/NSObject+NotNull.h>
 #import <SkyCore/SCStore.h>
 #import <SkyCore/SCApplication.h>
 #import <SkyCore/NSString+SCUtils.h>

@@ -10,8 +10,6 @@
     #import <Foundation/Foundation.h>
     #import "SCSysconfig.h"
     #import "SCAppCache.h"
-    #import "SCBaseDao.h"
-    #import "SCBaseManagedDomain.h"
     #import "SCBaseService.h"
     #import "NSObject+NotNull.h"
     #import <AFNetworking/AFNetworking.h>
