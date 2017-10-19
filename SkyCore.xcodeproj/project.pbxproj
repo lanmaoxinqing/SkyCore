@@ -101,8 +101,6 @@
 		33E331FD1F9187CC003F428D /* NSObject+NotNull.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NotNull.m"; sourceTree = "<group>"; };
 		33E332021F9187CC003F428D /* NSString+MD5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
 		33E332031F9187CC003F428D /* NSString+MD5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
-		33E332041F9187CC003F428D /* PinYin.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = PinYin.c; sourceTree = "<group>"; };
-		33E332051F9187CC003F428D /* PinYin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PinYin.h; sourceTree = "<group>"; };
 		33E332061F918992003F428D /* NSString+SCUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+SCUtils.h"; sourceTree = "<group>"; };
 		33E332071F918992003F428D /* NSString+SCUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+SCUtils.m"; sourceTree = "<group>"; };
 		33E3320A1F918B1A003F428D /* NSArray+SCUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+SCUtils.h"; sourceTree = "<group>"; };
@@ -273,8 +271,6 @@
 				33E331FD1F9187CC003F428D /* NSObject+NotNull.m */,
 				33E332021F9187CC003F428D /* NSString+MD5.h */,
 				33E332031F9187CC003F428D /* NSString+MD5.m */,
-				33E332041F9187CC003F428D /* PinYin.c */,
-				33E332051F9187CC003F428D /* PinYin.h */,
 				33E332061F918992003F428D /* NSString+SCUtils.h */,
 				33E332071F918992003F428D /* NSString+SCUtils.m */,
 				3374A4741F98E82300C88BBF /* UIImage+SCUtils.h */,

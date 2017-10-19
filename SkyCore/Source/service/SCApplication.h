@@ -31,3 +31,20 @@
 @property (nonatomic, readonly, strong) NSURL *appOfficialURL; // 官方APP链接
 
 @end
+
+@interface UIApplication (SCNavigation)
+
+@property (nonatomic, strong, readonly) __kindof UIViewController *rootViewController;
+@property (nonatomic, strong, readonly) UITabBarController *mainTabbarController;
+@property (nonatomic, strong, readonly) UINavigationController *currentNavigationController;
+
+- (void)sc_pushViewController:(UIViewController *)controller
+                     animated:(BOOL)animated;
+
+- (void)sc_presentViewController:(UIViewController *)controller
+                        animated:(BOOL)animated
+                      completion:(void (^)(void))completion;
+
+@end
+
+

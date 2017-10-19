@@ -9,6 +9,7 @@
 #import "SCApplication.h"
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
 #import <CoreTelephony/CTCarrier.h>
+#import "NSArray+SCUtils.h"
 
 @implementation SCApplication
 
@@ -140,6 +141,62 @@
 - (NSURL *)appOfficialURL
 {
     return [NSURL URLWithString:@"http://mei.163.com/download"];
+}
+
+@end
+
+@implementation UIApplication (SCNavigation)
+
+- (UIViewController *)rootViewController {
+    return self.delegate.window.rootViewController;
+}
+
+- (UITabBarController *)mainTabbarController {
+    if ([self.rootViewController isKindOfClass:[UITabBarController class]]) {
+        return self.rootViewController;
+    }
+    if ([self.rootViewController isKindOfClass:[UINavigationController class]]) {
+        UINavigationController *nav = self.rootViewController;
+        __block UITabBarController *tab = nil;
+        [nav.viewControllers sc_any:^BOOL(__kindof UIViewController *obj) {
+            if ([obj isKindOfClass:[UITabBarController class]]) {
+                tab = obj;
+                return YES;
+            }
+            return NO;
+        }];
+        return tab;
+    }
+    return nil;
+}
+
+- (UINavigationController *)currentNavigationController {
+    if ([self.rootViewController isKindOfClass:[UINavigationController class]]) {
+        return self.rootViewController;
+    }
+    else if ([self.rootViewController isKindOfClass:[UITableViewController class]]) {
+        UITabBarController *tab = self.rootViewController;
+        if ([tab.selectedViewController isKindOfClass:[UINavigationController class]]) {
+            return tab.selectedViewController;
+        }
+    }
+    return nil;
+}
+
+- (void)sc_pushViewController:(UIViewController *)controller
+                     animated:(BOOL)animated
+{
+    [self.currentNavigationController pushViewController:controller
+                                                animated:animated];
+}
+
+- (void)sc_presentViewController:(UIViewController *)controller
+                        animated:(BOOL)flag
+                      completion:(void (^)(void))completion
+{
+    [self.currentNavigationController.visibleViewController presentViewController:controller
+                                                                         animated:flag
+                                                                       completion:completion];
 }
 
 @end
