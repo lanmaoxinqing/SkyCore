@@ -7,12 +7,14 @@
 #define SCLogSimple
 
 #ifdef __OBJC__
-    #import <Foundation/Foundation.h>
-    #import "SCSysconfig.h"
-    #import "SCAppCache.h"
-    #import "SCBaseService.h"
-    #import "NSObject+NotNull.h"
-    #import <AFNetworking/AFNetworking.h>
-    #import "UIKit+AFNetworking.h"
+
+#import <Foundation/Foundation.h>
+#import "NSObject+NotNull.h"
+#import "NSArray+SCUtils.h"
+#import "NSString+SCUtils.h"
+#import "UIView+SCUtils.h"
+#import "UIColor+SCUtils.h"
+#import "SCWeakifyMacro.h"
+
 #endif
  

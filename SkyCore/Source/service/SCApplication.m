@@ -10,6 +10,7 @@
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
 #import <CoreTelephony/CTCarrier.h>
 #import "NSArray+SCUtils.h"
+#import <AFNetworking/AFNetworkReachabilityManager.h>
 
 @implementation SCApplication
 

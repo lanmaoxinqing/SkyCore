@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31A1912F1F99E87200E57957 /* SCWeakifyMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 31A1912E1F99E87200E57957 /* SCWeakifyMacro.h */; };
+		31A191311F99E8C900E57957 /* SkyCore-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 31A191301F99E8C900E57957 /* SkyCore-Prefix.pch */; };
 		31D25B4B1F9772740016C93B /* SkyCoreUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31D25B421F9772740016C93B /* SkyCoreUtils.framework */; };
 		31D25B501F9772750016C93B /* SkyCoreUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D25B4F1F9772750016C93B /* SkyCoreUtilsTests.m */; };
 		31D25B521F9772750016C93B /* SkyCoreUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 31D25B441F9772740016C93B /* SkyCoreUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -68,6 +70,8 @@
 /* Begin PBXFileReference section */
 		182179C94103E7C1F3C81F56 /* Pods-example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example.release.xcconfig"; path = "Pods/Target Support Files/Pods-example/Pods-example.release.xcconfig"; sourceTree = "<group>"; };
 		30F136BBFA816E563E49B995 /* Pods-example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-example/Pods-example.debug.xcconfig"; sourceTree = "<group>"; };
+		31A1912E1F99E87200E57957 /* SCWeakifyMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCWeakifyMacro.h; sourceTree = "<group>"; };
+		31A191301F99E8C900E57957 /* SkyCore-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SkyCore-Prefix.pch"; sourceTree = "<group>"; };
 		31D25B421F9772740016C93B /* SkyCoreUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SkyCoreUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		31D25B441F9772740016C93B /* SkyCoreUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SkyCoreUtils.h; sourceTree = "<group>"; };
 		31D25B451F9772740016C93B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -330,6 +334,7 @@
 		FAABF8871A020276004948E9 /* SkyCore */ = {
 			isa = PBXGroup;
 			children = (
+				31A191301F99E8C900E57957 /* SkyCore-Prefix.pch */,
 				FAF987D11A314FF600B4EFF9 /* Source */,
 				FAABF88E1A020276004948E9 /* SkyCore.h */,
 				FAABF8881A020276004948E9 /* Supporting Files */,
@@ -349,6 +354,7 @@
 		FAF987D11A314FF600B4EFF9 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				31A1912E1F99E87200E57957 /* SCWeakifyMacro.h */,
 				3374A46F1F98E34100C88BBF /* View */,
 				33E331F91F9187CC003F428D /* Category */,
 				33A89DDF1F8E8CDF00EB38F0 /* Store */,
@@ -394,6 +400,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31A191311F99E8C900E57957 /* SkyCore-Prefix.pch in Headers */,
 				FAE7F9581A02046400DC86BD /* SkyCore.h in Headers */,
 				FAF9881C1A314FF600B4EFF9 /* SCCommonTools.h in Headers */,
 				FAF988201A314FF600B4EFF9 /* SCLocationService.h in Headers */,
@@ -405,6 +412,7 @@
 				FAF988221A314FF600B4EFF9 /* SCSysconfig.h in Headers */,
 				33E331E81F903353003F428D /* SCApplication.h in Headers */,
 				33955BD01F98C11600B9A84E /* SCBaseManagedDomain.h in Headers */,
+				31A1912F1F99E87200E57957 /* SCWeakifyMacro.h in Headers */,
 				33E332081F918992003F428D /* NSString+SCUtils.h in Headers */,
 				FAF9881E1A314FF600B4EFF9 /* SCFileOper.h in Headers */,
 				33A89DE21F8E8CF500EB38F0 /* SCStore.h in Headers */,
