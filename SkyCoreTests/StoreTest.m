@@ -65,7 +65,7 @@
     NSArray *resultArr = (NSArray *)[[SCStore defaultStore] file_objectForKey:@"arr"];
     XCTAssertEqualObjects(resultArr[0], @"aaa");
     
-    SCStoreFile *file = [[SCStore defaultStore] fileForKey:@"arr"];
+    SCStoreFile *file = [[SCStore defaultStore] file_storeFileForKey:@"arr"];
     XCTAssertNotNil(file);
     NSArray *resultArr2 = [NSKeyedUnarchiver unarchiveObjectWithData:file.data];
     XCTAssertEqualObjects(resultArr2[0], @"aaa");

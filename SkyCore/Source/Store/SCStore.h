@@ -73,7 +73,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param key key值
  @return 文件数据
  */
-- (nullable __kindof SCStoreFile *)fileForKey:(NSString *)key;
+- (nullable __kindof SCStoreFile *)file_storeFileForKey:(NSString *)key;
 /**
  返回模型，如果key对应值不满足<NSCoding>，返回nil
  

@@ -31,4 +31,19 @@
 
 @end
 
+@interface NSObject (NotificationCenter)
+
+/**
+ *  使用 block 监听一个通知，自动释放 block，但是 block 中引用 self 需要 weakify.
+ *  @warning      同一个 name + object 只能有一个 block（最后一个）
+ *
+ *  @param name   通知名
+ *  @param object 监听的实例，为 nil ，监听所有实例
+ *  @param queue  回调的队列
+ *  @param block  回调 block
+ */
+- (void)observeNotificationName:(NSString *)name object:(id)object inQueue:(NSOperationQueue *)queue usingBlock:(void(^)(NSNotification * noti))block;
+- (void)observeNotificationName:(NSString *)name object:(id)object usingBlock:(void(^)(NSNotification *noti))block;
+- (void)unobserveNotificationName:(NSString *)name object:(id)object;
+@end
 

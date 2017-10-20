@@ -53,3 +53,59 @@
 
 @end
 
+@interface __MZObserverRemover : NSObject
+@property (nonatomic, weak) id<NSObject> observer;
+@end
+
+@implementation __MZObserverRemover
+
++ (instancetype)removerWithObserver:(id<NSObject>)observer
+{
+    __MZObserverRemover *remover = [[self alloc] init];
+    remover.observer = observer;
+    return remover;
+}
+
+- (void)dealloc
+{
+    if (self.observer) {
+        [[NSNotificationCenter defaultCenter] removeObserver:self.observer];
+    }
+}
+
+@end
+
+@implementation NSObject (NotificationCenter)
+
+- (NSMutableDictionary <NSString *, __MZObserverRemover *> *)nc_observerDictionary
+{
+    NSMutableDictionary <NSString *, __MZObserverRemover *> * dic = objc_getAssociatedObject(self, @selector(nc_observerDictionary));
+    if (!dic) {
+        dic = [NSMutableDictionary dictionary];
+        objc_setAssociatedObject(self, @selector(nc_observerDictionary), dic, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    }
+    return dic;
+}
+
+- (void)observeNotificationName:(NSString *)name object:(id)object inQueue:(NSOperationQueue *)queue usingBlock:(void (^)(NSNotification *noti))block
+{
+    NSString *key = [NSString stringWithFormat:@"%@-%p", name, object];
+    
+    [self nc_observerDictionary][key] = [__MZObserverRemover removerWithObserver:[[NSNotificationCenter defaultCenter] addObserverForName:name
+                                                                                                                                   object:object
+                                                                                                                                    queue:queue
+                                                                                                                               usingBlock:block]];
+}
+
+- (void)observeNotificationName:(NSString *)name object:(id)object usingBlock:(void (^)(NSNotification *noti))block
+{
+    [self observeNotificationName:name object:object inQueue:[NSOperationQueue currentQueue] usingBlock:block];
+}
+
+- (void)unobserveNotificationName:(NSString *)name object:(id)object
+{
+    NSString *key = [NSString stringWithFormat:@"%@-%p", name, object];
+    [self nc_observerDictionary][key] = nil;
+}
+
+@end

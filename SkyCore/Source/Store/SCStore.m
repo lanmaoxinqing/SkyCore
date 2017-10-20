@@ -163,7 +163,7 @@
     return [NSKeyedUnarchiver unarchiveObjectWithFile:[self pathForKey:key]];
 }
 
--(SCStoreFile *)fileForKey:(NSString *)key {
+-(SCStoreFile *)file_storeFileForKey:(NSString *)key {
     NSData *fileData = nil;
     NSDate *lastModifyDate = nil;
     NSString *fileFullPath = [self pathForKey:key];
