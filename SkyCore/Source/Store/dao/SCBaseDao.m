@@ -79,7 +79,7 @@ static NSManagedObjectModel         *_model;        //数据模板
 #pragma mark - public method
 +(void)prepare{
     //检查配置文件是否配置数据库名称
-    if(![[SCSysconfig bundleValueByKey:kBundleKeyDataBase] isNotEmpty]){
+    if(![[SCSysconfig bundleValueByKey:kBundleKeyDataBase] sc_isNotEmpty]){
         NSLog(@"尚未配置数据库名称");
         return;
     }
@@ -191,7 +191,7 @@ static NSManagedObjectModel         *_model;        //数据模板
     }
     NSPredicate *predicate=[NSPredicate predicateWithFormat:@"sid = %@",sid];
     NSArray *arr=[self selectByName:entityName andPredicate:predicate sort:nil limited:0];
-    if([arr isNotEmpty]){
+    if([arr sc_isNotEmpty]){
         NSManagedObject *obj=[arr objectAtIndex:0];
         return obj;
     }else{
@@ -216,7 +216,7 @@ static NSManagedObjectModel         *_model;        //数据模板
             NSString *propertyName = [NSString stringWithCString:property_getName(properties[i]) encoding:NSUTF8StringEncoding];
             if([attr rangeOfString:@"NSNumber"].location!=NSNotFound){
                 id value=[obj valueForKey:propertyName];
-                if([value isNotNull]){
+                if([value sc_isNotNull]){
                     NSString *preStr=[NSString stringWithFormat:@"%@ = %%@",propertyName];
                     NSLog(@"%@",preStr);
                     NSPredicate *predicate=[NSPredicate predicateWithFormat:preStr,value];
@@ -225,7 +225,7 @@ static NSManagedObjectModel         *_model;        //数据模板
             }else if([attr rangeOfString:@"NSString"].location!=NSNotFound ||
                      [attr rangeOfString:@"NSMutableString"].location!=NSNotFound){
                 id value=[obj valueForKey:propertyName];
-                if([value isNotNull]){
+                if([value sc_isNotNull]){
                     NSString *preStr=[NSString stringWithFormat:@"%@ CONTAINS[cd] %%@",propertyName];
                     NSPredicate *predicate=[NSPredicate predicateWithFormat:preStr,value];
                     [predicates addObject:predicate];
@@ -233,7 +233,7 @@ static NSManagedObjectModel         *_model;        //数据模板
             }
         }
         free(properties);
-        if([predicates isNotEmpty]){
+        if([predicates sc_isNotEmpty]){
             predicate=[NSCompoundPredicate andPredicateWithSubpredicates:predicates];
         }
     }

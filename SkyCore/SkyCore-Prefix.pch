@@ -4,17 +4,15 @@
 //  The contents of this file are implicitly included at the beginning of every source file.
 //
 
-#define SCLogSimple
-
 #ifdef __OBJC__
 
 #import <Foundation/Foundation.h>
-#import "NSObject+NotNull.h"
 #import "NSArray+SCUtils.h"
 #import "NSString+SCUtils.h"
 #import "UIView+SCUtils.h"
 #import "UIColor+SCUtils.h"
 #import "SCWeakifyMacro.h"
+#import "NSObject+SCUtils.h"
 
 #endif
  

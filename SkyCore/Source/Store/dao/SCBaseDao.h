@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 #import <objc/runtime.h>
-#import "NSObject+NotNull.h"
 
 #define kCurrentContentKey ([[NSThread currentThread] description])
 

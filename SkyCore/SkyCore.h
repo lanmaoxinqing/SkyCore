@@ -14,7 +14,3 @@
 #import <SkyCore/SCStore.h>
 #import <SkyCore/SCApplication.h>
 #import <SkyCore/NSString+SCUtils.h>
-
-@interface SkyCore : NSObject
-
-@end

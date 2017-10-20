@@ -31,7 +31,7 @@
     NSFileManager *fileManager=[NSFileManager defaultManager];
     if(filePaths!=nil && [filePaths count]>0){
         for(NSString *filePath in filePaths){
-            if([filePath isNotEmpty] && [fileManager fileExistsAtPath:filePath]){
+            if([filePath sc_isNotEmpty] && [fileManager fileExistsAtPath:filePath]){
                 NSString *newPath=[newFolder stringByAppendingPathComponent:[filePath lastPathComponent]];
                 [fileManager moveItemAtPath:filePath toPath:newPath error:nil];
             }

@@ -33,7 +33,7 @@
 }
 
 -(void)setUrlStr:(NSString *)urlStr{
-    if([urlStr isNotEmpty] && ![urlStr hasPrefix:@"http://"]){
+    if([urlStr sc_isNotEmpty] && ![urlStr hasPrefix:@"http://"]){
         urlStr=[@"http://" stringByAppendingString:urlStr];
     }
     _urlStr=urlStr;
@@ -84,7 +84,7 @@
     urlStr=url.absoluteString;
     NSMutableArray *arr=[NSMutableArray new];
     for(NSString *key in [_params allKeys]){
-        NSString *str=[key stringByAppendingFormat:@"=%@",[_params[key] isNotEmpty]?_params[key]:@""];
+        NSString *str=[key stringByAppendingFormat:@"=%@",[_params[key] sc_isNotEmpty]?_params[key]:@""];
         [arr addObject:str];
     }
     NSString *params=[arr componentsJoinedByString:@"&"];
@@ -110,7 +110,7 @@
 }
 
 -(NSURLSessionDataTask *)requestWithProgressBlock:(void (^)(NSUInteger, long long, long long))block finish:(void (^)(NSString *, NSString *))finish{
-    if([fileDic_ isNotEmpty]){
+    if([fileDic_ sc_isNotEmpty]){
         return [self uploadWithProgressBlock:block finish:finish];
     }else{
         return [self request:finish];
@@ -163,7 +163,7 @@
 }
 
 -(NSURLSessionDataTask *)uploadWithProgressBlock:(void (^)(NSUInteger, long long, long long))block finish:(void (^)(id, NSString *))finish{
-    if(![fileDic_ isNotEmpty]){
+    if(![fileDic_ sc_isNotEmpty]){
         if(finish) finish(nil,@"未选择上传文件");
         return nil;
     }
@@ -199,7 +199,7 @@
 }
 
 -(void)batchUploadWithProgressBlock:(void (^)(NSUInteger, NSUInteger))progressBlock finish:(void (^)(NSArray *, NSString *))finish{
-//    if(![fileDic_ isNotEmpty]){
+//    if(![fileDic_ sc_isNotEmpty]){
 //        if(finish) finish(nil,@"未选择上传文件");
 //        return;
 //    }
@@ -229,7 +229,7 @@
 //            }
 //        }
 //    }
-//    if(![operationList isNotEmpty]){
+//    if(![operationList sc_isNotEmpty]){
 //        if(finish) finish(nil,@"上传文件不存在");
 //        return;
 //    }

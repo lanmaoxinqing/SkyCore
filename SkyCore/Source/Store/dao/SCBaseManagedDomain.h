@@ -7,7 +7,6 @@
 //
 
 #import <CoreData/CoreData.h>
-#import "NSObject+NotNull.h"
 #import <YYModel/YYModel.h>
 
 /**

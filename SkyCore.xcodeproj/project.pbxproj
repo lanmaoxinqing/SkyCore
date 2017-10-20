@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		31A1912F1F99E87200E57957 /* SCWeakifyMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 31A1912E1F99E87200E57957 /* SCWeakifyMacro.h */; };
 		31A191311F99E8C900E57957 /* SkyCore-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 31A191301F99E8C900E57957 /* SkyCore-Prefix.pch */; };
+		31A191A91F99F57700E57957 /* NSObject+SCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 31A191A71F99F57700E57957 /* NSObject+SCUtils.h */; };
+		31A191AA1F99F57700E57957 /* NSObject+SCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A191A81F99F57700E57957 /* NSObject+SCUtils.m */; };
+		31A191C11F9A071900E57957 /* ObjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A191C01F9A071900E57957 /* ObjectTests.m */; };
 		31D25B4B1F9772740016C93B /* SkyCoreUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31D25B421F9772740016C93B /* SkyCoreUtils.framework */; };
 		31D25B501F9772750016C93B /* SkyCoreUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D25B4F1F9772750016C93B /* SkyCoreUtilsTests.m */; };
 		31D25B521F9772750016C93B /* SkyCoreUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 31D25B441F9772740016C93B /* SkyCoreUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -72,6 +75,9 @@
 		30F136BBFA816E563E49B995 /* Pods-example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-example/Pods-example.debug.xcconfig"; sourceTree = "<group>"; };
 		31A1912E1F99E87200E57957 /* SCWeakifyMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCWeakifyMacro.h; sourceTree = "<group>"; };
 		31A191301F99E8C900E57957 /* SkyCore-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SkyCore-Prefix.pch"; sourceTree = "<group>"; };
+		31A191A71F99F57700E57957 /* NSObject+SCUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+SCUtils.h"; sourceTree = "<group>"; };
+		31A191A81F99F57700E57957 /* NSObject+SCUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SCUtils.m"; sourceTree = "<group>"; };
+		31A191C01F9A071900E57957 /* ObjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectTests.m; sourceTree = "<group>"; };
 		31D25B421F9772740016C93B /* SkyCoreUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SkyCoreUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		31D25B441F9772740016C93B /* SkyCoreUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SkyCoreUtils.h; sourceTree = "<group>"; };
 		31D25B451F9772740016C93B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,8 +107,6 @@
 		33E331E61F903353003F428D /* SCApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCApplication.h; sourceTree = "<group>"; };
 		33E331E71F903353003F428D /* SCApplication.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCApplication.m; sourceTree = "<group>"; };
 		33E331EA1F903946003F428D /* ApplicationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplicationTests.m; sourceTree = "<group>"; };
-		33E331FC1F9187CC003F428D /* NSObject+NotNull.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+NotNull.h"; sourceTree = "<group>"; };
-		33E331FD1F9187CC003F428D /* NSObject+NotNull.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NotNull.m"; sourceTree = "<group>"; };
 		33E332021F9187CC003F428D /* NSString+MD5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
 		33E332031F9187CC003F428D /* NSString+MD5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
 		33E332061F918992003F428D /* NSString+SCUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+SCUtils.h"; sourceTree = "<group>"; };
@@ -262,6 +266,7 @@
 				33A89DF01F8E8FAB00EB38F0 /* StoreTest.m */,
 				33E331EA1F903946003F428D /* ApplicationTests.m */,
 				31D25B5E1F9786930016C93B /* StringTests.m */,
+				31A191C01F9A071900E57957 /* ObjectTests.m */,
 			);
 			path = SkyCoreTests;
 			sourceTree = "<group>";
@@ -271,8 +276,6 @@
 			children = (
 				33E3320A1F918B1A003F428D /* NSArray+SCUtils.h */,
 				33E3320B1F918B1A003F428D /* NSArray+SCUtils.m */,
-				33E331FC1F9187CC003F428D /* NSObject+NotNull.h */,
-				33E331FD1F9187CC003F428D /* NSObject+NotNull.m */,
 				33E332021F9187CC003F428D /* NSString+MD5.h */,
 				33E332031F9187CC003F428D /* NSString+MD5.m */,
 				33E332061F918992003F428D /* NSString+SCUtils.h */,
@@ -283,6 +286,8 @@
 				3374A4791F98EA3100C88BBF /* UIView+SCUtils.m */,
 				3374A47C1F98ECA000C88BBF /* UIColor+SCUtils.h */,
 				3374A47D1F98ECA000C88BBF /* UIColor+SCUtils.m */,
+				31A191A71F99F57700E57957 /* NSObject+SCUtils.h */,
+				31A191A81F99F57700E57957 /* NSObject+SCUtils.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -416,6 +421,7 @@
 				33E332081F918992003F428D /* NSString+SCUtils.h in Headers */,
 				FAF9881E1A314FF600B4EFF9 /* SCFileOper.h in Headers */,
 				33A89DE21F8E8CF500EB38F0 /* SCStore.h in Headers */,
+				31A191A91F99F57700E57957 /* NSObject+SCUtils.h in Headers */,
 				3374A47A1F98EA3100C88BBF /* UIView+SCUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -629,6 +635,7 @@
 			files = (
 				33A89DF11F8E8FAB00EB38F0 /* StoreTest.m in Sources */,
 				31D25B5F1F9786930016C93B /* StringTests.m in Sources */,
+				31A191C11F9A071900E57957 /* ObjectTests.m in Sources */,
 				33E331EB1F903946003F428D /* ApplicationTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -644,6 +651,7 @@
 				3374A47F1F98ECA000C88BBF /* UIColor+SCUtils.m in Sources */,
 				33A89DE31F8E8CF500EB38F0 /* SCStore.m in Sources */,
 				FAF988231A314FF600B4EFF9 /* SCSysconfig.m in Sources */,
+				31A191AA1F99F57700E57957 /* NSObject+SCUtils.m in Sources */,
 				33E332091F918992003F428D /* NSString+SCUtils.m in Sources */,
 				33955BD11F98C11600B9A84E /* SCBaseManagedDomain.m in Sources */,
 				33955BCF1F98C11600B9A84E /* SCBaseDao.m in Sources */,

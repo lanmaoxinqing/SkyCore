@@ -109,7 +109,7 @@ static NSMutableDictionary *cfgDict;
 
 +(NSString *)baiduAppKey{
     NSString *ak=[self bundleValueByKey:kBundleKeyBaiduAppKey];
-    if(![ak isNotEmpty]){
+    if(![ak sc_isNotEmpty]){
         ak=kBaiduAppKeyDefault;
     }
     NSAssert(ak, @"%@未配置",kBundleKeyAPI);
