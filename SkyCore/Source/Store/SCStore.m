@@ -8,6 +8,7 @@
 
 #import "SCStore.h"
 #import "SCApplication.h"
+#import <SFHFKeychainUtils/SFHFKeychainUtils.h>
 
 @interface SCStore()
 
@@ -185,5 +186,26 @@
 @end
 
 @implementation SCStore (KeyChain)
+
+- (NSString *)kc_stringForKey:(NSString *)key {
+    NSError *error = nil;
+    NSString *password = [SFHFKeychainUtils getPasswordForUsername:key
+                                                    andServiceName:@"skycore"
+                                                             error:&error];
+    if (error) {
+        return nil;
+    }
+    return password;
+}
+
+- (void)kc_setString:(NSString *)string forKey:(NSString *)key {
+    NSError *error = nil;
+    [SFHFKeychainUtils storeUsername:key
+                         andPassword:string
+                      forServiceName:@"skycore"
+                      updateExisting:YES
+                               error:&error];
+    
+}
 
 @end

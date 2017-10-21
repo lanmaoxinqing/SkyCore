@@ -85,5 +85,20 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SCStore (KeyChain)
 
+/**
+ 设置数据到钥匙串
+
+ @param string 数据
+ @param key  key 值
+ */
+- (void)kc_setString:(NSString *)string forKey:(NSString *)key;
+/**
+ 根据 key 值从钥匙串中获取数据
+ 
+ @param key key 值
+ */
+- (NSString *)kc_stringForKey:(NSString *)key;
+
+
 @end
 NS_ASSUME_NONNULL_END
