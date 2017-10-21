@@ -11,6 +11,7 @@
 #import <CoreTelephony/CTCarrier.h>
 #import "NSArray+SCUtils.h"
 #import <AFNetworking/AFNetworkReachabilityManager.h>
+#import "SCStore.h"
 
 @implementation SCApplication
 
@@ -89,6 +90,30 @@
     return networkTypeString;
 }
 
++ (NSString *)applicationDirectory {
+    NSArray * paths = NSSearchPathForDirectoriesInDomains(NSApplicationDirectory, NSUserDomainMask, YES);
+    return [paths objectAtIndex:0];
+}
+
++ (NSString *)documentDirectory {
+    NSArray * paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    return [paths objectAtIndex:0];
+}
+
++ (NSString *)libraryDirectory {
+    NSArray * paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
+    return [paths objectAtIndex:0];
+}
+
++ (NSString *)cacheDirectory {
+    NSArray * paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+    return [paths objectAtIndex:0];
+}
+
++ (NSString *)tmpDirectory {
+    return NSTemporaryDirectory();
+}
+
 + (NSString *)launchImageName
 {
     /*
@@ -120,6 +145,18 @@
     return dict[key] ?: dict[@"414x736"];
 }
 
+
+//MARK:- 标识符
++ (NSString *)UUID __attribute__((const)) {
+    NSString *uuid = [[SCStore defaultStore] kc_stringForKey:@"UUID"];
+    if (!uuid) {
+        uuid = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+        [[SCStore defaultStore] kc_setString:uuid forKey:@"UUID"];
+    }
+    return uuid;
+}
+
+//MARK:- 应用信息
 -(UIImage *)appIcon
 {
     NSString *iconName = @"AppIcon60x60";
