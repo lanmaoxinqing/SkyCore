@@ -8,7 +8,15 @@
 
 #import "UIColor+SCUtils.h"
 
-UIColor *SCHexColor(NSUInteger hex) {
+inline UIColor *SCRGBColor(NSUInteger r, NSUInteger g, NSUInteger b) {
+    return [UIColor colorWithRed:r/255.f green:g/255.f blue:b/255.f alpha:1];
+}
+
+inline UIColor *SCRGBAColor(NSUInteger r, NSUInteger g, NSUInteger b, NSUInteger a) {
+    return [UIColor colorWithRed:r/255.f green:g/255.f blue:b/255.f alpha:a];
+}
+
+inline UIColor *SCHexColor(NSUInteger hex) {
     return [UIColor sc_colorWithHexColor:hex];
 }
 
