@@ -8,11 +8,12 @@
 
 #import "SCBaseDao.h"
 #import "SCBaseManagedDomain.h"
-#import "SCSysconfig.h"
 #import "SCFileOper.h"
+#import "SCApplication.h"
 
 @interface SCBaseDao(Private)
 
++ (NSString *)dbPath;
 +(NSManagedObjectModel *)model;
 +(NSPersistentStoreCoordinator *)database;
 +(NSArray *)sortDescriptorsByStr:(NSString *)sort;
@@ -30,6 +31,10 @@ static NSPersistentStoreCoordinator *_database;     //数据源
 static NSManagedObjectModel         *_model;        //数据模板
 
 #pragma mark - Private method
++ (NSString *)dbPath {
+    return [SCApplication.cacheDirectory stringByAppendingPathComponent:@"db.sqlite"];
+}
+
 +(NSManagedObjectModel *)model{
     if (_model == nil) {
         _model = [NSManagedObjectModel mergedModelFromBundles:nil];
@@ -40,7 +45,7 @@ static NSManagedObjectModel         *_model;        //数据模板
 +(NSPersistentStoreCoordinator *)database{
     if (_database == nil) {
         //CoreData是建立在SQLite之上的，数据库名称需与Xcdatamodel文件同名
-        NSString *dataFile=[SCSysconfig databasePath];
+        NSString *dataFile = self.dbPath;
 //        NSLog(@"%@", dataFile);
         if(![[NSFileManager defaultManager] fileExistsAtPath:dataFile]){
             [[NSFileManager defaultManager] createFileAtPath:dataFile contents:nil attributes:nil];
@@ -54,7 +59,8 @@ static NSManagedObjectModel         *_model;        //数据模板
         _database=[[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self model]];
         //连接SQLite
         if (![_database addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:url options:options error:&error]) {
-            NSAssert(@"ERROR-[BaseDao database]:%@,%@",[error description],[[error userInfo] description]);
+            NSString *errorMsg = [NSString stringWithFormat:@"ERROR-[BaseDao database]:%@",[error localizedDescription]];
+            NSAssert(NO, errorMsg);
         }
     }
     return _database;
@@ -63,8 +69,8 @@ static NSManagedObjectModel         *_model;        //数据模板
 +(NSArray *)sortDescriptorsByStr:(NSString *)sort{
     NSArray *arr=[sort componentsSeparatedByString:@","];
     if([arr count]%2!=0){
-        NSAssert(@"ERROR-[BaseDao sortDescriptorsByStr:]:以下排序字段键值对不完整\n%@\n",sort);
-        return nil;
+        NSString *errorMsg = [NSString stringWithFormat:@"ERROR-[BaseDao sortDescriptorsByStr:]:以下排序字段键值对不完整\n%@\n",sort];
+        NSAssert(NO, errorMsg);
     }
     NSMutableArray *sorts=[NSMutableArray array];
     for(int i=0;i<[arr count];i=i+2){
@@ -78,14 +84,9 @@ static NSManagedObjectModel         *_model;        //数据模板
 
 #pragma mark - public method
 +(void)prepare{
-    //检查配置文件是否配置数据库名称
-    if(![[SCSysconfig bundleValueByKey:kBundleKeyDataBase] sc_isNotEmpty]){
-        NSLog(@"尚未配置数据库名称");
-        return;
-    }
     //检测沙盒中数据库是否存在
     NSError *error=nil;
-    BOOL isExists=[[NSFileManager defaultManager] fileExistsAtPath:[SCSysconfig databasePath]];
+    BOOL isExists=[[NSFileManager defaultManager] fileExistsAtPath:self.dbPath];
     //数据库已存在
     if(isExists){
         NSLog(@"数据库已存在,加载数据库");
@@ -94,11 +95,15 @@ static NSManagedObjectModel         *_model;        //数据模板
         return;
     }
     //沙盒数据库不存在,检测应用包中初始数据库是否存在
-    NSString *dbPath=[[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:[SCSysconfig bundleValueByKey:kBundleKeyDataBase]];
-    isExists=[[NSFileManager defaultManager] fileExistsAtPath:dbPath];
-    if(isExists){
+    NSArray *paths = [[NSBundle mainBundle] pathsForResourcesOfType:@".sqlite" inDirectory:nil];
+    if (![paths sc_isNotEmpty]) {
+        NSLog(@"初始数据库不存在,创建并加载数据库");
+        [SCBaseDao tempContext];
+        [SCBaseDao context];
+    } else {
+        NSString *dbPath = paths[0];
         //复制初始数据库至沙盒
-        BOOL isCreate=[[NSFileManager defaultManager] copyItemAtPath:dbPath toPath:[SCSysconfig databasePath] error:&error];
+        BOOL isCreate=[[NSFileManager defaultManager] copyItemAtPath:dbPath toPath:self.dbPath error:&error];
         if(isCreate){
             NSLog(@"初始数据库添加成功,加载数据库");
             [SCBaseDao tempContext];
@@ -108,10 +113,6 @@ static NSManagedObjectModel         *_model;        //数据模板
             [SCBaseDao tempContext];
             [SCBaseDao context];
         }
-    }else{
-        NSLog(@"初始数据库不存在,创建并加载数据库");
-        [SCBaseDao tempContext];
-        [SCBaseDao context];
     }
 }
 //获取上下文,每个线程一个context

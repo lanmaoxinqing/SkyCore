@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		31A1912F1F99E87200E57957 /* SCWeakifyMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 31A1912E1F99E87200E57957 /* SCWeakifyMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		31A191311F99E8C900E57957 /* SkyCore-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 31A191301F99E8C900E57957 /* SkyCore-Prefix.pch */; settings = {ATTRIBUTES = (Public, ); }; };
 		31A191A91F99F57700E57957 /* NSObject+SCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 31A191A71F99F57700E57957 /* NSObject+SCUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		31A191AA1F99F57700E57957 /* NSObject+SCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A191A81F99F57700E57957 /* NSObject+SCUtils.m */; };
@@ -86,12 +85,8 @@
 		FAABF9AB1A0202DA004948E9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAABF9A01A0202DA004948E9 /* SystemConfiguration.framework */; };
 		FAABF9AD1A0202DA004948E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAABF9A21A0202DA004948E9 /* UIKit.framework */; };
 		FAE7F9581A02046400DC86BD /* SkyCore.h in Headers */ = {isa = PBXBuildFile; fileRef = FAABF88E1A020276004948E9 /* SkyCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAF988181A314FF600B4EFF9 /* SCAppCache.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF987E71A314FF600B4EFF9 /* SCAppCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAF988191A314FF600B4EFF9 /* SCAppCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF987E81A314FF600B4EFF9 /* SCAppCache.m */; };
 		FAF9881E1A314FF600B4EFF9 /* SCFileOper.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF987ED1A314FF600B4EFF9 /* SCFileOper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FAF9881F1A314FF600B4EFF9 /* SCFileOper.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF987EE1A314FF600B4EFF9 /* SCFileOper.m */; };
-		FAF988221A314FF600B4EFF9 /* SCSysconfig.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF987F11A314FF600B4EFF9 /* SCSysconfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAF988231A314FF600B4EFF9 /* SCSysconfig.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF987F21A314FF600B4EFF9 /* SCSysconfig.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,7 +102,6 @@
 /* Begin PBXFileReference section */
 		182179C94103E7C1F3C81F56 /* Pods-example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example.release.xcconfig"; path = "Pods/Target Support Files/Pods-example/Pods-example.release.xcconfig"; sourceTree = "<group>"; };
 		30F136BBFA816E563E49B995 /* Pods-example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-example/Pods-example.debug.xcconfig"; sourceTree = "<group>"; };
-		31A1912E1F99E87200E57957 /* SCWeakifyMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCWeakifyMacro.h; sourceTree = "<group>"; };
 		31A191301F99E8C900E57957 /* SkyCore-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SkyCore-Prefix.pch"; sourceTree = "<group>"; };
 		31A191A71F99F57700E57957 /* NSObject+SCUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+SCUtils.h"; sourceTree = "<group>"; };
 		31A191A81F99F57700E57957 /* NSObject+SCUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SCUtils.m"; sourceTree = "<group>"; };
@@ -169,6 +163,8 @@
 		3374A47C1F98ECA000C88BBF /* UIColor+SCUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+SCUtils.h"; sourceTree = "<group>"; };
 		3374A47D1F98ECA000C88BBF /* UIColor+SCUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SCUtils.m"; sourceTree = "<group>"; };
 		3374A4B01F9B161800C88BBF /* RequestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestTests.m; sourceTree = "<group>"; };
+		3374A4B31F9B1C4600C88BBF /* SCWeakifyMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCWeakifyMacro.h; sourceTree = "<group>"; };
+		3374A4B41F9B1C5B00C88BBF /* SCMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCMacros.h; sourceTree = "<group>"; };
 		33955BCA1F98C11600B9A84E /* SCBaseDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBaseDao.h; sourceTree = "<group>"; };
 		33955BCB1F98C11600B9A84E /* SCBaseDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBaseDao.m; sourceTree = "<group>"; };
 		33955BCC1F98C11600B9A84E /* SCBaseManagedDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBaseManagedDomain.h; sourceTree = "<group>"; };
@@ -208,12 +204,8 @@
 		FAABF9A11A0202DA004948E9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FAABF9A21A0202DA004948E9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FAABF9A31A0202DA004948E9 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
-		FAF987E71A314FF600B4EFF9 /* SCAppCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAppCache.h; sourceTree = "<group>"; };
-		FAF987E81A314FF600B4EFF9 /* SCAppCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAppCache.m; sourceTree = "<group>"; };
 		FAF987ED1A314FF600B4EFF9 /* SCFileOper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFileOper.h; sourceTree = "<group>"; };
 		FAF987EE1A314FF600B4EFF9 /* SCFileOper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFileOper.m; sourceTree = "<group>"; };
-		FAF987F11A314FF600B4EFF9 /* SCSysconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSysconfig.h; sourceTree = "<group>"; };
-		FAF987F21A314FF600B4EFF9 /* SCSysconfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSysconfig.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -384,6 +376,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		3374A4B21F9B1C4600C88BBF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3374A4B31F9B1C4600C88BBF /* SCWeakifyMacro.h */,
+				3374A4B41F9B1C5B00C88BBF /* SCMacros.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		33955BC91F98C11600B9A84E /* dao */ = {
 			isa = PBXGroup;
 			children = (
@@ -506,8 +507,8 @@
 		FAF987D11A314FF600B4EFF9 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				3374A4B21F9B1C4600C88BBF /* Utils */,
 				31A191C21F9A097700E57957 /* Network */,
-				31A1912E1F99E87200E57957 /* SCWeakifyMacro.h */,
 				3374A46F1F98E34100C88BBF /* View */,
 				33E331F91F9187CC003F428D /* Category */,
 				33A89DDF1F8E8CDF00EB38F0 /* Store */,
@@ -519,12 +520,8 @@
 		FAF987E61A314FF600B4EFF9 /* service */ = {
 			isa = PBXGroup;
 			children = (
-				FAF987E71A314FF600B4EFF9 /* SCAppCache.h */,
-				FAF987E81A314FF600B4EFF9 /* SCAppCache.m */,
 				FAF987ED1A314FF600B4EFF9 /* SCFileOper.h */,
 				FAF987EE1A314FF600B4EFF9 /* SCFileOper.m */,
-				FAF987F11A314FF600B4EFF9 /* SCSysconfig.h */,
-				FAF987F21A314FF600B4EFF9 /* SCSysconfig.m */,
 				33E331E61F903353003F428D /* SCApplication.h */,
 				33E331E71F903353003F428D /* SCApplication.m */,
 			);
@@ -568,15 +565,12 @@
 				31A192061F9A097700E57957 /* MZResponseParser.h in Headers */,
 				31A192181F9A097700E57957 /* MZBaseResponse+CommonErrorSolution.h in Headers */,
 				31A192021F9A097700E57957 /* MZResponseListParser.h in Headers */,
-				31A1912F1F99E87200E57957 /* SCWeakifyMacro.h in Headers */,
 				31A1921C1F9A097700E57957 /* MZListResponse.h in Headers */,
 				31A1921A1F9A097700E57957 /* MZBaseResponse.h in Headers */,
 				31A191A91F99F57700E57957 /* NSObject+SCUtils.h in Headers */,
 				3374A47A1F98EA3100C88BBF /* UIView+SCUtils.h in Headers */,
 				31A191FF1F9A097700E57957 /* MZErrorCode.h in Headers */,
-				FAF988181A314FF600B4EFF9 /* SCAppCache.h in Headers */,
 				33955BCE1F98C11600B9A84E /* SCBaseDao.h in Headers */,
-				FAF988221A314FF600B4EFF9 /* SCSysconfig.h in Headers */,
 				33E331E81F903353003F428D /* SCApplication.h in Headers */,
 				33955BD01F98C11600B9A84E /* SCBaseManagedDomain.h in Headers */,
 				33E332081F918992003F428D /* NSString+SCUtils.h in Headers */,
@@ -810,7 +804,6 @@
 				3374A47B1F98EA3100C88BBF /* UIView+SCUtils.m in Sources */,
 				31A192031F9A097700E57957 /* MZResponseListParser.m in Sources */,
 				31A192211F9A097700E57957 /* MZPropertyResponse.m in Sources */,
-				FAF988191A314FF600B4EFF9 /* SCAppCache.m in Sources */,
 				31A192191F9A097700E57957 /* MZBaseResponse+CommonErrorSolution.m in Sources */,
 				31A192071F9A097700E57957 /* MZResponseParser.m in Sources */,
 				31A192051F9A097700E57957 /* MZResponseObjectParser.m in Sources */,
@@ -822,7 +815,6 @@
 				33A89DE31F8E8CF500EB38F0 /* SCStore.m in Sources */,
 				31A191F61F9A097700E57957 /* MZRequestCache.m in Sources */,
 				31A192001F9A097700E57957 /* MZErrorCode.m in Sources */,
-				FAF988231A314FF600B4EFF9 /* SCSysconfig.m in Sources */,
 				31A191AA1F99F57700E57957 /* NSObject+SCUtils.m in Sources */,
 				31A1920D1F9A097700E57957 /* MZCachedRequestManager.m in Sources */,
 				31A192131F9A097700E57957 /* MZRequestManager.m in Sources */,
