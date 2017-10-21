@@ -88,8 +88,6 @@
 		FAE7F9581A02046400DC86BD /* SkyCore.h in Headers */ = {isa = PBXBuildFile; fileRef = FAABF88E1A020276004948E9 /* SkyCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FAF988181A314FF600B4EFF9 /* SCAppCache.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF987E71A314FF600B4EFF9 /* SCAppCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FAF988191A314FF600B4EFF9 /* SCAppCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF987E81A314FF600B4EFF9 /* SCAppCache.m */; };
-		FAF9881C1A314FF600B4EFF9 /* SCCommonTools.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF987EB1A314FF600B4EFF9 /* SCCommonTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAF9881D1A314FF600B4EFF9 /* SCCommonTools.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF987EC1A314FF600B4EFF9 /* SCCommonTools.m */; };
 		FAF9881E1A314FF600B4EFF9 /* SCFileOper.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF987ED1A314FF600B4EFF9 /* SCFileOper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FAF9881F1A314FF600B4EFF9 /* SCFileOper.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF987EE1A314FF600B4EFF9 /* SCFileOper.m */; };
 		FAF988221A314FF600B4EFF9 /* SCSysconfig.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF987F11A314FF600B4EFF9 /* SCSysconfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -212,8 +210,6 @@
 		FAABF9A31A0202DA004948E9 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		FAF987E71A314FF600B4EFF9 /* SCAppCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAppCache.h; sourceTree = "<group>"; };
 		FAF987E81A314FF600B4EFF9 /* SCAppCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAppCache.m; sourceTree = "<group>"; };
-		FAF987EB1A314FF600B4EFF9 /* SCCommonTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCCommonTools.h; sourceTree = "<group>"; };
-		FAF987EC1A314FF600B4EFF9 /* SCCommonTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCCommonTools.m; sourceTree = "<group>"; };
 		FAF987ED1A314FF600B4EFF9 /* SCFileOper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFileOper.h; sourceTree = "<group>"; };
 		FAF987EE1A314FF600B4EFF9 /* SCFileOper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFileOper.m; sourceTree = "<group>"; };
 		FAF987F11A314FF600B4EFF9 /* SCSysconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSysconfig.h; sourceTree = "<group>"; };
@@ -525,8 +521,6 @@
 			children = (
 				FAF987E71A314FF600B4EFF9 /* SCAppCache.h */,
 				FAF987E81A314FF600B4EFF9 /* SCAppCache.m */,
-				FAF987EB1A314FF600B4EFF9 /* SCCommonTools.h */,
-				FAF987EC1A314FF600B4EFF9 /* SCCommonTools.m */,
 				FAF987ED1A314FF600B4EFF9 /* SCFileOper.h */,
 				FAF987EE1A314FF600B4EFF9 /* SCFileOper.m */,
 				FAF987F11A314FF600B4EFF9 /* SCSysconfig.h */,
@@ -580,7 +574,6 @@
 				31A191A91F99F57700E57957 /* NSObject+SCUtils.h in Headers */,
 				3374A47A1F98EA3100C88BBF /* UIView+SCUtils.h in Headers */,
 				31A191FF1F9A097700E57957 /* MZErrorCode.h in Headers */,
-				FAF9881C1A314FF600B4EFF9 /* SCCommonTools.h in Headers */,
 				FAF988181A314FF600B4EFF9 /* SCAppCache.h in Headers */,
 				33955BCE1F98C11600B9A84E /* SCBaseDao.h in Headers */,
 				FAF988221A314FF600B4EFF9 /* SCSysconfig.h in Headers */,
@@ -824,7 +817,6 @@
 				3374A4771F98E82300C88BBF /* UIImage+SCUtils.m in Sources */,
 				31A192091F9A097700E57957 /* MZResponsePropertyParser.m in Sources */,
 				31A1920F1F9A097700E57957 /* MZListRequest.m in Sources */,
-				FAF9881D1A314FF600B4EFF9 /* SCCommonTools.m in Sources */,
 				3374A47F1F98ECA000C88BBF /* UIColor+SCUtils.m in Sources */,
 				31A192171F9A097700E57957 /* MZRequestTransaction.m in Sources */,
 				33A89DE31F8E8CF500EB38F0 /* SCStore.m in Sources */,

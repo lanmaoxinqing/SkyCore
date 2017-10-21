@@ -182,3 +182,50 @@
 }
 
 @end
+
+@implementation NSString (IDCard)
+
+- (BOOL)validIDCard {
+    NSArray *cityArr = [NSArray arrayWithObjects:[NSNull null],[NSNull null],[NSNull null],[NSNull null],[NSNull null],[NSNull null],[NSNull null],[NSNull null],[NSNull null],[NSNull null],[NSNull null],@"北京",@"天津",@"河北",@"山西",@"内蒙古",[NSNull null],[NSNull null],[NSNull null],[NSNull null],[NSNull null],@"辽宁",@"吉林",@"黑龙江",[NSNull null],[NSNull null],[NSNull null],[NSNull null],[NSNull null],[NSNull null],[NSNull null],@"上海",@"江苏",@"浙江",@"安微",@"福建",@"江西",@"山东",[NSNull null],[NSNull null],[NSNull null],@"河南",@"湖北",@"湖南",@"广东",@"广西",@"海南",[NSNull null],[NSNull null],[NSNull null],@"重庆",@"四川",@"贵州",@"云南",@"西藏",[NSNull null],[NSNull null],[NSNull null],[NSNull null],[NSNull null],[NSNull null],@"陕西",@"甘肃",@"青海",@"宁夏",@"新疆",[NSNull null],[NSNull null],[NSNull null],[NSNull null],[NSNull null],@"台湾",[NSNull null],[NSNull null],[NSNull null],[NSNull null],[NSNull null],[NSNull null],[NSNull null],[NSNull null],[NSNull null],@"香港",@"澳门",[NSNull null],[NSNull null],[NSNull null],[NSNull null],[NSNull null],[NSNull null],[NSNull null],[NSNull null],@"国外", nil];
+    NSArray *wis = [NSArray arrayWithObjects:@"7",@"9",@"10",@"5",@"8",@"4",@"2",@"1",@"6",@"3",@"7",@"9",@"10",@"5",@"8",@"4",@"2", nil];
+    NSArray *codes = [NSArray arrayWithObjects:@"1",@"0",@"x",@"9",@"8",@"7",@"6",@"5",@"4",@"3",@"2", nil];
+    NSError *error;
+    NSRegularExpression *regex;
+    NSTextCheckingResult *result;
+    //数字及地址码验证
+    regex=[NSRegularExpression regularExpressionWithPattern:@"^(^\\d{15}$|^\\d{18}$|^\\d{17}(\\d|X|x))$" options:0 error:&error];
+    result=[regex firstMatchInString:self options:0 range:NSMakeRange(0, [self length])];
+    if(!result){
+        return NO;
+    }
+    if([cityArr objectAtIndex:[[self substringWithRange:NSMakeRange(0, 2)] intValue]]==[NSNull null]){
+        return NO;
+    }
+    //日期码验证
+    NSDateFormatter *formatter=[[NSDateFormatter alloc] init];
+    @try {
+        NSString *dateStr=[self substringWithRange:NSMakeRange(6, 8)];
+        formatter.dateFormat=@"yyyyMMdd";
+        NSDate *date=[formatter dateFromString:dateStr];
+        if(!date){
+            return NO;
+        }
+    }
+    @catch (NSException *exception) {
+        return NO;
+    }
+    //校验码验证
+    int sum=0;
+    for(int i=0;i<17;i++){
+        int ai=[[self substringWithRange:NSMakeRange(i, 1)] intValue];
+        int wi=[[wis objectAtIndex:i] intValue];
+        sum+=ai*wi;
+    }
+    NSString *code=[codes objectAtIndex:(sum%11)];
+    if(![code isEqualToString:[self substringWithRange:NSMakeRange(17, 1)]]){
+        return NO;
+    }
+    return YES;
+}
+
+@end
