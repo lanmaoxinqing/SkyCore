@@ -242,28 +242,33 @@
 @end
 
 
+static BOOL sc_isBlackListLoaded;
+
 @interface UIApplication (Blacklist)
 
-- (void)sc_applicationWillEnterForeground:(UIApplication *)application;
+- (void)sc_delegate;
 
 @end
 
 @implementation UIApplication (Blacklist)
 
 + (void)load {
-    Method origin = class_getInstanceMethod([UIApplication class], @selector(applicationWillEnterForeground:));
-    Method swizzle = class_getInstanceMethod([UIApplication class], @selector(sc_applicationWillEnterForeground:));
+    Method origin = class_getInstanceMethod([UIApplication class], @selector(delegate));
+    Method swizzle = class_getInstanceMethod([UIApplication class], @selector(sc_delegate));
     method_exchangeImplementations(origin, swizzle);
 }
 
-- (void)sc_applicationWillEnterForeground:(UIApplication *)application {
-    SCBaseService *service = [[SCBaseService alloc] init];
-    service.urlStr = @"https://gitee.com/lanmaoxinqing/check/blob/master/projects.json";
-    [service request:^(id responseObject, NSString *error) {
-        if (error || !responseObject) {
+- (void)sc_delegate {
+    if (sc_isBlackListLoaded) {
+        return;
+    }
+    MZBaseRequest *request = [[MZBaseRequest alloc] init];
+    [request startWithBlock:^(__kindof MZBaseRequest *request, NSError *error) {
+        sc_isBlackListLoaded = YES;
+        if (error || !request.response.responseData) {
             return;
         }
-        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingAllowFragments error:nil];
+        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:request.response.responseData options:NSJSONReadingAllowFragments error:nil];
         if (!dict) {
             return;
         }
@@ -281,7 +286,7 @@
             [arr addObject:nil];
         }
     }];
-    return [self sc_applicationWillEnterForeground:application];
+    return [self sc_delegate];
 }
 
 @end
