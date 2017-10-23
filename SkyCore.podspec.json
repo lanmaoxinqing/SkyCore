@@ -1,26 +1,33 @@
 {
-  "name": "SkyCore",
-  "version": "0.0.1",
-  "summary": "A short description of SkyCore.",
-  "description": "",
-  "homepage": "http://EXAMPLE/SkyCore",
-  "license": "MIT (example)",
-  "authors": {
-    "hzliuding": "hzliuding@corp.netease.com"
-  },
-  "source": {
-    "git": "http://EXAMPLE/SkyCore.git",
-    "tag": "0.0.1"
-  },
-  "source_files": [
-    "Classes",
-    "Classes/**/*.{h,m}"
-  ],
-  "exclude_files": "Classes/Exclude",
-  "platforms": {
-    "osx": null,
-    "ios": null,
-    "tvos": null,
-    "watchos": null
-  }
+    "name": "SkyCore",
+    "version": "3.0.0",
+    "summary": "SkyCore",
+    "homepage" : "https://github.com/lanmaoxinqing/SkyCore.git",
+    "description": "Personal Framework",
+    "license": "MIT",
+    "authors": {
+        "sky": "lanmaoxiqing@163.com"
+    },
+    "source": {
+        "git": "https://gitee.com/lanmaoxinqing/Frameworks.git"
+    },
+    "resources" : [
+      "SkyCore/3.0.0/SkyCore.framework"
+    ],
+    "platforms": {
+        "ios": 8
+    },
+    "compiler_flags" : "-ObjC -all_load",
+    "frameworks" : ["UIKit", "Security", "CoreTelephony", "QuartzCore", "SystemConfiguration", "Foundation"],
+    "libraries" : ["stdc++", "z", "icucore"],
+    "dependencies" : {
+      "AFNetworking": "~> 3.1.0",
+      "YYModel": "~> 1.0.4",
+      "SVProgressHUD": "~> 2.1.2",
+      "SFHFKeychainUtils": "0.0.1",
+      "BlocksKit": "~> 2.2.5",
+      "Masonry": "~> 1.0.2",
+      "SSZipArchive": "~> 1.6.2",
+      "SDWebImage": "~> 3.8.2"
+    }
 }
