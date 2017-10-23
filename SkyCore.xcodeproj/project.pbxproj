@@ -7,23 +7,64 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		31A1912F1F99E87200E57957 /* SCWeakifyMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 31A1912E1F99E87200E57957 /* SCWeakifyMacro.h */; };
-		31A191311F99E8C900E57957 /* SkyCore-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 31A191301F99E8C900E57957 /* SkyCore-Prefix.pch */; };
-		31A191A91F99F57700E57957 /* NSObject+SCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 31A191A71F99F57700E57957 /* NSObject+SCUtils.h */; };
+		31A191311F99E8C900E57957 /* SkyCore-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 31A191301F99E8C900E57957 /* SkyCore-Prefix.pch */; settings = {ATTRIBUTES = (Public, ); }; };
+		31A191A91F99F57700E57957 /* NSObject+SCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 31A191A71F99F57700E57957 /* NSObject+SCUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		31A191AA1F99F57700E57957 /* NSObject+SCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A191A81F99F57700E57957 /* NSObject+SCUtils.m */; };
 		31A191C11F9A071900E57957 /* ObjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A191C01F9A071900E57957 /* ObjectTests.m */; };
+		31A191F51F9A097700E57957 /* MZRequestCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 31A191C41F9A097700E57957 /* MZRequestCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31A191F61F9A097700E57957 /* MZRequestCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A191C51F9A097700E57957 /* MZRequestCache.m */; };
+		31A191FF1F9A097700E57957 /* MZErrorCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 31A191CF1F9A097700E57957 /* MZErrorCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31A192001F9A097700E57957 /* MZErrorCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A191D01F9A097700E57957 /* MZErrorCode.m */; };
+		31A192011F9A097700E57957 /* MZRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 31A191D11F9A097700E57957 /* MZRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31A192021F9A097700E57957 /* MZResponseListParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 31A191D31F9A097700E57957 /* MZResponseListParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31A192031F9A097700E57957 /* MZResponseListParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A191D41F9A097700E57957 /* MZResponseListParser.m */; };
+		31A192041F9A097700E57957 /* MZResponseObjectParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 31A191D51F9A097700E57957 /* MZResponseObjectParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31A192051F9A097700E57957 /* MZResponseObjectParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A191D61F9A097700E57957 /* MZResponseObjectParser.m */; };
+		31A192061F9A097700E57957 /* MZResponseParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 31A191D71F9A097700E57957 /* MZResponseParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31A192071F9A097700E57957 /* MZResponseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A191D81F9A097700E57957 /* MZResponseParser.m */; };
+		31A192081F9A097700E57957 /* MZResponsePropertyParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 31A191D91F9A097700E57957 /* MZResponsePropertyParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31A192091F9A097700E57957 /* MZResponsePropertyParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A191DA1F9A097700E57957 /* MZResponsePropertyParser.m */; };
+		31A1920A1F9A097700E57957 /* MZBaseRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 31A191DC1F9A097700E57957 /* MZBaseRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31A1920B1F9A097700E57957 /* MZBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A191DD1F9A097700E57957 /* MZBaseRequest.m */; };
+		31A1920C1F9A097700E57957 /* MZCachedRequestManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 31A191DE1F9A097700E57957 /* MZCachedRequestManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31A1920D1F9A097700E57957 /* MZCachedRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A191DF1F9A097700E57957 /* MZCachedRequestManager.m */; };
+		31A1920E1F9A097700E57957 /* MZListRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 31A191E01F9A097700E57957 /* MZListRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31A1920F1F9A097700E57957 /* MZListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A191E11F9A097700E57957 /* MZListRequest.m */; };
+		31A192101F9A097700E57957 /* MZRequestGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 31A191E21F9A097700E57957 /* MZRequestGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31A192111F9A097700E57957 /* MZRequestGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A191E31F9A097700E57957 /* MZRequestGroup.m */; };
+		31A192121F9A097700E57957 /* MZRequestManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 31A191E41F9A097700E57957 /* MZRequestManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31A192131F9A097700E57957 /* MZRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A191E51F9A097700E57957 /* MZRequestManager.m */; };
+		31A192141F9A097700E57957 /* MZRequestQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 31A191E61F9A097700E57957 /* MZRequestQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31A192151F9A097700E57957 /* MZRequestQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A191E71F9A097700E57957 /* MZRequestQueue.m */; };
+		31A192161F9A097700E57957 /* MZRequestTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = 31A191E81F9A097700E57957 /* MZRequestTransaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31A192171F9A097700E57957 /* MZRequestTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A191E91F9A097700E57957 /* MZRequestTransaction.m */; };
+		31A192181F9A097700E57957 /* MZBaseResponse+CommonErrorSolution.h in Headers */ = {isa = PBXBuildFile; fileRef = 31A191EB1F9A097700E57957 /* MZBaseResponse+CommonErrorSolution.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31A192191F9A097700E57957 /* MZBaseResponse+CommonErrorSolution.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A191EC1F9A097700E57957 /* MZBaseResponse+CommonErrorSolution.m */; };
+		31A1921A1F9A097700E57957 /* MZBaseResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 31A191ED1F9A097700E57957 /* MZBaseResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31A1921B1F9A097700E57957 /* MZBaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A191EE1F9A097700E57957 /* MZBaseResponse.m */; };
+		31A1921C1F9A097700E57957 /* MZListResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 31A191EF1F9A097700E57957 /* MZListResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31A1921D1F9A097700E57957 /* MZListResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A191F01F9A097700E57957 /* MZListResponse.m */; };
+		31A1921E1F9A097700E57957 /* MZObjectResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 31A191F11F9A097700E57957 /* MZObjectResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31A1921F1F9A097700E57957 /* MZObjectResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A191F21F9A097700E57957 /* MZObjectResponse.m */; };
+		31A192201F9A097700E57957 /* MZPropertyResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 31A191F31F9A097700E57957 /* MZPropertyResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31A192211F9A097700E57957 /* MZPropertyResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A191F41F9A097700E57957 /* MZPropertyResponse.m */; };
+		31A192241F9A09B100E57957 /* MZListEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 31A192221F9A09B000E57957 /* MZListEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31A192251F9A09B100E57957 /* MZListEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A192231F9A09B100E57957 /* MZListEntity.m */; };
 		31D25B4B1F9772740016C93B /* SkyCoreUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31D25B421F9772740016C93B /* SkyCoreUtils.framework */; };
 		31D25B501F9772750016C93B /* SkyCoreUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D25B4F1F9772750016C93B /* SkyCoreUtilsTests.m */; };
 		31D25B521F9772750016C93B /* SkyCoreUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 31D25B441F9772740016C93B /* SkyCoreUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		31D25B5C1F9772BC0016C93B /* NSDate+ChineseCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 31D25B5A1F9772BC0016C93B /* NSDate+ChineseCalendar.h */; };
 		31D25B5D1F9772BC0016C93B /* NSDate+ChineseCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D25B5B1F9772BC0016C93B /* NSDate+ChineseCalendar.m */; };
 		31D25B5F1F9786930016C93B /* StringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D25B5E1F9786930016C93B /* StringTests.m */; };
-		3374A4761F98E82300C88BBF /* UIImage+SCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3374A4741F98E82300C88BBF /* UIImage+SCUtils.h */; };
+		31E963151F9E0247007142F6 /* NSArray+SCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 33E3320A1F918B1A003F428D /* NSArray+SCUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31E963161F9E025F007142F6 /* SCWeakifyMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 3374A4B31F9B1C4600C88BBF /* SCWeakifyMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3374A4761F98E82300C88BBF /* UIImage+SCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3374A4741F98E82300C88BBF /* UIImage+SCUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3374A4771F98E82300C88BBF /* UIImage+SCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3374A4751F98E82300C88BBF /* UIImage+SCUtils.m */; };
-		3374A47A1F98EA3100C88BBF /* UIView+SCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3374A4781F98EA3100C88BBF /* UIView+SCUtils.h */; };
+		3374A47A1F98EA3100C88BBF /* UIView+SCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3374A4781F98EA3100C88BBF /* UIView+SCUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3374A47B1F98EA3100C88BBF /* UIView+SCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3374A4791F98EA3100C88BBF /* UIView+SCUtils.m */; };
-		3374A47E1F98ECA000C88BBF /* UIColor+SCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3374A47C1F98ECA000C88BBF /* UIColor+SCUtils.h */; };
+		3374A47E1F98ECA000C88BBF /* UIColor+SCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3374A47C1F98ECA000C88BBF /* UIColor+SCUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3374A47F1F98ECA000C88BBF /* UIColor+SCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3374A47D1F98ECA000C88BBF /* UIColor+SCUtils.m */; };
+		3374A4B11F9B161800C88BBF /* RequestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3374A4B01F9B161800C88BBF /* RequestTests.m */; };
 		33955BCE1F98C11600B9A84E /* SCBaseDao.h in Headers */ = {isa = PBXBuildFile; fileRef = 33955BCA1F98C11600B9A84E /* SCBaseDao.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		33955BCF1F98C11600B9A84E /* SCBaseDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 33955BCB1F98C11600B9A84E /* SCBaseDao.m */; };
 		33955BD01F98C11600B9A84E /* SCBaseManagedDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = 33955BCC1F98C11600B9A84E /* SCBaseManagedDomain.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -46,18 +87,8 @@
 		FAABF9AB1A0202DA004948E9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAABF9A01A0202DA004948E9 /* SystemConfiguration.framework */; };
 		FAABF9AD1A0202DA004948E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAABF9A21A0202DA004948E9 /* UIKit.framework */; };
 		FAE7F9581A02046400DC86BD /* SkyCore.h in Headers */ = {isa = PBXBuildFile; fileRef = FAABF88E1A020276004948E9 /* SkyCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAF988181A314FF600B4EFF9 /* SCAppCache.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF987E71A314FF600B4EFF9 /* SCAppCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAF988191A314FF600B4EFF9 /* SCAppCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF987E81A314FF600B4EFF9 /* SCAppCache.m */; };
-		FAF9881A1A314FF600B4EFF9 /* SCBaseService.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF987E91A314FF600B4EFF9 /* SCBaseService.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAF9881B1A314FF600B4EFF9 /* SCBaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF987EA1A314FF600B4EFF9 /* SCBaseService.m */; };
-		FAF9881C1A314FF600B4EFF9 /* SCCommonTools.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF987EB1A314FF600B4EFF9 /* SCCommonTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAF9881D1A314FF600B4EFF9 /* SCCommonTools.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF987EC1A314FF600B4EFF9 /* SCCommonTools.m */; };
 		FAF9881E1A314FF600B4EFF9 /* SCFileOper.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF987ED1A314FF600B4EFF9 /* SCFileOper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FAF9881F1A314FF600B4EFF9 /* SCFileOper.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF987EE1A314FF600B4EFF9 /* SCFileOper.m */; };
-		FAF988201A314FF600B4EFF9 /* SCLocationService.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF987EF1A314FF600B4EFF9 /* SCLocationService.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAF988211A314FF600B4EFF9 /* SCLocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF987F01A314FF600B4EFF9 /* SCLocationService.m */; };
-		FAF988221A314FF600B4EFF9 /* SCSysconfig.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF987F11A314FF600B4EFF9 /* SCSysconfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAF988231A314FF600B4EFF9 /* SCSysconfig.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF987F21A314FF600B4EFF9 /* SCSysconfig.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,11 +104,49 @@
 /* Begin PBXFileReference section */
 		182179C94103E7C1F3C81F56 /* Pods-example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example.release.xcconfig"; path = "Pods/Target Support Files/Pods-example/Pods-example.release.xcconfig"; sourceTree = "<group>"; };
 		30F136BBFA816E563E49B995 /* Pods-example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-example/Pods-example.debug.xcconfig"; sourceTree = "<group>"; };
-		31A1912E1F99E87200E57957 /* SCWeakifyMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCWeakifyMacro.h; sourceTree = "<group>"; };
 		31A191301F99E8C900E57957 /* SkyCore-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SkyCore-Prefix.pch"; sourceTree = "<group>"; };
 		31A191A71F99F57700E57957 /* NSObject+SCUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+SCUtils.h"; sourceTree = "<group>"; };
 		31A191A81F99F57700E57957 /* NSObject+SCUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SCUtils.m"; sourceTree = "<group>"; };
 		31A191C01F9A071900E57957 /* ObjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectTests.m; sourceTree = "<group>"; };
+		31A191C41F9A097700E57957 /* MZRequestCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZRequestCache.h; sourceTree = "<group>"; };
+		31A191C51F9A097700E57957 /* MZRequestCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZRequestCache.m; sourceTree = "<group>"; };
+		31A191CF1F9A097700E57957 /* MZErrorCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZErrorCode.h; sourceTree = "<group>"; };
+		31A191D01F9A097700E57957 /* MZErrorCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZErrorCode.m; sourceTree = "<group>"; };
+		31A191D11F9A097700E57957 /* MZRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZRequest.h; sourceTree = "<group>"; };
+		31A191D31F9A097700E57957 /* MZResponseListParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZResponseListParser.h; sourceTree = "<group>"; };
+		31A191D41F9A097700E57957 /* MZResponseListParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZResponseListParser.m; sourceTree = "<group>"; };
+		31A191D51F9A097700E57957 /* MZResponseObjectParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZResponseObjectParser.h; sourceTree = "<group>"; };
+		31A191D61F9A097700E57957 /* MZResponseObjectParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZResponseObjectParser.m; sourceTree = "<group>"; };
+		31A191D71F9A097700E57957 /* MZResponseParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZResponseParser.h; sourceTree = "<group>"; };
+		31A191D81F9A097700E57957 /* MZResponseParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZResponseParser.m; sourceTree = "<group>"; };
+		31A191D91F9A097700E57957 /* MZResponsePropertyParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZResponsePropertyParser.h; sourceTree = "<group>"; };
+		31A191DA1F9A097700E57957 /* MZResponsePropertyParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZResponsePropertyParser.m; sourceTree = "<group>"; };
+		31A191DC1F9A097700E57957 /* MZBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZBaseRequest.h; sourceTree = "<group>"; };
+		31A191DD1F9A097700E57957 /* MZBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZBaseRequest.m; sourceTree = "<group>"; };
+		31A191DE1F9A097700E57957 /* MZCachedRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZCachedRequestManager.h; sourceTree = "<group>"; };
+		31A191DF1F9A097700E57957 /* MZCachedRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZCachedRequestManager.m; sourceTree = "<group>"; };
+		31A191E01F9A097700E57957 /* MZListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZListRequest.h; sourceTree = "<group>"; };
+		31A191E11F9A097700E57957 /* MZListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZListRequest.m; sourceTree = "<group>"; };
+		31A191E21F9A097700E57957 /* MZRequestGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZRequestGroup.h; sourceTree = "<group>"; };
+		31A191E31F9A097700E57957 /* MZRequestGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZRequestGroup.m; sourceTree = "<group>"; };
+		31A191E41F9A097700E57957 /* MZRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZRequestManager.h; sourceTree = "<group>"; };
+		31A191E51F9A097700E57957 /* MZRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZRequestManager.m; sourceTree = "<group>"; };
+		31A191E61F9A097700E57957 /* MZRequestQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZRequestQueue.h; sourceTree = "<group>"; };
+		31A191E71F9A097700E57957 /* MZRequestQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZRequestQueue.m; sourceTree = "<group>"; };
+		31A191E81F9A097700E57957 /* MZRequestTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZRequestTransaction.h; sourceTree = "<group>"; };
+		31A191E91F9A097700E57957 /* MZRequestTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZRequestTransaction.m; sourceTree = "<group>"; };
+		31A191EB1F9A097700E57957 /* MZBaseResponse+CommonErrorSolution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MZBaseResponse+CommonErrorSolution.h"; sourceTree = "<group>"; };
+		31A191EC1F9A097700E57957 /* MZBaseResponse+CommonErrorSolution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MZBaseResponse+CommonErrorSolution.m"; sourceTree = "<group>"; };
+		31A191ED1F9A097700E57957 /* MZBaseResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZBaseResponse.h; sourceTree = "<group>"; };
+		31A191EE1F9A097700E57957 /* MZBaseResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZBaseResponse.m; sourceTree = "<group>"; };
+		31A191EF1F9A097700E57957 /* MZListResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZListResponse.h; sourceTree = "<group>"; };
+		31A191F01F9A097700E57957 /* MZListResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZListResponse.m; sourceTree = "<group>"; };
+		31A191F11F9A097700E57957 /* MZObjectResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZObjectResponse.h; sourceTree = "<group>"; };
+		31A191F21F9A097700E57957 /* MZObjectResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZObjectResponse.m; sourceTree = "<group>"; };
+		31A191F31F9A097700E57957 /* MZPropertyResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZPropertyResponse.h; sourceTree = "<group>"; };
+		31A191F41F9A097700E57957 /* MZPropertyResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZPropertyResponse.m; sourceTree = "<group>"; };
+		31A192221F9A09B000E57957 /* MZListEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZListEntity.h; sourceTree = "<group>"; };
+		31A192231F9A09B100E57957 /* MZListEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZListEntity.m; sourceTree = "<group>"; };
 		31D25B421F9772740016C93B /* SkyCoreUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SkyCoreUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		31D25B441F9772740016C93B /* SkyCoreUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SkyCoreUtils.h; sourceTree = "<group>"; };
 		31D25B451F9772740016C93B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -95,6 +164,9 @@
 		3374A4791F98EA3100C88BBF /* UIView+SCUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+SCUtils.m"; sourceTree = "<group>"; };
 		3374A47C1F98ECA000C88BBF /* UIColor+SCUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+SCUtils.h"; sourceTree = "<group>"; };
 		3374A47D1F98ECA000C88BBF /* UIColor+SCUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SCUtils.m"; sourceTree = "<group>"; };
+		3374A4B01F9B161800C88BBF /* RequestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestTests.m; sourceTree = "<group>"; };
+		3374A4B31F9B1C4600C88BBF /* SCWeakifyMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCWeakifyMacro.h; sourceTree = "<group>"; };
+		3374A4B41F9B1C5B00C88BBF /* SCMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCMacros.h; sourceTree = "<group>"; };
 		33955BCA1F98C11600B9A84E /* SCBaseDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBaseDao.h; sourceTree = "<group>"; };
 		33955BCB1F98C11600B9A84E /* SCBaseDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBaseDao.m; sourceTree = "<group>"; };
 		33955BCC1F98C11600B9A84E /* SCBaseManagedDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBaseManagedDomain.h; sourceTree = "<group>"; };
@@ -134,18 +206,8 @@
 		FAABF9A11A0202DA004948E9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FAABF9A21A0202DA004948E9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FAABF9A31A0202DA004948E9 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
-		FAF987E71A314FF600B4EFF9 /* SCAppCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAppCache.h; sourceTree = "<group>"; };
-		FAF987E81A314FF600B4EFF9 /* SCAppCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAppCache.m; sourceTree = "<group>"; };
-		FAF987E91A314FF600B4EFF9 /* SCBaseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBaseService.h; sourceTree = "<group>"; };
-		FAF987EA1A314FF600B4EFF9 /* SCBaseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBaseService.m; sourceTree = "<group>"; };
-		FAF987EB1A314FF600B4EFF9 /* SCCommonTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCCommonTools.h; sourceTree = "<group>"; };
-		FAF987EC1A314FF600B4EFF9 /* SCCommonTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCCommonTools.m; sourceTree = "<group>"; };
 		FAF987ED1A314FF600B4EFF9 /* SCFileOper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFileOper.h; sourceTree = "<group>"; };
 		FAF987EE1A314FF600B4EFF9 /* SCFileOper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFileOper.m; sourceTree = "<group>"; };
-		FAF987EF1A314FF600B4EFF9 /* SCLocationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLocationService.h; sourceTree = "<group>"; };
-		FAF987F01A314FF600B4EFF9 /* SCLocationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLocationService.m; sourceTree = "<group>"; };
-		FAF987F11A314FF600B4EFF9 /* SCSysconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSysconfig.h; sourceTree = "<group>"; };
-		FAF987F21A314FF600B4EFF9 /* SCSysconfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSysconfig.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +263,84 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		31A191C21F9A097700E57957 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				31A192221F9A09B000E57957 /* MZListEntity.h */,
+				31A192231F9A09B100E57957 /* MZListEntity.m */,
+				31A191C31F9A097700E57957 /* cache */,
+				31A191CF1F9A097700E57957 /* MZErrorCode.h */,
+				31A191D01F9A097700E57957 /* MZErrorCode.m */,
+				31A191D11F9A097700E57957 /* MZRequest.h */,
+				31A191D21F9A097700E57957 /* parser */,
+				31A191DB1F9A097700E57957 /* request */,
+				31A191EA1F9A097700E57957 /* response */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		31A191C31F9A097700E57957 /* cache */ = {
+			isa = PBXGroup;
+			children = (
+				31A191C41F9A097700E57957 /* MZRequestCache.h */,
+				31A191C51F9A097700E57957 /* MZRequestCache.m */,
+			);
+			path = cache;
+			sourceTree = "<group>";
+		};
+		31A191D21F9A097700E57957 /* parser */ = {
+			isa = PBXGroup;
+			children = (
+				31A191D31F9A097700E57957 /* MZResponseListParser.h */,
+				31A191D41F9A097700E57957 /* MZResponseListParser.m */,
+				31A191D51F9A097700E57957 /* MZResponseObjectParser.h */,
+				31A191D61F9A097700E57957 /* MZResponseObjectParser.m */,
+				31A191D71F9A097700E57957 /* MZResponseParser.h */,
+				31A191D81F9A097700E57957 /* MZResponseParser.m */,
+				31A191D91F9A097700E57957 /* MZResponsePropertyParser.h */,
+				31A191DA1F9A097700E57957 /* MZResponsePropertyParser.m */,
+			);
+			path = parser;
+			sourceTree = "<group>";
+		};
+		31A191DB1F9A097700E57957 /* request */ = {
+			isa = PBXGroup;
+			children = (
+				31A191DC1F9A097700E57957 /* MZBaseRequest.h */,
+				31A191DD1F9A097700E57957 /* MZBaseRequest.m */,
+				31A191DE1F9A097700E57957 /* MZCachedRequestManager.h */,
+				31A191DF1F9A097700E57957 /* MZCachedRequestManager.m */,
+				31A191E01F9A097700E57957 /* MZListRequest.h */,
+				31A191E11F9A097700E57957 /* MZListRequest.m */,
+				31A191E21F9A097700E57957 /* MZRequestGroup.h */,
+				31A191E31F9A097700E57957 /* MZRequestGroup.m */,
+				31A191E41F9A097700E57957 /* MZRequestManager.h */,
+				31A191E51F9A097700E57957 /* MZRequestManager.m */,
+				31A191E61F9A097700E57957 /* MZRequestQueue.h */,
+				31A191E71F9A097700E57957 /* MZRequestQueue.m */,
+				31A191E81F9A097700E57957 /* MZRequestTransaction.h */,
+				31A191E91F9A097700E57957 /* MZRequestTransaction.m */,
+			);
+			path = request;
+			sourceTree = "<group>";
+		};
+		31A191EA1F9A097700E57957 /* response */ = {
+			isa = PBXGroup;
+			children = (
+				31A191EB1F9A097700E57957 /* MZBaseResponse+CommonErrorSolution.h */,
+				31A191EC1F9A097700E57957 /* MZBaseResponse+CommonErrorSolution.m */,
+				31A191ED1F9A097700E57957 /* MZBaseResponse.h */,
+				31A191EE1F9A097700E57957 /* MZBaseResponse.m */,
+				31A191EF1F9A097700E57957 /* MZListResponse.h */,
+				31A191F01F9A097700E57957 /* MZListResponse.m */,
+				31A191F11F9A097700E57957 /* MZObjectResponse.h */,
+				31A191F21F9A097700E57957 /* MZObjectResponse.m */,
+				31A191F31F9A097700E57957 /* MZPropertyResponse.h */,
+				31A191F41F9A097700E57957 /* MZPropertyResponse.m */,
+			);
+			path = response;
+			sourceTree = "<group>";
+		};
 		31D25B431F9772740016C93B /* SkyCoreUtils */ = {
 			isa = PBXGroup;
 			children = (
@@ -238,6 +378,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		3374A4B21F9B1C4600C88BBF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3374A4B31F9B1C4600C88BBF /* SCWeakifyMacro.h */,
+				3374A4B41F9B1C5B00C88BBF /* SCMacros.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		33955BC91F98C11600B9A84E /* dao */ = {
 			isa = PBXGroup;
 			children = (
@@ -267,6 +416,7 @@
 				33E331EA1F903946003F428D /* ApplicationTests.m */,
 				31D25B5E1F9786930016C93B /* StringTests.m */,
 				31A191C01F9A071900E57957 /* ObjectTests.m */,
+				3374A4B01F9B161800C88BBF /* RequestTests.m */,
 			);
 			path = SkyCoreTests;
 			sourceTree = "<group>";
@@ -359,7 +509,8 @@
 		FAF987D11A314FF600B4EFF9 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				31A1912E1F99E87200E57957 /* SCWeakifyMacro.h */,
+				3374A4B21F9B1C4600C88BBF /* Utils */,
+				31A191C21F9A097700E57957 /* Network */,
 				3374A46F1F98E34100C88BBF /* View */,
 				33E331F91F9187CC003F428D /* Category */,
 				33A89DDF1F8E8CDF00EB38F0 /* Store */,
@@ -371,18 +522,8 @@
 		FAF987E61A314FF600B4EFF9 /* service */ = {
 			isa = PBXGroup;
 			children = (
-				FAF987E71A314FF600B4EFF9 /* SCAppCache.h */,
-				FAF987E81A314FF600B4EFF9 /* SCAppCache.m */,
-				FAF987E91A314FF600B4EFF9 /* SCBaseService.h */,
-				FAF987EA1A314FF600B4EFF9 /* SCBaseService.m */,
-				FAF987EB1A314FF600B4EFF9 /* SCCommonTools.h */,
-				FAF987EC1A314FF600B4EFF9 /* SCCommonTools.m */,
 				FAF987ED1A314FF600B4EFF9 /* SCFileOper.h */,
 				FAF987EE1A314FF600B4EFF9 /* SCFileOper.m */,
-				FAF987EF1A314FF600B4EFF9 /* SCLocationService.h */,
-				FAF987F01A314FF600B4EFF9 /* SCLocationService.m */,
-				FAF987F11A314FF600B4EFF9 /* SCSysconfig.h */,
-				FAF987F21A314FF600B4EFF9 /* SCSysconfig.m */,
 				33E331E61F903353003F428D /* SCApplication.h */,
 				33E331E71F903353003F428D /* SCApplication.m */,
 			);
@@ -405,24 +546,40 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31A191311F99E8C900E57957 /* SkyCore-Prefix.pch in Headers */,
 				FAE7F9581A02046400DC86BD /* SkyCore.h in Headers */,
-				FAF9881C1A314FF600B4EFF9 /* SCCommonTools.h in Headers */,
-				FAF988201A314FF600B4EFF9 /* SCLocationService.h in Headers */,
-				FAF9881A1A314FF600B4EFF9 /* SCBaseService.h in Headers */,
+				31A1920C1F9A097700E57957 /* MZCachedRequestManager.h in Headers */,
+				31A191311F99E8C900E57957 /* SkyCore-Prefix.pch in Headers */,
+				31A191F51F9A097700E57957 /* MZRequestCache.h in Headers */,
+				31A192201F9A097700E57957 /* MZPropertyResponse.h in Headers */,
+				31A192081F9A097700E57957 /* MZResponsePropertyParser.h in Headers */,
+				31A192121F9A097700E57957 /* MZRequestManager.h in Headers */,
+				31A192011F9A097700E57957 /* MZRequest.h in Headers */,
+				31A1920A1F9A097700E57957 /* MZBaseRequest.h in Headers */,
+				31A192241F9A09B100E57957 /* MZListEntity.h in Headers */,
 				3374A47E1F98ECA000C88BBF /* UIColor+SCUtils.h in Headers */,
-				FAF988181A314FF600B4EFF9 /* SCAppCache.h in Headers */,
+				31A192161F9A097700E57957 /* MZRequestTransaction.h in Headers */,
+				31A192041F9A097700E57957 /* MZResponseObjectParser.h in Headers */,
+				31A192101F9A097700E57957 /* MZRequestGroup.h in Headers */,
 				3374A4761F98E82300C88BBF /* UIImage+SCUtils.h in Headers */,
-				33955BCE1F98C11600B9A84E /* SCBaseDao.h in Headers */,
-				FAF988221A314FF600B4EFF9 /* SCSysconfig.h in Headers */,
-				33E331E81F903353003F428D /* SCApplication.h in Headers */,
-				33955BD01F98C11600B9A84E /* SCBaseManagedDomain.h in Headers */,
-				31A1912F1F99E87200E57957 /* SCWeakifyMacro.h in Headers */,
-				33E332081F918992003F428D /* NSString+SCUtils.h in Headers */,
-				FAF9881E1A314FF600B4EFF9 /* SCFileOper.h in Headers */,
-				33A89DE21F8E8CF500EB38F0 /* SCStore.h in Headers */,
+				31A1920E1F9A097700E57957 /* MZListRequest.h in Headers */,
+				31A1921E1F9A097700E57957 /* MZObjectResponse.h in Headers */,
+				31A192141F9A097700E57957 /* MZRequestQueue.h in Headers */,
+				31A192061F9A097700E57957 /* MZResponseParser.h in Headers */,
+				31A192181F9A097700E57957 /* MZBaseResponse+CommonErrorSolution.h in Headers */,
+				31A192021F9A097700E57957 /* MZResponseListParser.h in Headers */,
+				31A1921C1F9A097700E57957 /* MZListResponse.h in Headers */,
+				31A1921A1F9A097700E57957 /* MZBaseResponse.h in Headers */,
 				31A191A91F99F57700E57957 /* NSObject+SCUtils.h in Headers */,
 				3374A47A1F98EA3100C88BBF /* UIView+SCUtils.h in Headers */,
+				31A191FF1F9A097700E57957 /* MZErrorCode.h in Headers */,
+				33955BCE1F98C11600B9A84E /* SCBaseDao.h in Headers */,
+				33E331E81F903353003F428D /* SCApplication.h in Headers */,
+				33955BD01F98C11600B9A84E /* SCBaseManagedDomain.h in Headers */,
+				33E332081F918992003F428D /* NSString+SCUtils.h in Headers */,
+				FAF9881E1A314FF600B4EFF9 /* SCFileOper.h in Headers */,
+				31E963151F9E0247007142F6 /* NSArray+SCUtils.h in Headers */,
+				33A89DE21F8E8CF500EB38F0 /* SCStore.h in Headers */,
+				31E963161F9E025F007142F6 /* SCWeakifyMacro.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -636,6 +793,7 @@
 				33A89DF11F8E8FAB00EB38F0 /* StoreTest.m in Sources */,
 				31D25B5F1F9786930016C93B /* StringTests.m in Sources */,
 				31A191C11F9A071900E57957 /* ObjectTests.m in Sources */,
+				3374A4B11F9B161800C88BBF /* RequestTests.m in Sources */,
 				33E331EB1F903946003F428D /* ApplicationTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -644,21 +802,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31A192151F9A097700E57957 /* MZRequestQueue.m in Sources */,
+				31A1920B1F9A097700E57957 /* MZBaseRequest.m in Sources */,
+				31A192251F9A09B100E57957 /* MZListEntity.m in Sources */,
 				3374A47B1F98EA3100C88BBF /* UIView+SCUtils.m in Sources */,
-				FAF988191A314FF600B4EFF9 /* SCAppCache.m in Sources */,
+				31A192031F9A097700E57957 /* MZResponseListParser.m in Sources */,
+				31A192211F9A097700E57957 /* MZPropertyResponse.m in Sources */,
+				31A192191F9A097700E57957 /* MZBaseResponse+CommonErrorSolution.m in Sources */,
+				31A192071F9A097700E57957 /* MZResponseParser.m in Sources */,
+				31A192051F9A097700E57957 /* MZResponseObjectParser.m in Sources */,
 				3374A4771F98E82300C88BBF /* UIImage+SCUtils.m in Sources */,
-				FAF9881D1A314FF600B4EFF9 /* SCCommonTools.m in Sources */,
+				31A192091F9A097700E57957 /* MZResponsePropertyParser.m in Sources */,
+				31A1920F1F9A097700E57957 /* MZListRequest.m in Sources */,
 				3374A47F1F98ECA000C88BBF /* UIColor+SCUtils.m in Sources */,
+				31A192171F9A097700E57957 /* MZRequestTransaction.m in Sources */,
 				33A89DE31F8E8CF500EB38F0 /* SCStore.m in Sources */,
-				FAF988231A314FF600B4EFF9 /* SCSysconfig.m in Sources */,
+				31A191F61F9A097700E57957 /* MZRequestCache.m in Sources */,
+				31A192001F9A097700E57957 /* MZErrorCode.m in Sources */,
 				31A191AA1F99F57700E57957 /* NSObject+SCUtils.m in Sources */,
+				31A1920D1F9A097700E57957 /* MZCachedRequestManager.m in Sources */,
+				31A192131F9A097700E57957 /* MZRequestManager.m in Sources */,
 				33E332091F918992003F428D /* NSString+SCUtils.m in Sources */,
+				31A1921D1F9A097700E57957 /* MZListResponse.m in Sources */,
 				33955BD11F98C11600B9A84E /* SCBaseManagedDomain.m in Sources */,
+				31A1921B1F9A097700E57957 /* MZBaseResponse.m in Sources */,
 				33955BCF1F98C11600B9A84E /* SCBaseDao.m in Sources */,
+				31A1921F1F9A097700E57957 /* MZObjectResponse.m in Sources */,
+				31A192111F9A097700E57957 /* MZRequestGroup.m in Sources */,
 				33E3320C1F918B1A003F428D /* NSArray+SCUtils.m in Sources */,
 				FAF9881F1A314FF600B4EFF9 /* SCFileOper.m in Sources */,
-				FAF9881B1A314FF600B4EFF9 /* SCBaseService.m in Sources */,
-				FAF988211A314FF600B4EFF9 /* SCLocationService.m in Sources */,
 				33E331E91F903353003F428D /* SCApplication.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

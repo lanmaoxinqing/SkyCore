@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+FOUNDATION_EXTERN UIColor *SCRGBColor(NSUInteger r, NSUInteger g, NSUInteger b);
+FOUNDATION_EXTERN UIColor *SCRGBAColor(NSUInteger r, NSUInteger g, NSUInteger b, NSUInteger a);
 FOUNDATION_EXTERN UIColor *SCHexColor(NSUInteger hex);
 
 @interface UIColor (SCHex)

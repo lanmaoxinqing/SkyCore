@@ -73,7 +73,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param key key值
  @return 文件数据
  */
-- (nullable __kindof SCStoreFile *)fileForKey:(NSString *)key;
+- (nullable __kindof SCStoreFile *)file_storeFileForKey:(NSString *)key;
 /**
  返回模型，如果key对应值不满足<NSCoding>，返回nil
  
@@ -84,6 +84,21 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 @interface SCStore (KeyChain)
+
+/**
+ 设置数据到钥匙串
+
+ @param string 数据
+ @param key  key 值
+ */
+- (void)kc_setString:(NSString *)string forKey:(NSString *)key;
+/**
+ 根据 key 值从钥匙串中获取数据
+ 
+ @param key key 值
+ */
+- (NSString *)kc_stringForKey:(NSString *)key;
+
 
 @end
 NS_ASSUME_NONNULL_END

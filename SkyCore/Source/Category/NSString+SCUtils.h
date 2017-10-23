@@ -145,3 +145,9 @@
 +(NSString *)stringFromDateWithFormat:(NSString *)format;
 +(NSString *)stringFromDate:(NSDate *)date withFormat:(NSString *)format;
 @end
+
+@interface NSString (IDCard)
+
+- (BOOL)validIDCard;
+
+@end
