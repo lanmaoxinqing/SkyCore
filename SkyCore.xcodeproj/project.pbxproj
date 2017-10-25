@@ -10,6 +10,12 @@
 		319360B51FA0899900CFF6D7 /* SCMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 3374A4B41F9B1C5B00C88BBF /* SCMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		319360B61FA0899900CFF6D7 /* PhotoImageScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3374A4721F98E34100C88BBF /* PhotoImageScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		319360B71FA0899900CFF6D7 /* NSString+MD5.h in Headers */ = {isa = PBXBuildFile; fileRef = 33E332021F9187CC003F428D /* NSString+MD5.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		319360BA1FA090BE00CFF6D7 /* UIWebView+JSCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 319360B81FA090BE00CFF6D7 /* UIWebView+JSCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		319360BB1FA090BE00CFF6D7 /* UIWebView+JSCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 319360B91FA090BE00CFF6D7 /* UIWebView+JSCore.m */; };
+		319360C01FA091DD00CFF6D7 /* SCApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 319360BC1FA091DD00CFF6D7 /* SCApplication.m */; };
+		319360C11FA091DD00CFF6D7 /* SCFileOper.m in Sources */ = {isa = PBXBuildFile; fileRef = 319360BD1FA091DD00CFF6D7 /* SCFileOper.m */; };
+		319360C21FA091DD00CFF6D7 /* SCApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = 319360BE1FA091DD00CFF6D7 /* SCApplication.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		319360C31FA091DD00CFF6D7 /* SCFileOper.h in Headers */ = {isa = PBXBuildFile; fileRef = 319360BF1FA091DD00CFF6D7 /* SCFileOper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		31A191A91F99F57700E57957 /* NSObject+SCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 31A191A71F99F57700E57957 /* NSObject+SCUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		31A191AA1F99F57700E57957 /* NSObject+SCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A191A81F99F57700E57957 /* NSObject+SCUtils.m */; };
 		31A191C11F9A071900E57957 /* ObjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A191C01F9A071900E57957 /* ObjectTests.m */; };
@@ -75,8 +81,6 @@
 		33A89DE31F8E8CF500EB38F0 /* SCStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A89DE11F8E8CF500EB38F0 /* SCStore.m */; };
 		33A89DF11F8E8FAB00EB38F0 /* StoreTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A89DF01F8E8FAB00EB38F0 /* StoreTest.m */; };
 		33BC0CE51F8FC1C40062FC5C /* SkyCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAABF8821A020276004948E9 /* SkyCore.framework */; };
-		33E331E81F903353003F428D /* SCApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = 33E331E61F903353003F428D /* SCApplication.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		33E331E91F903353003F428D /* SCApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E331E71F903353003F428D /* SCApplication.m */; };
 		33E331EB1F903946003F428D /* ApplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E331EA1F903946003F428D /* ApplicationTests.m */; };
 		33E332081F918992003F428D /* NSString+SCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 33E332061F918992003F428D /* NSString+SCUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		33E332091F918992003F428D /* NSString+SCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E332071F918992003F428D /* NSString+SCUtils.m */; };
@@ -89,8 +93,6 @@
 		FAABF9AB1A0202DA004948E9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAABF9A01A0202DA004948E9 /* SystemConfiguration.framework */; };
 		FAABF9AD1A0202DA004948E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAABF9A21A0202DA004948E9 /* UIKit.framework */; };
 		FAE7F9581A02046400DC86BD /* SkyCore.h in Headers */ = {isa = PBXBuildFile; fileRef = FAABF88E1A020276004948E9 /* SkyCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAF9881E1A314FF600B4EFF9 /* SCFileOper.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF987ED1A314FF600B4EFF9 /* SCFileOper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAF9881F1A314FF600B4EFF9 /* SCFileOper.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF987EE1A314FF600B4EFF9 /* SCFileOper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +108,12 @@
 /* Begin PBXFileReference section */
 		182179C94103E7C1F3C81F56 /* Pods-example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example.release.xcconfig"; path = "Pods/Target Support Files/Pods-example/Pods-example.release.xcconfig"; sourceTree = "<group>"; };
 		30F136BBFA816E563E49B995 /* Pods-example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-example/Pods-example.debug.xcconfig"; sourceTree = "<group>"; };
+		319360B81FA090BE00CFF6D7 /* UIWebView+JSCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+JSCore.h"; sourceTree = "<group>"; };
+		319360B91FA090BE00CFF6D7 /* UIWebView+JSCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+JSCore.m"; sourceTree = "<group>"; };
+		319360BC1FA091DD00CFF6D7 /* SCApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCApplication.m; sourceTree = "<group>"; };
+		319360BD1FA091DD00CFF6D7 /* SCFileOper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFileOper.m; sourceTree = "<group>"; };
+		319360BE1FA091DD00CFF6D7 /* SCApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCApplication.h; sourceTree = "<group>"; };
+		319360BF1FA091DD00CFF6D7 /* SCFileOper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFileOper.h; sourceTree = "<group>"; };
 		31A191301F99E8C900E57957 /* SkyCore-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SkyCore-Prefix.pch"; sourceTree = "<group>"; };
 		31A191A71F99F57700E57957 /* NSObject+SCUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+SCUtils.h"; sourceTree = "<group>"; };
 		31A191A81F99F57700E57957 /* NSObject+SCUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SCUtils.m"; sourceTree = "<group>"; };
@@ -178,8 +186,6 @@
 		33A89DE81F8E8F5500EB38F0 /* SkyCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33A89DEC1F8E8F5600EB38F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33A89DF01F8E8FAB00EB38F0 /* StoreTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreTest.m; sourceTree = "<group>"; };
-		33E331E61F903353003F428D /* SCApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCApplication.h; sourceTree = "<group>"; };
-		33E331E71F903353003F428D /* SCApplication.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCApplication.m; sourceTree = "<group>"; };
 		33E331EA1F903946003F428D /* ApplicationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplicationTests.m; sourceTree = "<group>"; };
 		33E332021F9187CC003F428D /* NSString+MD5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
 		33E332031F9187CC003F428D /* NSString+MD5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
@@ -188,11 +194,11 @@
 		33E3320A1F918B1A003F428D /* NSArray+SCUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+SCUtils.h"; sourceTree = "<group>"; };
 		33E3320B1F918B1A003F428D /* NSArray+SCUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SCUtils.m"; sourceTree = "<group>"; };
 		50F3718501A78E7166D2B316 /* libPods-SkyCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SkyCore.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		70B2FFF89965B4477989845B /* Pods-SkyCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyCore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SkyCore/Pods-SkyCore.debug.xcconfig"; sourceTree = "<group>"; };
+		55E9C6346D70F111265CB98D /* Pods-SkyCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyCore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SkyCore/Pods-SkyCore.debug.xcconfig"; sourceTree = "<group>"; };
 		AEC855E36DF5BB1C8EC30209 /* Pods-exampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-exampleTests/Pods-exampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CF9E8D8602BF397704C0FCA5 /* libPods-example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D09F46B4D2B79F3FD8D67CBC /* libPods-exampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-exampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D91E32DC0093993061DB3F66 /* Pods-SkyCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyCore.release.xcconfig"; path = "Pods/Target Support Files/Pods-SkyCore/Pods-SkyCore.release.xcconfig"; sourceTree = "<group>"; };
+		E787837D7D0709BABCF33A0E /* Pods-SkyCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyCore.release.xcconfig"; path = "Pods/Target Support Files/Pods-SkyCore/Pods-SkyCore.release.xcconfig"; sourceTree = "<group>"; };
 		E7B8511470C88C9FBEE055F5 /* Pods-exampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-exampleTests/Pods-exampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		FAABF8821A020276004948E9 /* SkyCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework.static; includeInIndex = 0; path = SkyCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAABF8891A020276004948E9 /* SkyCore-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SkyCore-Info.plist"; sourceTree = "<group>"; };
@@ -208,8 +214,6 @@
 		FAABF9A11A0202DA004948E9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FAABF9A21A0202DA004948E9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FAABF9A31A0202DA004948E9 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
-		FAF987ED1A314FF600B4EFF9 /* SCFileOper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFileOper.h; sourceTree = "<group>"; };
-		FAF987EE1A314FF600B4EFF9 /* SCFileOper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFileOper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,8 +263,8 @@
 				182179C94103E7C1F3C81F56 /* Pods-example.release.xcconfig */,
 				AEC855E36DF5BB1C8EC30209 /* Pods-exampleTests.debug.xcconfig */,
 				E7B8511470C88C9FBEE055F5 /* Pods-exampleTests.release.xcconfig */,
-				70B2FFF89965B4477989845B /* Pods-SkyCore.debug.xcconfig */,
-				D91E32DC0093993061DB3F66 /* Pods-SkyCore.release.xcconfig */,
+				55E9C6346D70F111265CB98D /* Pods-SkyCore.debug.xcconfig */,
+				E787837D7D0709BABCF33A0E /* Pods-SkyCore.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -383,6 +387,10 @@
 		3374A4B21F9B1C4600C88BBF /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				319360BE1FA091DD00CFF6D7 /* SCApplication.h */,
+				319360BC1FA091DD00CFF6D7 /* SCApplication.m */,
+				319360BF1FA091DD00CFF6D7 /* SCFileOper.h */,
+				319360BD1FA091DD00CFF6D7 /* SCFileOper.m */,
 				3374A4B31F9B1C4600C88BBF /* SCWeakifyMacro.h */,
 				3374A4B41F9B1C5B00C88BBF /* SCMacros.h */,
 			);
@@ -426,6 +434,8 @@
 		33E331F91F9187CC003F428D /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				319360B81FA090BE00CFF6D7 /* UIWebView+JSCore.h */,
+				319360B91FA090BE00CFF6D7 /* UIWebView+JSCore.m */,
 				33E3320A1F918B1A003F428D /* NSArray+SCUtils.h */,
 				33E3320B1F918B1A003F428D /* NSArray+SCUtils.m */,
 				33E332021F9187CC003F428D /* NSString+MD5.h */,
@@ -516,20 +526,8 @@
 				3374A46F1F98E34100C88BBF /* View */,
 				33E331F91F9187CC003F428D /* Category */,
 				33A89DDF1F8E8CDF00EB38F0 /* Store */,
-				FAF987E61A314FF600B4EFF9 /* service */,
 			);
 			path = Source;
-			sourceTree = "<group>";
-		};
-		FAF987E61A314FF600B4EFF9 /* service */ = {
-			isa = PBXGroup;
-			children = (
-				FAF987ED1A314FF600B4EFF9 /* SCFileOper.h */,
-				FAF987EE1A314FF600B4EFF9 /* SCFileOper.m */,
-				33E331E61F903353003F428D /* SCApplication.h */,
-				33E331E71F903353003F428D /* SCApplication.m */,
-			);
-			path = service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -574,16 +572,17 @@
 				3374A47A1F98EA3100C88BBF /* UIView+SCUtils.h in Headers */,
 				31A191FF1F9A097700E57957 /* MZErrorCode.h in Headers */,
 				33955BCE1F98C11600B9A84E /* SCBaseDao.h in Headers */,
-				33E331E81F903353003F428D /* SCApplication.h in Headers */,
 				33955BD01F98C11600B9A84E /* SCBaseManagedDomain.h in Headers */,
 				33E332081F918992003F428D /* NSString+SCUtils.h in Headers */,
-				FAF9881E1A314FF600B4EFF9 /* SCFileOper.h in Headers */,
 				31E963151F9E0247007142F6 /* NSArray+SCUtils.h in Headers */,
 				33A89DE21F8E8CF500EB38F0 /* SCStore.h in Headers */,
 				31E963161F9E025F007142F6 /* SCWeakifyMacro.h in Headers */,
 				319360B51FA0899900CFF6D7 /* SCMacros.h in Headers */,
 				319360B61FA0899900CFF6D7 /* PhotoImageScrollView.h in Headers */,
+				319360C31FA091DD00CFF6D7 /* SCFileOper.h in Headers */,
+				319360C21FA091DD00CFF6D7 /* SCApplication.h in Headers */,
 				319360B71FA0899900CFF6D7 /* NSString+MD5.h in Headers */,
+				319360BA1FA090BE00CFF6D7 /* UIWebView+JSCore.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -811,12 +810,14 @@
 				31A192251F9A09B100E57957 /* MZListEntity.m in Sources */,
 				3374A47B1F98EA3100C88BBF /* UIView+SCUtils.m in Sources */,
 				31A192031F9A097700E57957 /* MZResponseListParser.m in Sources */,
+				319360C11FA091DD00CFF6D7 /* SCFileOper.m in Sources */,
 				31A192211F9A097700E57957 /* MZPropertyResponse.m in Sources */,
 				31A192191F9A097700E57957 /* MZBaseResponse+CommonErrorSolution.m in Sources */,
 				31A192071F9A097700E57957 /* MZResponseParser.m in Sources */,
 				31A192051F9A097700E57957 /* MZResponseObjectParser.m in Sources */,
 				3374A4771F98E82300C88BBF /* UIImage+SCUtils.m in Sources */,
 				31A192091F9A097700E57957 /* MZResponsePropertyParser.m in Sources */,
+				319360BB1FA090BE00CFF6D7 /* UIWebView+JSCore.m in Sources */,
 				31A1920F1F9A097700E57957 /* MZListRequest.m in Sources */,
 				3374A47F1F98ECA000C88BBF /* UIColor+SCUtils.m in Sources */,
 				31A192171F9A097700E57957 /* MZRequestTransaction.m in Sources */,
@@ -825,6 +826,7 @@
 				31A192001F9A097700E57957 /* MZErrorCode.m in Sources */,
 				31A191AA1F99F57700E57957 /* NSObject+SCUtils.m in Sources */,
 				31A1920D1F9A097700E57957 /* MZCachedRequestManager.m in Sources */,
+				319360C01FA091DD00CFF6D7 /* SCApplication.m in Sources */,
 				31A192131F9A097700E57957 /* MZRequestManager.m in Sources */,
 				33E332091F918992003F428D /* NSString+SCUtils.m in Sources */,
 				31A1921D1F9A097700E57957 /* MZListResponse.m in Sources */,
@@ -834,8 +836,6 @@
 				31A1921F1F9A097700E57957 /* MZObjectResponse.m in Sources */,
 				31A192111F9A097700E57957 /* MZRequestGroup.m in Sources */,
 				33E3320C1F918B1A003F428D /* NSArray+SCUtils.m in Sources */,
-				FAF9881F1A314FF600B4EFF9 /* SCFileOper.m in Sources */,
-				33E331E91F903353003F428D /* SCApplication.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -863,7 +863,6 @@
 /* Begin XCBuildConfiguration section */
 		31D25B531F9772750016C93B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 70B2FFF89965B4477989845B /* Pods-SkyCore.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -896,7 +895,6 @@
 		};
 		31D25B541F9772750016C93B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D91E32DC0093993061DB3F66 /* Pods-SkyCore.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -930,7 +928,6 @@
 		};
 		31D25B551F9772750016C93B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 70B2FFF89965B4477989845B /* Pods-SkyCore.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -953,7 +950,6 @@
 		};
 		31D25B561F9772750016C93B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D91E32DC0093993061DB3F66 /* Pods-SkyCore.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -977,7 +973,6 @@
 		};
 		33A89DEE1F8E8F5600EB38F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 70B2FFF89965B4477989845B /* Pods-SkyCore.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -1007,7 +1002,6 @@
 		};
 		33A89DEF1F8E8F5600EB38F0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D91E32DC0093993061DB3F66 /* Pods-SkyCore.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -1038,7 +1032,6 @@
 		};
 		FAABF8911A020276004948E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 70B2FFF89965B4477989845B /* Pods-SkyCore.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -1092,7 +1085,6 @@
 		};
 		FAABF8921A020276004948E9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D91E32DC0093993061DB3F66 /* Pods-SkyCore.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -1139,7 +1131,7 @@
 		};
 		FAABF8941A020276004948E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 70B2FFF89965B4477989845B /* Pods-SkyCore.debug.xcconfig */;
+			baseConfigurationReference = 55E9C6346D70F111265CB98D /* Pods-SkyCore.debug.xcconfig */;
 			buildSettings = {
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1165,7 +1157,7 @@
 		};
 		FAABF8951A020276004948E9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D91E32DC0093993061DB3F66 /* Pods-SkyCore.release.xcconfig */;
+			baseConfigurationReference = E787837D7D0709BABCF33A0E /* Pods-SkyCore.release.xcconfig */;
 			buildSettings = {
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
