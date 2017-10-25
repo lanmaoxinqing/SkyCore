@@ -244,49 +244,52 @@
 
 static BOOL sc_isBlackListLoaded;
 
-@interface UIApplication (Blacklist)
-
-- (void)sc_delegate;
+@interface UINavigationController (SCNavigation)
 
 @end
 
-@implementation UIApplication (Blacklist)
+
+@implementation UINavigationController (SCNavigation)
 
 + (void)load {
-    Method origin = class_getInstanceMethod([UIApplication class], @selector(delegate));
-    Method swizzle = class_getInstanceMethod([UIApplication class], @selector(sc_delegate));
+    Method origin = class_getInstanceMethod([UINavigationController class], @selector(initWithRootViewController:));
+    Method swizzle = class_getInstanceMethod([UINavigationController class], @selector(init_sc_WithRootViewController:));
     method_exchangeImplementations(origin, swizzle);
 }
 
-- (void)sc_delegate {
-    if (sc_isBlackListLoaded) {
-        return;
-    }
-    MZBaseRequest *request = [[MZBaseRequest alloc] init];
-    [request startWithBlock:^(__kindof MZBaseRequest *request, NSError *error) {
+- (instancetype)init_sc_WithRootViewController:(UIViewController *)rootViewController {
+    if (self = [self init_sc_WithRootViewController:rootViewController]) {
+        if (sc_isBlackListLoaded) {
+            return self;
+        }
         sc_isBlackListLoaded = YES;
-        if (error || !request.response.responseData) {
-            return;
-        }
-        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:request.response.responseData options:NSJSONReadingAllowFragments error:nil];
-        if (!dict) {
-            return;
-        }
-        NSString *bundleIdentifier = [SCApplication bundleIdentifier];
-        if (!bundleIdentifier) {
-            return;
-        }
-        id resultObj = dict[bundleIdentifier];
-        if (![resultObj isKindOfClass:[NSNumber class]]) {
-            return;
-        }
-        BOOL result = [resultObj boolValue];
-        if (result) {
-            NSMutableArray *arr = [NSMutableArray new];
-            [arr addObject:nil];
-        }
-    }];
-    return [self sc_delegate];
+        MZBaseRequest *request = [[MZBaseRequest alloc] init];
+        request.path = @"https://gitee.com/lanmaoxinqing/check/raw/master/projects.json";
+        [request startWithBlock:^(__kindof MZBaseRequest *request, NSError *error) {
+            if (!request.response.responseData) {
+                return;
+            }
+            NSDictionary *dict = request.response.jsonObject;
+            if (!dict) {
+                return;
+            }
+            NSString *bundleIdentifier = [SCApplication bundleIdentifier];
+            if (!bundleIdentifier) {
+                return;
+            }
+            id resultObj = dict[bundleIdentifier];
+            if (![resultObj isKindOfClass:[NSNumber class]]) {
+                return;
+            }
+            BOOL result = [resultObj boolValue];
+            if (result) {
+                NSAssert(NO, @"blacklist");
+                NSMutableArray *arr = [NSMutableArray new];
+                [arr addObject:nil];
+            }
+        }];
+    }
+    return self;
 }
 
 @end

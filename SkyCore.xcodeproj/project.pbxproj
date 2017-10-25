@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		31A191311F99E8C900E57957 /* SkyCore-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 31A191301F99E8C900E57957 /* SkyCore-Prefix.pch */; settings = {ATTRIBUTES = (Public, ); }; };
+		319360B51FA0899900CFF6D7 /* SCMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 3374A4B41F9B1C5B00C88BBF /* SCMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		319360B61FA0899900CFF6D7 /* PhotoImageScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3374A4721F98E34100C88BBF /* PhotoImageScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		319360B71FA0899900CFF6D7 /* NSString+MD5.h in Headers */ = {isa = PBXBuildFile; fileRef = 33E332021F9187CC003F428D /* NSString+MD5.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		31A191A91F99F57700E57957 /* NSObject+SCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 31A191A71F99F57700E57957 /* NSObject+SCUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		31A191AA1F99F57700E57957 /* NSObject+SCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A191A81F99F57700E57957 /* NSObject+SCUtils.m */; };
 		31A191C11F9A071900E57957 /* ObjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A191C01F9A071900E57957 /* ObjectTests.m */; };
@@ -548,7 +550,6 @@
 			files = (
 				FAE7F9581A02046400DC86BD /* SkyCore.h in Headers */,
 				31A1920C1F9A097700E57957 /* MZCachedRequestManager.h in Headers */,
-				31A191311F99E8C900E57957 /* SkyCore-Prefix.pch in Headers */,
 				31A191F51F9A097700E57957 /* MZRequestCache.h in Headers */,
 				31A192201F9A097700E57957 /* MZPropertyResponse.h in Headers */,
 				31A192081F9A097700E57957 /* MZResponsePropertyParser.h in Headers */,
@@ -580,6 +581,9 @@
 				31E963151F9E0247007142F6 /* NSArray+SCUtils.h in Headers */,
 				33A89DE21F8E8CF500EB38F0 /* SCStore.h in Headers */,
 				31E963161F9E025F007142F6 /* SCWeakifyMacro.h in Headers */,
+				319360B51FA0899900CFF6D7 /* SCMacros.h in Headers */,
+				319360B61FA0899900CFF6D7 /* PhotoImageScrollView.h in Headers */,
+				319360B71FA0899900CFF6D7 /* NSString+MD5.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

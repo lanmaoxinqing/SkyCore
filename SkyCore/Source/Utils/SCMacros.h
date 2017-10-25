@@ -12,20 +12,20 @@
 //iOS版本
 #define SCSystemVersionOver(version) ([[[UIDevice currentDevice] systemVersion] floatValue] >= version)
 
-/*日志打印*/
-#if DEBUG
-//simple
-#ifdef SCLogSimple
-#define NSLog(s, ...) printf("%s\n",[[NSString stringWithFormat:(s), ##__VA_ARGS__] UTF8String])
-#endif
-//detail
-#ifdef SCLogDetail
-#define NSLog(s, ...) NSLog(@"%s(%d) %@",__FUNCTION__, __LINE__,[NSString stringWithFormat:(s), ##__VA_ARGS__])
-#endif
-#else
-//product
-#define NSLog(s, ...)
-#endif
+///*日志打印*/
+//#if DEBUG
+////simple
+//#ifdef SCLogSimple
+//#define NSLog(s, ...) printf("%s\n",[[NSString stringWithFormat:(s), ##__VA_ARGS__] UTF8String])
+//#endif
+////detail
+//#ifdef SCLogDetail
+//#define NSLog(s, ...) NSLog(@"%s(%d) %@",__FUNCTION__, __LINE__,[NSString stringWithFormat:(s), ##__VA_ARGS__])
+//#endif
+//#else
+////product
+//#define NSLog(s, ...)
+//#endif
 
 #define IgnorePerformSelectorLeakWarning(Stuff) \
 do { \

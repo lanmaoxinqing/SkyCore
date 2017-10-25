@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "SCApplication.h"
 
 @interface RequestTests : XCTestCase
 
@@ -38,6 +39,21 @@
     
     
     [self waitForExpectationsWithTimeout:request.timeout handler:^(NSError * _Nullable error) {
+        if (error) {
+            XCTAssert(error.localizedDescription);
+        }
+    }];
+
+}
+
+- (void)testBlacklist {
+    
+    XCTestExpectation *expect = [self expectationWithDescription:@""];
+
+    UIViewController *vc = [UIViewController new];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    
+    [self waitForExpectationsWithTimeout:15 handler:^(NSError * _Nullable error) {
         if (error) {
             XCTAssert(error.localizedDescription);
         }

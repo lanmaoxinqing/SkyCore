@@ -26,7 +26,7 @@
 }
 
 - (void)testApplication {
-    
+    NSLog(@"%@",SCApplication.bundleIdentifier);
     XCTAssertNotNil(SCApplication.infoDictionary);
     NSLog(@"%@", SCApplication.infoDictionary);
     
