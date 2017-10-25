@@ -85,5 +85,10 @@
 @end
 
 
+@interface UIImage (SCRound)
 
+- (UIImage *)sc_roundedImageWithCornerRadius:(CGFloat)radius;
+- (UIImage *)sc_roundedImage;
+
+@end
 

@@ -90,3 +90,28 @@
 }
 
 @end
+
+@implementation UIImage (SCRound)
+
+- (UIImage *)sc_roundedImageWithCornerRadius:(CGFloat)radius
+{
+    UIGraphicsBeginImageContextWithOptions(self.size, NO, 0);
+    
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    CGContextSetAllowsAntialiasing(ctx, true);
+    CGContextSetShouldAntialias(ctx, true);
+    [[UIBezierPath bezierPathWithRoundedRect:(CGRect){{0, 0}, self.size}
+                                cornerRadius:radius] addClip];
+    [self drawInRect:(CGRect){{0, 0}, self.size}];
+    
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
+}
+
+- (UIImage *)sc_roundedImage
+{
+    return [self sc_roundedImageWithCornerRadius:MIN(self.size.width, self.size.height) / 2];
+}
+
+@end
