@@ -35,4 +35,8 @@ Stuff; \
 _Pragma("clang diagnostic pop") \
 } while (0)
 
+#define SCFont(x) [UIFont systemFontOfSize:x]
+#define SCFontBold(x) [UIFont boldSystemFontOfSize:x]
+#define SCFontItalic(x) [UIFont italicSystemFontOfSize:x]
+
 #endif /* SCMacros_h */
