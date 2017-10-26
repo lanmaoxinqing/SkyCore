@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface SCStore (UserDefaults)
 
 
-- (nullable id)ud_objectForKey:(NSString *)key;
+- (nullable __kindof NSObject<NSCopying> *)ud_objectForKey:(NSString *)key;
 - (nullable NSString *)ud_stringForKey:(NSString *)key;
 - (nullable NSArray *)ud_arrayForKey:(NSString *)key;
 - (nullable NSDictionary<NSString *, id> *)ud_dictionaryForKey:(NSString *)key;
@@ -29,7 +29,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (double)ud_doubleForKey:(NSString *)key;
 - (BOOL)ud_boolForKey:(NSString *)key;
 - (nullable NSURL *)ud_URLForKey:(NSString *)key;
-
 - (void)ud_setObject:(nullable id <NSCopying>)object forKey:(NSString *)key;
 
 
@@ -80,7 +79,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param key key值
  @return 反序列后的模型
  */
-- (nullable id<NSCoding>)file_objectForKey:(NSString *)key;
+- (nullable __kindof NSObject<NSCoding> *)file_objectForKey:(NSString *)key;
 @end
 
 @interface SCStore (KeyChain)

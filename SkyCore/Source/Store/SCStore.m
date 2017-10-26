@@ -53,8 +53,7 @@
 
 @implementation SCStore (UserDefaults)
 
-- (id)ud_objectForKey:(NSString *)key
-{
+- (NSObject<NSCopying> *)ud_objectForKey:(NSString *)key {
     if (key == nil) {
         return nil;
     }
@@ -160,7 +159,7 @@
     [NSKeyedArchiver archiveRootObject:obj toFile:[self pathForKey:key]];
 }
 
-- (id<NSCoding>)file_objectForKey:(NSString *)key {
+- (NSObject<NSCoding> *)file_objectForKey:(NSString *)key {
     return [NSKeyedUnarchiver unarchiveObjectWithFile:[self pathForKey:key]];
 }
 
