@@ -22,3 +22,9 @@
 - (UIImage *)sc_snapshotImage;
 
 @end
+
+@interface UIView (SCCornerRadius)
+
+- (void)sc_setCorners:(UIRectCorner)corners radius:(CGFloat)radius;
+
+@end

@@ -159,3 +159,14 @@
 }
 
 @end
+
+@implementation UIView (SCCornerRadius)
+
+- (void)sc_setCorners:(UIRectCorner)corners radius:(CGFloat)radius {
+    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:corners cornerRadii:CGSizeMake(radius, radius)];
+    CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+    maskLayer.path = maskPath.CGPath;
+    self.layer.mask = maskLayer;
+}
+
+@end
