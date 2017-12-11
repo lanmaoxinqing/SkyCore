@@ -40,7 +40,9 @@
     if (!responseDictionary) {
         return [NSError mz_commonLocalSystemErrorWithCode:MZErrorLocalResponseJsonInvalid];
     }
-    
+    if (![responseDictionary isKindOfClass:[NSDictionary class]]) {
+        return [NSError mz_commonLocalSystemErrorWithCode:MZErrorLocalResponseJsonInvalid];
+    }
     //老接口未返回错误码，默认200
     NSInteger code = [responseDictionary[@"code"] integerValue];
     if (code == 0) {
