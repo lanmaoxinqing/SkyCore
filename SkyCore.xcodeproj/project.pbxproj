@@ -67,7 +67,6 @@
 		31D25B5F1F9786930016C93B /* StringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D25B5E1F9786930016C93B /* StringTests.m */; };
 		31E963151F9E0247007142F6 /* NSArray+SCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 33E3320A1F918B1A003F428D /* NSArray+SCUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		31E963161F9E025F007142F6 /* SCWeakifyMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 3374A4B31F9B1C4600C88BBF /* SCWeakifyMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		334032801FDBB3EA0032C49C /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E332031F9187CC003F428D /* NSString+MD5.m */; };
 		3374A4761F98E82300C88BBF /* UIImage+SCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3374A4741F98E82300C88BBF /* UIImage+SCUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3374A4771F98E82300C88BBF /* UIImage+SCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3374A4751F98E82300C88BBF /* UIImage+SCUtils.m */; };
 		3374A47A1F98EA3100C88BBF /* UIView+SCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3374A4781F98EA3100C88BBF /* UIView+SCUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -826,7 +825,6 @@
 				31A192171F9A097700E57957 /* MZRequestTransaction.m in Sources */,
 				33A89DE31F8E8CF500EB38F0 /* SCStore.m in Sources */,
 				31A191F61F9A097700E57957 /* MZRequestCache.m in Sources */,
-				334032801FDBB3EA0032C49C /* NSString+MD5.m in Sources */,
 				31A192001F9A097700E57957 /* MZErrorCode.m in Sources */,
 				31A191AA1F99F57700E57957 /* NSObject+SCUtils.m in Sources */,
 				31A1920D1F9A097700E57957 /* MZCachedRequestManager.m in Sources */,
